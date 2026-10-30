@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 
-export default function Timeline({ nodes, color = '#f5a623', summary = '' }) {
+export default function Timeline({ nodes, color = '#f5a623', summary = '', onImageOpen }) {
   const cardRefs = useRef([]);
   const scrollTo = (i) => {
     const el = cardRefs.current[i];
@@ -61,7 +61,17 @@ export default function Timeline({ nodes, color = '#f5a623', summary = '' }) {
                   </div>
                 )}
               </div>
-              {n.img && <img className="tl-thumb" src={n.img} alt="" />}
+              {(n.media || n.img) && (
+                <button
+                  className="tl-media"
+                  type="button"
+                  onClick={() => onImageOpen?.(n.media || { url: n.img, filename: n.t })}
+                  aria-label={`Enlarge ${n.media?.filename || n.t}`}
+                >
+                  <img src={n.media?.url || n.img} alt={n.media?.filename || `${n.t} project material`} />
+                  <span>Click to enlarge</span>
+                </button>
+              )}
             </div>
           </div>
         ))}

@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import { api, timeAgo } from '../api.js';
 import Timeline from '../components/Timeline.jsx';
 import { imageAttachmentUrl } from '../attachment.js';
+import { attachTimelineMedia } from '../timelineMedia.js';
 
 export default function StoryPage() {
   const { id } = useParams();
@@ -10,6 +11,7 @@ export default function StoryPage() {
   const [error, setError] = useState(false);
   const [likes, setLikes] = useState(0);
   const [liked, setLiked] = useState(false);
+  const [lightbox, setLightbox] = useState(null);
 
   useEffect(() => {
     setStory(null); setError(false);
@@ -17,6 +19,17 @@ export default function StoryPage() {
       .then(s => { setStory(s); setLikes(s.likes); })
       .catch(() => setError(true));
   }, [id]);
+
+  useEffect(() => {
+    if (!lightbox) return undefined;
+    const close = event => event.key === 'Escape' && setLightbox(null);
+    document.addEventListener('keydown', close);
+    document.body.classList.add('lightbox-open');
+    return () => {
+      document.removeEventListener('keydown', close);
+      document.body.classList.remove('lightbox-open');
+    };
+  }, [lightbox]);
 
   const like = async () => {
     if (liked) return;
@@ -52,6 +65,8 @@ export default function StoryPage() {
   const imageAttachments = (story.attachments || [])
     .map(a => ({ ...a, url: imageAttachmentUrl(a, import.meta.env.BASE_URL) }))
     .filter(a => a.url);
+  const mediaOrder = String(id) === '15' ? [3, 1, 0, 2] : imageAttachments.map((_, index) => index);
+  const timeline = attachTimelineMedia(story.timeline, imageAttachments, mediaOrder);
 
   return (
     <div className="container page">
@@ -70,7 +85,14 @@ export default function StoryPage() {
         </div>
       </div>
 
-      {story.timeline?.length > 0 && <Timeline nodes={story.timeline} color="#4caf7d" summary="Organized by the AI editor from the submitted material — pending editorial review." />}
+      {timeline?.length > 0 && (
+        <Timeline
+          nodes={timeline}
+          color="#4caf7d"
+          summary="Organized by the AI editor from the submitted material — pending editorial review."
+          onImageOpen={setLightbox}
+        />
+      )}
 
       {story.stats?.length > 0 && (
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: 24 }}>
@@ -78,24 +100,6 @@ export default function StoryPage() {
             <span className="tl-stat" key={i} style={{ padding: '10px 18px', fontSize: 14 }}>{s[0]} <i>{s[1]}</i></span>
           ))}
         </div>
-      )}
-
-      {imageAttachments.length > 0 && (
-        <section className="story-gallery">
-          <div className="story-gallery-head">
-            <span className="eyebrow">ORIGINAL FIELD MATERIALS</span>
-            <h2>Created by the students</h2>
-            <p>These posters, drawings, and notes are the evidence behind this journey.</p>
-          </div>
-          <div className="story-gallery-grid">
-            {imageAttachments.map((a, index) => (
-              <a href={a.url} target="_blank" rel="noopener noreferrer" key={a.id} className={index === 0 ? 'featured' : ''}>
-                <img src={a.url} alt={`Student-created project material: ${a.filename}`} />
-                <span>{a.filename}</span>
-              </a>
-            ))}
-          </div>
-        </section>
       )}
 
       <section className="relay-cta">
@@ -127,6 +131,16 @@ export default function StoryPage() {
               📎 {a.filename}
             </a>
           ))}
+        </div>
+      )}
+
+      {lightbox && (
+        <div className="story-lightbox" role="dialog" aria-modal="true" aria-label="Project image preview" onClick={() => setLightbox(null)}>
+          <button type="button" className="story-lightbox-close" onClick={() => setLightbox(null)} aria-label="Close image preview">×</button>
+          <figure onClick={event => event.stopPropagation()}>
+            <img src={lightbox.url} alt={lightbox.filename || 'Student-created project material'} />
+            {lightbox.filename && <figcaption>{lightbox.filename}</figcaption>}
+          </figure>
         </div>
       )}
     </div>
