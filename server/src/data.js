@@ -9,7 +9,7 @@ export const TYPES = {
 
 export const KNOWN_LOCATIONS = [
   'Yunnan Province','Henan Province','Shandong Province','Jilin Province','Xinjiang Uygur Autonomous Region',
-  'Fujian Province','Gansu Province','Shanghai','Nanjing','Uncategorized',
+  'Fujian Province','Gansu Province','Shanghai','Nanjing','Chongqing','Uncategorized',
 ];
 
 export const PARTICIPATING = [
@@ -247,6 +247,24 @@ export const LOCATIONS = [
           { y: 'Stage 3', lab: 'Field Work', t: 'Finding answers in Nanjing', d: 'At the Nanjing Museum Republican-era hall, the Yihe Road mansion district and the Presidential Palace, the team stopped just looking and started observing: roof shapes, brick patterns, carved windows, interior layouts.', ph: ['Field Work'], st: [['3', 'sites visited']], img: '/samples/nanjing/nanjing-yihe-window.png' },
           { y: 'Stage 4', lab: 'Creation', t: 'Six kids, one picture book', d: 'Every evening the six sat together, reviewing the day\'s photos and sketches. Chenchen and Jiejie drew architectural details, Manman and Yueyue drew the team, and Feifei and Xixi organized the words and history.', ph: ['Collaboration', 'Creation'], st: [['3', 'pages drafted']], img: '/samples/nanjing/nanjing-sketch.png' },
           { y: 'Stage 5', lab: 'Outcomes', t: 'Coming home with more than a book', d: 'The team finished the first draft of their picture book. But the journey also left them with independent planning skills, teamwork habits, and the courage to face unfamiliar places.', ph: ['Outcomes', 'Sharing'], st: [['1', 'picture-book draft']], img: '/samples/nanjing/nanjing-presidential-gate.png' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'chongqing', name: 'Chongqing', geo: '重庆市', coords: [106.579, 29.562],
+    tagline: '2026 · A six-kid research team asked how Hongyadong was "grown" onto a cliff — and measured the answer themselves',
+    stats: [['2026', 'first edition'], ['6', 'students'], ['12', 'report pages']],
+    projects: [
+      {
+        id: 'cq-hongyadong', type: 'qyf', title: 'How Hongyadong Grew on a Cliff', years: '2026 · July · 5 days', img: '/samples/hongyadong/hongyadong-night-overview.png',
+        summary: 'Six fifth-graders from Chongqing spent five days around Hongyadong asking one question: why can stilted houses stand on such a steep cliff? They measured columns, counted eleven layers and came home with a 12-page research report.',
+        timeline: [
+          { y: 'Stage 1', lab: 'Preparation', t: 'A cardboard model that kept falling down', d: 'In class the team tried to build a stilt-house model from cardboard. It collapsed at the third floor until they added diagonal braces — the first hint of the answer they would find on the cliff.', ph: ['Preparation'], st: [['1', 'model rebuilt']], img: '/samples/hongyadong/hongyadong-riverside-bridge.png' },
+          { y: 'Stage 2', lab: 'Field Work', t: 'Looking down at the columns', d: 'On the riverbank below Hongyadong the team crouched and traced where each wooden column lands: the uphill side rests straight on rock, the river side stands on long posts over stone platforms.', ph: ['Field Work'], st: [['160', 'photos taken']], img: '/samples/hongyadong/hongyadong-night-overview.png' },
+          { y: 'Stage 3', lab: 'Interview', t: 'The noodle seller and the flood line', d: 'A vendor told them the river reaches the lowest floor in flood years, which is why nobody sleeps there. Old photos in the Three Gorges Museum confirmed the same habit across old Chongqing.', ph: ['Reflection'], st: [['1', 'interview']], img: '/samples/hongyadong/hongyadong-riverside-bridge.png' },
+          { y: 'Stage 4', lab: 'Creation', t: 'Drawing a section from the bridge', d: 'From Qiansimen Bridge the team drew a cross-section and counted eleven layers, each roof serving as the street level of the floor above.', ph: ['Creation'], st: [['11', 'layers counted']], img: '/samples/hongyadong/hongyadong-night-overview.png' },
+          { y: 'Stage 5', lab: 'Outcomes', t: '“Grown”, not “built”', d: 'The team finished a 12-page report and a take-apart model, concluding that Hongyadong was grown with the slope and the river — not simply built on flat ground.', ph: ['Outcomes', 'Sharing'], st: [['12', 'report pages']], img: '/samples/hongyadong/hongyadong-riverside-bridge.png' },
         ],
       },
     ],

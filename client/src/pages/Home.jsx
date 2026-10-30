@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { api, timeAgo } from '../api.js';
+import { asset } from '../static.js';
 import ChinaMap from '../components/ChinaMap.jsx';
 
 const FILTERS = [
@@ -48,7 +49,7 @@ export default function Home() {
             </div>
           </div>
           <div className="hero-art">
-            <img src="/img/hero.png" alt="Children on a hillside looking at a distant city" />
+            <img src={asset('/img/hero.png')} alt="Children on a hillside looking at a distant city" />
             <div className="float-card fc-1">2025 edition · 467 teams on the road<small>Destinations: Qingdao · Beijing · Shanghai…</small></div>
             <div className="float-card fc-2">First sight of the sea<small>Shunchang, Fujian → Qingdao</small></div>
           </div>
@@ -118,7 +119,7 @@ export default function Home() {
           <div className="story-grid">
             {stories.slice(0, 4).map(s => (
               <Link to={`/story/${s.id}`} className="card story-card" key={s.id}>
-                <div className="pic"><img src={s.image || '/img/hero.png'} alt="" /></div>
+                <div className="pic"><img src={asset(s.image || '/img/hero.png')} alt="" /></div>
                 <div className="body">
                   <div className="quote">{s.title}</div>
                   <div className="who">{s.location} · {timeAgo(s.created_at)} · {s.likes} likes</div>

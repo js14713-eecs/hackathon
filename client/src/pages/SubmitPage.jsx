@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { api } from '../api.js';
+import { STATIC } from '../static.js';
 
 export default function SubmitPage() {
   const [text, setText] = useState('');
@@ -41,6 +42,11 @@ export default function SubmitPage() {
       </p>
 
       <form className="form-card" onSubmit={submit}>
+        {STATIC && (
+          <div className="status-panel" style={{ marginTop: 0, marginBottom: 16, background: '#fff7e6', color: '#7a5200' }}>
+            This is a read-only demo build — submissions are disabled. Use the Teacher AI page to explore a pre-generated storyline.
+          </div>
+        )}
         <textarea
           placeholder={'Paste the raw story here…\n\nExample:\nIn June 2025 our school in Wuzhishan, Hainan organized a robotics club. Ten kids built a water-quality robot in 2024. In 2025 they won the provincial contest and visited Guangzhou for the first time.'}
           value={text}
@@ -56,7 +62,7 @@ export default function SubmitPage() {
         {files.length > 0 && <div className="file-list">{files.map((f, i) => <span key={i} style={{ marginRight: 12 }}>📎 {f.name}</span>)}</div>}
 
         <div style={{ marginTop: 22, display: 'flex', gap: 12, alignItems: 'center' }}>
-          <button className="btn btn-primary" disabled={status.state === 'processing' || (!text.trim() && files.length === 0)}>
+          <button className="btn btn-primary" disabled={STATIC || status.state === 'processing' || (!text.trim() && files.length === 0)}>
             {status.state === 'processing' ? 'Organizing…' : 'Submit & organize'}
           </button>
           {(text.trim() || files.length > 0) && (

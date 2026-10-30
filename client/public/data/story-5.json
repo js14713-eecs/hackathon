@@ -1,0 +1,29 @@
+{
+  "id": 5,
+  "title": "Our school in Bijie Guizhou organized a coding club. In 2023 ten kids built a we",
+  "summary": "Our school in Bijie Guizhou organized a coding club. In 2023 ten kids built a weather station. In 2024 they won a provincial robot contest and visited Shanghai.",
+  "location": "Uncategorized",
+  "lng": null,
+  "lat": null,
+  "timeline": [
+    {
+      "y": "Now",
+      "lab": "Story",
+      "t": "Our school in Bijie Guizhou organized a coding club. In 2023",
+      "d": "Our school in Bijie Guizhou organized a coding club. In 2023 ten kids built a weather station. In 2024 they won a provincial robot contest and visited Shanghai.",
+      "ph": [
+        "Sharing"
+      ]
+    }
+  ],
+  "stats": [],
+  "tags": [
+    "unedited"
+  ],
+  "image": null,
+  "status": "ready",
+  "likes": 1,
+  "created_at": 1793334351323,
+  "storyline": [],
+  "attachments": []
+}

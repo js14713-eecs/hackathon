@@ -1,0 +1,51 @@
+{
+  "id": 3,
+  "title": "\"What's beyond the mountains?\" — now I know",
+  "summary": "Kids from Tianzhu, Wuwei, Gansu, kept asking what lies beyond the snowy grasslands. In 2025's \"Heroes' Journey\", they left the Hexi Corridor for eastern cities with their hometown stories in their backpacks.",
+  "location": "Gansu Province",
+  "lng": 103.7,
+  "lat": 36.1,
+  "timeline": [
+    {
+      "y": "2022",
+      "lab": "First Teams",
+      "t": "Lanzhou, the first \"far away\"",
+      "d": "12 teams departed; many rode high-speed rail for the first time.",
+      "ph": [
+        "Trip Plan",
+        "Journey"
+      ]
+    },
+    {
+      "y": "2024",
+      "lab": "Huanfang Special",
+      "t": "Four provinces together",
+      "d": "6,297 students opened the course with 116 teachers.",
+      "ph": [
+        "Course"
+      ]
+    },
+    {
+      "y": "2025",
+      "lab": "Heroes' Journey",
+      "t": "Tianzhu students see the world",
+      "d": "From the Hexi Corridor to eastern cities.",
+      "ph": [
+        "Journey",
+        "Sharing"
+      ]
+    }
+  ],
+  "stats": [],
+  "tags": [
+    "Go Far",
+    "Tianzhu",
+    "Heroes Journey"
+  ],
+  "image": "/img/hero.png",
+  "status": "ready",
+  "likes": 19,
+  "created_at": 1793226341850,
+  "storyline": [],
+  "attachments": []
+}

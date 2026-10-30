@@ -116,7 +116,7 @@ export function fallbackStoryline(rawText) {
     question, subQuestions, turns, openQuestions, outcomes,
     stats: pickStats(text), tags: pickTags(text),
     location, lng: where?.coords[0] ?? null, lat: where?.coords[1] ?? null,
-    timeline: turns.map((t, i) => ({ y: `Phase ${i + 1}`, lab: t.lab, t: t.t, d: t.d, ph: t.ph, st: [] })),
+    timeline: turns.map((t, i) => ({ y: `Phase ${i + 1}`, lab: t.lab, t: t.t, d: t.d, ph: t.ph, st: [], moments: t.moments })),
     dataKind: 'provided',
   };
 }
@@ -142,7 +142,7 @@ function normalize(j) {
     stats: (Array.isArray(j.stats) ? j.stats : []).slice(0, 6).map(s => [String(s?.[0] ?? ''), String(s?.[1] ?? '')]),
     tags: (Array.isArray(j.tags) ? j.tags : []).slice(0, 4).map(String),
     location: loc, lng: where?.coords[0] ?? null, lat: where?.coords[1] ?? null,
-    timeline: turns.map((t, i) => ({ y: `Phase ${i + 1}`, lab: t.lab, t: t.t, d: t.d, ph: t.ph, st: [] })),
+    timeline: turns.map((t, i) => ({ y: `Phase ${i + 1}`, lab: t.lab, t: t.t, d: t.d, ph: t.ph, st: [], moments: t.moments })),
     dataKind: 'provided',
   };
 }
@@ -158,9 +158,12 @@ async function callLLM(text, images) {
   const body = {
     model,
     temperature: 0.3,
+    max_tokens: 3000,
     messages: [{ role: 'system', content: SYSTEM_PROMPT }, { role: 'user', content }],
     response_format: { type: 'json_object' },
   };
+  // Qwen3 family spends the output budget on reasoning unless told not to
+  if (process.env.OPENAI_DISABLE_THINKING === '1') body.enable_thinking = false;
   const post = () => fetch(`${base}/chat/completions`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json', Authorization: `Bearer ${OPENAI_API_KEY}` },

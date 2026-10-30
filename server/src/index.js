@@ -107,8 +107,9 @@ app.get('/uploads/:name', (req, res) => {
 });
 
 /* ---------- teacher AI agent ---------- */
-app.get('/api/agent/samples', (_req, res) => {
-  const dir = path.join(SAMPLES_DIR, 'nanjing');
+app.get('/api/agent/samples', (req, res) => {
+  const set = path.basename(String(req.query.set || 'nanjing'));
+  const dir = path.join(SAMPLES_DIR, set);
   if (!fs.existsSync(dir)) return res.json({ text: '', images: [] });
   const files = fs.readdirSync(dir).sort();
   let text = '';
@@ -116,7 +117,7 @@ app.get('/api/agent/samples', (_req, res) => {
   for (const f of files) {
     const full = path.join(dir, f);
     if (/\.(md|txt)$/i.test(f)) text += `\n\n${fs.readFileSync(full, 'utf8').slice(0, 12000)}`;
-    else if (/\.(jpe?g|png|webp)$/i.test(f)) images.push(`/samples/nanjing/${f}`);
+    else if (/\.(jpe?g|png|webp)$/i.test(f)) images.push(`/samples/${set}/${f}`);
   }
   res.json({ text: text.trim(), images });
 });

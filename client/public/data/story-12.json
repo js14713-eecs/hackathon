@@ -1,0 +1,404 @@
+{
+  "id": 12,
+  "title": "The House That Grew on the Cliff: Decoding Hongya Cave",
+  "summary": "Six fifth-grade students investigated how Hongya Cave’s stilt houses stand on a vertical cliff face. Through field observation, historical research at the Three Gorges Museum, and physical modeling, they discovered that the building is not just constructed but 'grown' from the mountain using diagonal bracing and flood-adaptive design.",
+  "location": "Chongqing",
+  "lng": 106.579,
+  "lat": 29.562,
+  "timeline": [
+    {
+      "y": "Phase 1",
+      "lab": "Preparation",
+      "t": "Modeling Failure & Success",
+      "d": "Before leaving for Chongqing, the team attempted to build cardboard models of stilt houses in the classroom.",
+      "ph": [
+        "Preparation"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "The Collapse",
+          "d": "Their first attempt failed dramatically when the model collapsed at the third layer."
+        },
+        {
+          "t": "Adding Diagonal Braces",
+          "d": "By adding diagonal supports (bracing), they successfully stabilized the second prototype, learning the physics before seeing the real thing."
+        }
+      ]
+    },
+    {
+      "y": "Phase 2",
+      "lab": "Field Work",
+      "t": "Measuring the Mystery",
+      "d": "Upon arriving in Chongqing, students went directly to the riverside below Hongya Cave to inspect the structural base.",
+      "ph": [
+        "Field Work",
+        "Observation"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "Crouching Down",
+          "d": "Ignoring the tourist crowds above, the group crouched near the water to measure platform widths with tape measures."
+        },
+        {
+          "t": "Seeing the Pillars",
+          "d": "They observed that pillars on the river side were significantly longer than those on the mountain side, relying on stone platforms for footing."
+        }
+      ]
+    },
+    {
+      "y": "Phase 3",
+      "lab": "Research",
+      "t": "Layers of History",
+      "d": "The journey moved indoors to understand the context of the city's topography and history.",
+      "ph": [
+        "Collaboration",
+        "Field Work"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "Museum Archives",
+          "d": "At the China Three Gorges Museum, photos revealed that old Chongqing was once densely packed with these specific types of riverside structures."
+        },
+        {
+          "t": "Drawing Sections",
+          "d": "From Qiansimen Bridge, students sketched cross-sections confirming the building stacks vertically from Binjiang Road up to Cangbai Road."
+        }
+      ]
+    },
+    {
+      "y": "Phase 4",
+      "lab": "Discovery",
+      "t": "The Flood Line",
+      "d": "A crucial insight came from interviewing a local vendor about the function of the lowest floors.",
+      "ph": [
+        "Challenges",
+        "Reflection"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "The Darker Wood",
+          "d": "Students noticed discoloration on lower pillars; a local auntie explained this was the high-water mark during floods."
+        },
+        {
+          "t": "Retreating Architecture",
+          "d": "They realized the bottom floor is intentionally left empty or used for movable goods so it can 'yield' to nature without destroying the home."
+        }
+      ]
+    },
+    {
+      "y": "Phase 5",
+      "lab": "Synthesis",
+      "t": "Building the Conclusion",
+      "d": "Back at the hotel, the team synthesized their sketches, interviews, and measurements into final outputs.",
+      "ph": [
+        "Creation",
+        "Outcomes"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "Straw Model V2",
+          "d": "Using straws and paperboard, they rebuilt their initial concept, proving that diagonal bracing makes the structure rigid against shaking."
+        },
+        {
+          "t": "Sharing Knowledge",
+          "d": "The group presented their findings to younger students, explaining that buildings can grow along slopes rather than sitting flat on land."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    [
+      "5 Days",
+      "Duration"
+    ],
+    [
+      "6 Students",
+      "Team Size"
+    ],
+    [
+      "160 Photos",
+      "Documentation"
+    ],
+    [
+      "11 Floors",
+      "Height Analyzed"
+    ]
+  ],
+  "tags": [
+    "architecture",
+    "engineering",
+    "chongqing",
+    "field-research"
+  ],
+  "image": null,
+  "status": "ready",
+  "likes": 0,
+  "created_at": 1793343901559,
+  "storyline": {
+    "title": "The House That Grew on the Cliff: Decoding Hongya Cave",
+    "theme": "How Chongqing's architecture adapts to steep terrain and rising waters.",
+    "summary": "Six fifth-grade students investigated how Hongya Cave’s stilt houses stand on a vertical cliff face. Through field observation, historical research at the Three Gorges Museum, and physical modeling, they discovered that the building is not just constructed but 'grown' from the mountain using diagonal bracing and flood-adaptive design.",
+    "question": "Why can Hongya Cave's stilt houses be built on such a steep cliff?",
+    "subQuestions": [
+      "Why don't the wooden pillars inserted into the cliff cause the house to fall over?",
+      "Why does every floor of an eleven-story building feel like the ground level when you walk out?",
+      "Why did people living by the river historically build their homes this way?"
+    ],
+    "turns": [
+      {
+        "lab": "Preparation",
+        "t": "Modeling Failure & Success",
+        "d": "Before leaving for Chongqing, the team attempted to build cardboard models of stilt houses in the classroom.",
+        "ph": [
+          "Preparation"
+        ],
+        "moments": [
+          {
+            "t": "The Collapse",
+            "d": "Their first attempt failed dramatically when the model collapsed at the third layer."
+          },
+          {
+            "t": "Adding Diagonal Braces",
+            "d": "By adding diagonal supports (bracing), they successfully stabilized the second prototype, learning the physics before seeing the real thing."
+          }
+        ]
+      },
+      {
+        "lab": "Field Work",
+        "t": "Measuring the Mystery",
+        "d": "Upon arriving in Chongqing, students went directly to the riverside below Hongya Cave to inspect the structural base.",
+        "ph": [
+          "Field Work",
+          "Observation"
+        ],
+        "moments": [
+          {
+            "t": "Crouching Down",
+            "d": "Ignoring the tourist crowds above, the group crouched near the water to measure platform widths with tape measures."
+          },
+          {
+            "t": "Seeing the Pillars",
+            "d": "They observed that pillars on the river side were significantly longer than those on the mountain side, relying on stone platforms for footing."
+          }
+        ]
+      },
+      {
+        "lab": "Research",
+        "t": "Layers of History",
+        "d": "The journey moved indoors to understand the context of the city's topography and history.",
+        "ph": [
+          "Collaboration",
+          "Field Work"
+        ],
+        "moments": [
+          {
+            "t": "Museum Archives",
+            "d": "At the China Three Gorges Museum, photos revealed that old Chongqing was once densely packed with these specific types of riverside structures."
+          },
+          {
+            "t": "Drawing Sections",
+            "d": "From Qiansimen Bridge, students sketched cross-sections confirming the building stacks vertically from Binjiang Road up to Cangbai Road."
+          }
+        ]
+      },
+      {
+        "lab": "Discovery",
+        "t": "The Flood Line",
+        "d": "A crucial insight came from interviewing a local vendor about the function of the lowest floors.",
+        "ph": [
+          "Challenges",
+          "Reflection"
+        ],
+        "moments": [
+          {
+            "t": "The Darker Wood",
+            "d": "Students noticed discoloration on lower pillars; a local auntie explained this was the high-water mark during floods."
+          },
+          {
+            "t": "Retreating Architecture",
+            "d": "They realized the bottom floor is intentionally left empty or used for movable goods so it can 'yield' to nature without destroying the home."
+          }
+        ]
+      },
+      {
+        "lab": "Synthesis",
+        "t": "Building the Conclusion",
+        "d": "Back at the hotel, the team synthesized their sketches, interviews, and measurements into final outputs.",
+        "ph": [
+          "Creation",
+          "Outcomes"
+        ],
+        "moments": [
+          {
+            "t": "Straw Model V2",
+            "d": "Using straws and paperboard, they rebuilt their initial concept, proving that diagonal bracing makes the structure rigid against shaking."
+          },
+          {
+            "t": "Sharing Knowledge",
+            "d": "The group presented their findings to younger students, explaining that buildings can grow along slopes rather than sitting flat on land."
+          }
+        ]
+      }
+    ],
+    "openQuestions": [
+      {
+        "q": "Are there other old houses in Chongqing still 'growing' on slopes today?",
+        "d": "To see if this architectural style survives outside of famous landmarks."
+      },
+      {
+        "q": "If we build on an even steeper slope, how many more pillars are needed?",
+        "d": "Testing the limits of the structural engineering principles they learned."
+      },
+      {
+        "q": "Can traditional wood withstand modern tourism loads?",
+        "d": "Investigating the durability of heritage sites under heavy foot traffic."
+      }
+    ],
+    "outcomes": [
+      "Produced a 12-page illustrated report titled 'Why Stilt Houses Can Stand on Cliffs'.",
+      "Created functional straw-and-cardboard models demonstrating diagonal bracing stability.",
+      "Completed 9 detailed site sketches capturing column bases and eaves.",
+      "Delivered a school-wide presentation on adaptive mountain architecture."
+    ],
+    "stats": [
+      [
+        "5 Days",
+        "Duration"
+      ],
+      [
+        "6 Students",
+        "Team Size"
+      ],
+      [
+        "160 Photos",
+        "Documentation"
+      ],
+      [
+        "11 Floors",
+        "Height Analyzed"
+      ]
+    ],
+    "tags": [
+      "architecture",
+      "engineering",
+      "chongqing",
+      "field-research"
+    ],
+    "location": "Chongqing",
+    "lng": 106.579,
+    "lat": 29.562,
+    "timeline": [
+      {
+        "y": "Phase 1",
+        "lab": "Preparation",
+        "t": "Modeling Failure & Success",
+        "d": "Before leaving for Chongqing, the team attempted to build cardboard models of stilt houses in the classroom.",
+        "ph": [
+          "Preparation"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "The Collapse",
+            "d": "Their first attempt failed dramatically when the model collapsed at the third layer."
+          },
+          {
+            "t": "Adding Diagonal Braces",
+            "d": "By adding diagonal supports (bracing), they successfully stabilized the second prototype, learning the physics before seeing the real thing."
+          }
+        ]
+      },
+      {
+        "y": "Phase 2",
+        "lab": "Field Work",
+        "t": "Measuring the Mystery",
+        "d": "Upon arriving in Chongqing, students went directly to the riverside below Hongya Cave to inspect the structural base.",
+        "ph": [
+          "Field Work",
+          "Observation"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "Crouching Down",
+            "d": "Ignoring the tourist crowds above, the group crouched near the water to measure platform widths with tape measures."
+          },
+          {
+            "t": "Seeing the Pillars",
+            "d": "They observed that pillars on the river side were significantly longer than those on the mountain side, relying on stone platforms for footing."
+          }
+        ]
+      },
+      {
+        "y": "Phase 3",
+        "lab": "Research",
+        "t": "Layers of History",
+        "d": "The journey moved indoors to understand the context of the city's topography and history.",
+        "ph": [
+          "Collaboration",
+          "Field Work"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "Museum Archives",
+            "d": "At the China Three Gorges Museum, photos revealed that old Chongqing was once densely packed with these specific types of riverside structures."
+          },
+          {
+            "t": "Drawing Sections",
+            "d": "From Qiansimen Bridge, students sketched cross-sections confirming the building stacks vertically from Binjiang Road up to Cangbai Road."
+          }
+        ]
+      },
+      {
+        "y": "Phase 4",
+        "lab": "Discovery",
+        "t": "The Flood Line",
+        "d": "A crucial insight came from interviewing a local vendor about the function of the lowest floors.",
+        "ph": [
+          "Challenges",
+          "Reflection"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "The Darker Wood",
+            "d": "Students noticed discoloration on lower pillars; a local auntie explained this was the high-water mark during floods."
+          },
+          {
+            "t": "Retreating Architecture",
+            "d": "They realized the bottom floor is intentionally left empty or used for movable goods so it can 'yield' to nature without destroying the home."
+          }
+        ]
+      },
+      {
+        "y": "Phase 5",
+        "lab": "Synthesis",
+        "t": "Building the Conclusion",
+        "d": "Back at the hotel, the team synthesized their sketches, interviews, and measurements into final outputs.",
+        "ph": [
+          "Creation",
+          "Outcomes"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "Straw Model V2",
+            "d": "Using straws and paperboard, they rebuilt their initial concept, proving that diagonal bracing makes the structure rigid against shaking."
+          },
+          {
+            "t": "Sharing Knowledge",
+            "d": "The group presented their findings to younger students, explaining that buildings can grow along slopes rather than sitting flat on land."
+          }
+        ]
+      }
+    ],
+    "dataKind": "provided"
+  },
+  "attachments": []
+}

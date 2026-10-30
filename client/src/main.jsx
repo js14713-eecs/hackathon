@@ -3,10 +3,11 @@ import { createRoot } from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './App.jsx';
 import './styles.css';
+import { BASE } from './static.js';
 
 createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={BASE || '/'}>
       <App />
     </BrowserRouter>
   </React.StrictMode>

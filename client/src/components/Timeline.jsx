@@ -35,6 +35,13 @@ export default function Timeline({ nodes, color = '#f5a623', summary = '' }) {
               <div>
                 <h4>{n.t}</h4>
                 <p>{n.d}</p>
+                {n.moments?.length > 0 && (
+                  <ul className="tl-moments">
+                    {n.moments.map((m, j) => (
+                      <li key={j}><b>{m.t}</b>{m.d ? ` — ${m.d}` : ''}</li>
+                    ))}
+                  </ul>
+                )}
                 {n.ph?.length > 0 && (
                   <div className="tl-phases">
                     {n.ph.map((p, j) => (

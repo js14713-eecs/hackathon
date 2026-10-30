@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { api, timeAgo } from '../api.js';
+import { asset } from '../static.js';
 
 export default function HotPage() {
   const [stories, setStories] = useState([]);
@@ -36,7 +37,7 @@ export default function HotPage() {
           {stories.map((s, i) => (
             <div className="hot-item" key={s.id}>
               <div className="hot-rank">{i + 1}</div>
-              <img src={s.image || '/img/hero.png'} alt="" />
+              <img src={asset(s.image || '/img/hero.png')} alt="" />
               <div>
                 <h3><Link to={`/story/${s.id}`}>{s.title}</Link></h3>
                 <p>{s.summary}</p>

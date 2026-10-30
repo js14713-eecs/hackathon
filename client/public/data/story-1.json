@@ -1,0 +1,51 @@
+{
+  "id": 1,
+  "title": "\"The sea really is as salty as the textbook said\"",
+  "summary": "Fifth graders from Shunchang County Experimental Primary School, Fujian, reached Qingdao in 2025 and saw the ocean for the first time in their lives. They opened their arms on the beach and shouted at the waves.",
+  "location": "Fujian Province",
+  "lng": 118.1,
+  "lat": 26.1,
+  "timeline": [
+    {
+      "y": "2019",
+      "lab": "Course In",
+      "t": "Learning to plan a trip",
+      "d": "The Go Far course entered school; kids learned routes and budgets.",
+      "ph": [
+        "Course"
+      ]
+    },
+    {
+      "y": "2022",
+      "lab": "First Teams",
+      "t": "Wuyi Mountain on their own",
+      "d": "First local journeys with self-planned routes.",
+      "ph": [
+        "Trip Plan",
+        "Journey"
+      ]
+    },
+    {
+      "y": "2025",
+      "lab": "First Sight of the Sea",
+      "t": "Shunchang → Qingdao",
+      "d": "On the beach, arms wide open: \"The sea really is as salty as the textbook said.\"",
+      "ph": [
+        "Journey",
+        "Sharing"
+      ]
+    }
+  ],
+  "stats": [],
+  "tags": [
+    "Go Far",
+    "first-time",
+    "Qingdao"
+  ],
+  "image": "/img/sea.png",
+  "status": "ready",
+  "likes": 58,
+  "created_at": 1793323541838,
+  "storyline": [],
+  "attachments": []
+}

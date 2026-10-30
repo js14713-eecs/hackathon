@@ -1,0 +1,237 @@
+{
+  "locations": [
+    {
+      "id": "yunnan",
+      "name": "Yunnan Province",
+      "geo": "云南省",
+      "coords": [
+        102.71,
+        24.97
+      ],
+      "tagline": "373 teams · 1,937 children · 270,000+ class hours of Dream Courses (by Aug 2025)",
+      "types": [
+        "qyf",
+        "caravan"
+      ]
+    },
+    {
+      "id": "henan",
+      "name": "Henan Province",
+      "geo": "河南省",
+      "coords": [
+        113.6,
+        34.7
+      ],
+      "tagline": "2023 Central Plains Tour · 8 stops across 7 cities · tradition × technology",
+      "types": [
+        "caravan",
+        "qyf"
+      ]
+    },
+    {
+      "id": "shandong",
+      "name": "Shandong Province",
+      "geo": "山东省",
+      "coords": [
+        118,
+        36.4
+      ],
+      "tagline": "2024 YAO Health Tour · 6 cities · 10,105 students joined",
+      "types": [
+        "caravan",
+        "qyf"
+      ]
+    },
+    {
+      "id": "jilin",
+      "name": "Jilin Province",
+      "geo": "吉林省",
+      "coords": [
+        126.5,
+        43.8
+      ],
+      "tagline": "2024 Winter Games · Astronomy Club trip to Beijing",
+      "types": [
+        "sports",
+        "qyf"
+      ]
+    },
+    {
+      "id": "xinjiang",
+      "name": "Xinjiang Uygur Autonomous Region",
+      "geo": "新疆维吾尔自治区",
+      "coords": [
+        75.2,
+        39.9
+      ],
+      "tagline": "Border Schools · the 20th school at Jigen Township, China's westernmost frontier",
+      "types": [
+        "border",
+        "qyf"
+      ]
+    },
+    {
+      "id": "fujian",
+      "name": "Fujian Province",
+      "geo": "福建省",
+      "coords": [
+        118.1,
+        26.1
+      ],
+      "tagline": "Shunchang kids see the sea — \"the sea really is as salty as the textbook said\"",
+      "types": [
+        "qyf"
+      ]
+    },
+    {
+      "id": "gansu",
+      "name": "Gansu Province",
+      "geo": "甘肃省",
+      "coords": [
+        103.7,
+        36.1
+      ],
+      "tagline": "Huanfang Special · 116 teachers & 6,297 students · the Tianzhu Heroes' Journey",
+      "types": [
+        "qyf"
+      ]
+    },
+    {
+      "id": "shanghai",
+      "name": "Shanghai",
+      "geo": "上海市",
+      "coords": [
+        121.47,
+        31.23
+      ],
+      "tagline": "Go Far headquarters · Dream Coach Program · Kids in Governance",
+      "types": [
+        "qyf",
+        "coach",
+        "citizen"
+      ]
+    },
+    {
+      "id": "nanjing",
+      "name": "Nanjing",
+      "geo": "江苏省",
+      "coords": [
+        118.796,
+        32.06
+      ],
+      "tagline": "2025 · The Nanjing Dream Team asked what makes Republican-era architecture special — and left new questions behind",
+      "types": [
+        "qyf"
+      ]
+    },
+    {
+      "id": "chongqing",
+      "name": "Chongqing",
+      "geo": "重庆市",
+      "coords": [
+        106.579,
+        29.562
+      ],
+      "tagline": "2026 · A six-kid research team asked how Hongyadong was \"grown\" onto a cliff — and measured the answer themselves",
+      "types": [
+        "qyf"
+      ]
+    }
+  ],
+  "stories": [
+    {
+      "id": 13,
+      "title": "Sketching History: The Six Bricks of Nanjing",
+      "coords": [
+        118.796,
+        32.06
+      ]
+    },
+    {
+      "id": 12,
+      "title": "The House That Grew on the Cliff: Decoding Hongya Cave",
+      "coords": [
+        106.579,
+        29.562
+      ]
+    },
+    {
+      "id": 1,
+      "title": "\"The sea really is as salty as the textbook said\"",
+      "coords": [
+        118.1,
+        26.1
+      ]
+    },
+    {
+      "id": 2,
+      "title": "In seven days, the stars fell into their eyes",
+      "coords": [
+        126.5,
+        43.8
+      ]
+    },
+    {
+      "id": 3,
+      "title": "\"What's beyond the mountains?\" — now I know",
+      "coords": [
+        103.7,
+        36.1
+      ]
+    },
+    {
+      "id": 4,
+      "title": "When the caravan came, our school felt like New Year",
+      "coords": [
+        113.6,
+        34.7
+      ]
+    }
+  ],
+  "tiers": {
+    "participating": [
+      "北京市",
+      "天津市",
+      "河北省",
+      "山西省",
+      "内蒙古自治区",
+      "辽宁省",
+      "吉林省",
+      "黑龙江省",
+      "上海市",
+      "江苏省",
+      "浙江省",
+      "安徽省",
+      "福建省",
+      "江西省",
+      "山东省",
+      "河南省",
+      "湖北省",
+      "湖南省",
+      "广东省",
+      "广西壮族自治区",
+      "海南省",
+      "重庆市",
+      "四川省",
+      "贵州省",
+      "云南省",
+      "陕西省",
+      "甘肃省",
+      "青海省",
+      "宁夏回族自治区",
+      "新疆维吾尔自治区"
+    ],
+    "featured": [
+      "云南省",
+      "河南省",
+      "山东省",
+      "吉林省",
+      "新疆维吾尔自治区",
+      "福建省",
+      "甘肃省",
+      "上海市",
+      "江苏省",
+      "重庆市"
+    ]
+  }
+}

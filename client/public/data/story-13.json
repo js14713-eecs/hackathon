@@ -1,0 +1,389 @@
+{
+  "id": 13,
+  "title": "Sketching History: The Six Bricks of Nanjing",
+  "summary": "Six third-grade students traveled to Nanjing to investigate the unique features of Republic-era buildings. Through sketching intricate details like carved windows and domed gates, they learned about architectural history while developing essential teamwork skills like the 'Double Bookkeeping Method'. Their journey culminated in a collaborative picture book that captured both the city's heritage and their own growth.",
+  "location": "Nanjing",
+  "lng": 118.796,
+  "lat": 32.06,
+  "timeline": [
+    {
+      "y": "Phase 1",
+      "lab": "Preparation",
+      "t": "Packing Curiosity",
+      "d": "Before leaving home, the team gathered reference photos and prepared art supplies to document what they would see.",
+      "ph": [
+        "Preparation"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "Research Mission",
+          "d": "Students collected information on the Nanjing Museum and Yihe Road historic district."
+        },
+        {
+          "t": "Tool Check",
+          "d": "Each child packed a notebook and colored pencils specifically for field observation."
+        }
+      ]
+    },
+    {
+      "y": "Phase 2",
+      "lab": "Independence",
+      "t": "First Steps Alone",
+      "d": "Navigating the subway and ordering food without parents presented immediate challenges that required creative solutions.",
+      "ph": [
+        "Challenges",
+        "Collaboration"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "The Double Bookkeeping Method",
+          "d": "After Qianqian miscounted change at the ticket machine, she and Manman created a system where two people always verify money together."
+        },
+        {
+          "t": "Voice Control",
+          "d": "The group established a rule to speak one by one when ordering meals so waiters could understand them clearly."
+        }
+      ]
+    },
+    {
+      "y": "Phase 3",
+      "lab": "Field Work",
+      "t": "Reading the Stones",
+      "d": "At Yihe Road and the Presidential Palace, students observed how Western styles merged with traditional Chinese elements.",
+      "ph": [
+        "Field Work"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "Flower Windows",
+          "d": "Qianqian sketched an intricately carved wooden window frame, comparing its beauty to a blooming flower."
+        },
+        {
+          "t": "The Dome Gate",
+          "d": "Chenchen focused on the Sun Yat-sen Mausoleum gate, noting its solemn atmosphere and symmetrical layout."
+        }
+      ]
+    },
+    {
+      "y": "Phase 4",
+      "lab": "Creation",
+      "t": "Drawing Against the Wind",
+      "d": "Translating complex structures onto paper was difficult, but peer support helped refine their artistic techniques.",
+      "ph": [
+        "Creation",
+        "Collaboration"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "Three Drafts",
+          "d": "Chenchen struggled to draw the roof straight until Manman advised him to block out large shapes first; he redrew it three times."
+        },
+        {
+          "t": "Wind & Paper",
+          "d": "Jiejie held down Chenchen’s sketchbook against strong winds so he could finish his drawing of the Presidential Palace archway."
+        }
+      ]
+    },
+    {
+      "y": "Phase 5",
+      "lab": "Reflection",
+      "t": "Six Bricks, One House",
+      "d": "The trip concluded with a shared realization that individual talents combine to create something stronger than themselves.",
+      "ph": [
+        "Reflection",
+        "Outcomes"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "Team Metaphor",
+          "d": "Teacher Cai compared the six students to bricks in a wall, emphasizing that removing any one person weakens the structure."
+        },
+        {
+          "t": "Growing Up",
+          "d": "When Qianqian showed her mother the finished text pages of their book, her mom remarked on how much she had grown."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    [
+      "6",
+      "Third-graders"
+    ],
+    [
+      "7",
+      "Days duration"
+    ],
+    [
+      "3",
+      "Drafts per major sketch"
+    ]
+  ],
+  "tags": [
+    "architecture",
+    "teamwork",
+    "independence",
+    "art-journalism"
+  ],
+  "image": null,
+  "status": "ready",
+  "likes": 0,
+  "created_at": 1793343962786,
+  "storyline": {
+    "title": "Sketching History: The Six Bricks of Nanjing",
+    "theme": "Exploring the blend of East and West in Republic-era architecture.",
+    "summary": "Six third-grade students traveled to Nanjing to investigate the unique features of Republic-era buildings. Through sketching intricate details like carved windows and domed gates, they learned about architectural history while developing essential teamwork skills like the 'Double Bookkeeping Method'. Their journey culminated in a collaborative picture book that captured both the city's heritage and their own growth.",
+    "question": "What makes Republic-era architecture special?",
+    "subQuestions": [
+      "Why are most roofs slanted?",
+      "What materials were used for red brick walls?",
+      "Who lived inside these historical buildings?"
+    ],
+    "turns": [
+      {
+        "lab": "Preparation",
+        "t": "Packing Curiosity",
+        "d": "Before leaving home, the team gathered reference photos and prepared art supplies to document what they would see.",
+        "ph": [
+          "Preparation"
+        ],
+        "moments": [
+          {
+            "t": "Research Mission",
+            "d": "Students collected information on the Nanjing Museum and Yihe Road historic district."
+          },
+          {
+            "t": "Tool Check",
+            "d": "Each child packed a notebook and colored pencils specifically for field observation."
+          }
+        ]
+      },
+      {
+        "lab": "Independence",
+        "t": "First Steps Alone",
+        "d": "Navigating the subway and ordering food without parents presented immediate challenges that required creative solutions.",
+        "ph": [
+          "Challenges",
+          "Collaboration"
+        ],
+        "moments": [
+          {
+            "t": "The Double Bookkeeping Method",
+            "d": "After Qianqian miscounted change at the ticket machine, she and Manman created a system where two people always verify money together."
+          },
+          {
+            "t": "Voice Control",
+            "d": "The group established a rule to speak one by one when ordering meals so waiters could understand them clearly."
+          }
+        ]
+      },
+      {
+        "lab": "Field Work",
+        "t": "Reading the Stones",
+        "d": "At Yihe Road and the Presidential Palace, students observed how Western styles merged with traditional Chinese elements.",
+        "ph": [
+          "Field Work"
+        ],
+        "moments": [
+          {
+            "t": "Flower Windows",
+            "d": "Qianqian sketched an intricately carved wooden window frame, comparing its beauty to a blooming flower."
+          },
+          {
+            "t": "The Dome Gate",
+            "d": "Chenchen focused on the Sun Yat-sen Mausoleum gate, noting its solemn atmosphere and symmetrical layout."
+          }
+        ]
+      },
+      {
+        "lab": "Creation",
+        "t": "Drawing Against the Wind",
+        "d": "Translating complex structures onto paper was difficult, but peer support helped refine their artistic techniques.",
+        "ph": [
+          "Creation",
+          "Collaboration"
+        ],
+        "moments": [
+          {
+            "t": "Three Drafts",
+            "d": "Chenchen struggled to draw the roof straight until Manman advised him to block out large shapes first; he redrew it three times."
+          },
+          {
+            "t": "Wind & Paper",
+            "d": "Jiejie held down Chenchen’s sketchbook against strong winds so he could finish his drawing of the Presidential Palace archway."
+          }
+        ]
+      },
+      {
+        "lab": "Reflection",
+        "t": "Six Bricks, One House",
+        "d": "The trip concluded with a shared realization that individual talents combine to create something stronger than themselves.",
+        "ph": [
+          "Reflection",
+          "Outcomes"
+        ],
+        "moments": [
+          {
+            "t": "Team Metaphor",
+            "d": "Teacher Cai compared the six students to bricks in a wall, emphasizing that removing any one person weakens the structure."
+          },
+          {
+            "t": "Growing Up",
+            "d": "When Qianqian showed her mother the finished text pages of their book, her mom remarked on how much she had grown."
+          }
+        ]
+      }
+    ],
+    "openQuestions": [
+      {
+        "q": "How do Nanjing's flat-roofed villas differ structurally from Chongqing's stilt houses (Diaojiaolou)?",
+        "d": "Comparing geography-specific adaptations helps students understand why buildings look different across regions."
+      },
+      {
+        "q": "What specific historical events caused the mix of Western domes and Chinese tiles in Nanjing?",
+        "d": "Digging deeper into the timeline reveals the political context behind aesthetic choices."
+      }
+    ],
+    "outcomes": [
+      "A collaborative illustrated picture book featuring sketches of the Presidential Palace and Yihe Road.",
+      "Development of the 'Double Bookkeeping' financial safety habit.",
+      "Improved ability to articulate needs clearly in public settings like restaurants.",
+      "Personal reflection journals documenting architectural observations."
+    ],
+    "stats": [
+      [
+        "6",
+        "Third-graders"
+      ],
+      [
+        "7",
+        "Days duration"
+      ],
+      [
+        "3",
+        "Drafts per major sketch"
+      ]
+    ],
+    "tags": [
+      "architecture",
+      "teamwork",
+      "independence",
+      "art-journalism"
+    ],
+    "location": "Nanjing",
+    "lng": 118.796,
+    "lat": 32.06,
+    "timeline": [
+      {
+        "y": "Phase 1",
+        "lab": "Preparation",
+        "t": "Packing Curiosity",
+        "d": "Before leaving home, the team gathered reference photos and prepared art supplies to document what they would see.",
+        "ph": [
+          "Preparation"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "Research Mission",
+            "d": "Students collected information on the Nanjing Museum and Yihe Road historic district."
+          },
+          {
+            "t": "Tool Check",
+            "d": "Each child packed a notebook and colored pencils specifically for field observation."
+          }
+        ]
+      },
+      {
+        "y": "Phase 2",
+        "lab": "Independence",
+        "t": "First Steps Alone",
+        "d": "Navigating the subway and ordering food without parents presented immediate challenges that required creative solutions.",
+        "ph": [
+          "Challenges",
+          "Collaboration"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "The Double Bookkeeping Method",
+            "d": "After Qianqian miscounted change at the ticket machine, she and Manman created a system where two people always verify money together."
+          },
+          {
+            "t": "Voice Control",
+            "d": "The group established a rule to speak one by one when ordering meals so waiters could understand them clearly."
+          }
+        ]
+      },
+      {
+        "y": "Phase 3",
+        "lab": "Field Work",
+        "t": "Reading the Stones",
+        "d": "At Yihe Road and the Presidential Palace, students observed how Western styles merged with traditional Chinese elements.",
+        "ph": [
+          "Field Work"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "Flower Windows",
+            "d": "Qianqian sketched an intricately carved wooden window frame, comparing its beauty to a blooming flower."
+          },
+          {
+            "t": "The Dome Gate",
+            "d": "Chenchen focused on the Sun Yat-sen Mausoleum gate, noting its solemn atmosphere and symmetrical layout."
+          }
+        ]
+      },
+      {
+        "y": "Phase 4",
+        "lab": "Creation",
+        "t": "Drawing Against the Wind",
+        "d": "Translating complex structures onto paper was difficult, but peer support helped refine their artistic techniques.",
+        "ph": [
+          "Creation",
+          "Collaboration"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "Three Drafts",
+            "d": "Chenchen struggled to draw the roof straight until Manman advised him to block out large shapes first; he redrew it three times."
+          },
+          {
+            "t": "Wind & Paper",
+            "d": "Jiejie held down Chenchen’s sketchbook against strong winds so he could finish his drawing of the Presidential Palace archway."
+          }
+        ]
+      },
+      {
+        "y": "Phase 5",
+        "lab": "Reflection",
+        "t": "Six Bricks, One House",
+        "d": "The trip concluded with a shared realization that individual talents combine to create something stronger than themselves.",
+        "ph": [
+          "Reflection",
+          "Outcomes"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "Team Metaphor",
+            "d": "Teacher Cai compared the six students to bricks in a wall, emphasizing that removing any one person weakens the structure."
+          },
+          {
+            "t": "Growing Up",
+            "d": "When Qianqian showed her mother the finished text pages of their book, her mom remarked on how much she had grown."
+          }
+        ]
+      }
+    ],
+    "dataKind": "provided"
+  },
+  "attachments": []
+}

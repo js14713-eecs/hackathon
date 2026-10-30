@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { api } from '../api.js';
+import { STATIC } from '../static.js';
 
 async function resizeImage(file, maxDim = 1280, quality = 0.85) {
   const url = URL.createObjectURL(file);
@@ -126,6 +127,7 @@ export default function TeacherPage() {
   const [draft, setDraft] = useState(null);
   const [meta, setMeta] = useState(null);
   const [error, setError] = useState('');
+  const [sampleSet, setSampleSet] = useState(null);
   const fileRef = useRef(null);
 
   const addFiles = (list) => {
@@ -133,10 +135,11 @@ export default function TeacherPage() {
     setImages(prev => [...prev, ...imgs.map(file => ({ file, url: URL.createObjectURL(file) }))].slice(0, 8));
   };
 
-  const loadSample = async () => {
+  const loadSample = async (set) => {
     setBusy(true); setError(''); setPhase('idle'); setDraft(null);
     try {
-      const s = await api.agentSamples();
+      const s = await api.agentSamples(set);
+      setSampleSet(set);
       setText(s.text);
       const files = await Promise.all(s.images.map(async (u) => {
         const r = await fetch(u);
@@ -154,8 +157,8 @@ export default function TeacherPage() {
     if (!text.trim() && images.length === 0) return;
     setBusy(true); setError(''); setPhase('loading'); setDraft(null);
     try {
-      const files = await Promise.all(images.map(i => resizeImage(i.file)));
-      const res = await api.agentGenerate(text, files);
+      const files = STATIC ? [] : await Promise.all(images.map(i => resizeImage(i.file)));
+      const res = await api.agentGenerate(text, files, sampleSet);
       setDraft(res.data);
       setMeta({ engine: res.engine, model: res.model, id: res.id });
       setPhase('draft');
@@ -168,7 +171,8 @@ export default function TeacherPage() {
   const publish = async () => {
     setBusy(true);
     try {
-      await api.agentPublish(meta.id);
+      const r = await api.agentPublish(meta.id, draft);
+      if (r.id) setMeta(m => ({ ...m, id: r.id }));
       setPhase('published');
     } catch (e) {
       setError(e.message);
@@ -184,6 +188,14 @@ export default function TeacherPage() {
         Paste scattered notes and drop in photos. The agent reads everything — including the pictures —
         and drafts a journey with one core question, its turns, its moments, and the questions it leaves for the next cohort.
       </p>
+
+      {STATIC && (
+        <div className="tc-hint" style={{ marginTop: 16, background: '#fff7e6', borderLeft: '3px solid var(--gold)', padding: '12px 16px', borderRadius: 10 }}>
+          <b>Public demo build.</b> Live generation runs on the local server. Load a sample and hit
+          <b> Generate storyline</b> to replay the AI draft produced from those same materials; publishing adds it
+          to this browser's map and story list.
+        </div>
+      )}
 
       <div className="tc-grid">
         <div className="tc-card">
@@ -211,7 +223,8 @@ export default function TeacherPage() {
             </div>
           )}
           <div className="tc-actions">
-            <button className="btn btn-line" disabled={busy} onClick={loadSample}>Load sample materials</button>
+            <button className="btn btn-line" disabled={busy} onClick={() => loadSample('nanjing')}>Sample · Nanjing</button>
+            <button className="btn btn-line" disabled={busy} onClick={() => loadSample('hongyadong')}>Sample · Hongyadong</button>
             <button className="btn btn-line" disabled={busy || (!text && images.length === 0)} onClick={() => { setText(''); setImages([]); setDraft(null); setPhase('idle'); setError(''); }}>Clear</button>
             <button className="btn btn-primary" disabled={busy || (!text.trim() && images.length === 0)} onClick={generate}>
               {busy ? 'Generating…' : 'Generate storyline'}
@@ -219,8 +232,10 @@ export default function TeacherPage() {
           </div>
           {error && <div className="status-panel error">{error}</div>}
           <div className="tc-hint">
-            Engine: if <b>server/.env</b> has OPENAI_API_KEY, the agent uses a vision LLM (GLM / Qwen / any OpenAI-compatible API)
-            and reads the photos too. Without a key it falls back to an offline organizer so the demo still works.
+            {STATIC
+              ? 'Static demo: drafts are pre-generated from the bundled samples. Run the app locally (npm run dev) with an API key for live generation from your own materials.'
+              : <>Engine: if <b>server/.env</b> has OPENAI_API_KEY, the agent uses a vision LLM (GLM / Qwen / any OpenAI-compatible API)
+            and reads the photos too. Without a key it falls back to an offline organizer so the demo still works.</>}
           </div>
         </div>
 

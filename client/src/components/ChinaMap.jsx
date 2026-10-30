@@ -1,6 +1,7 @@
 import { useEffect, useRef } from 'react';
 import * as echarts from 'echarts';
 import { useNavigate } from 'react-router-dom';
+import { asset } from '../static.js';
 
 /**
  * Single-layer map: one `geo` component carries both the base map and the
@@ -82,7 +83,7 @@ export default function ChinaMap({ mapData, filter, onProvinceInfo }) {
       };
     };
 
-    fetch('/geo/china.json')
+    fetch(asset('/geo/china.json'))
       .then(r => r.json())
       .then(geo => {
         if (chart.isDisposed()) return;

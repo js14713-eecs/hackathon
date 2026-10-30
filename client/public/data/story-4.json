@@ -1,0 +1,49 @@
+{
+  "id": 4,
+  "title": "When the caravan came, our school felt like New Year",
+  "summary": "Along the 2023 Central Plains Tour in Henan, children waited at the school gate for the 27-ton \"mobile Dream Center\". One boy said the day the caravan arrived felt like New Year.",
+  "location": "Henan Province",
+  "lng": 113.6,
+  "lat": 34.7,
+  "timeline": [
+    {
+      "y": "05.08",
+      "lab": "Departure",
+      "t": "Zhengzhou launch",
+      "d": "The tour kicked off in Zhongyuan District.",
+      "ph": [
+        "Launch Ceremony"
+      ]
+    },
+    {
+      "y": "May",
+      "lab": "Mid-tour",
+      "t": "STEAM in Lushi County",
+      "d": "Mountain kids tried VR for the first time.",
+      "ph": [
+        "STEAM"
+      ]
+    },
+    {
+      "y": "Jun",
+      "lab": "Finale",
+      "t": "Neixiang County",
+      "d": "Kids left with Dream Cards.",
+      "ph": [
+        "Finale"
+      ]
+    }
+  ],
+  "stats": [],
+  "tags": [
+    "Dream Caravan",
+    "Henan",
+    "STEAM"
+  ],
+  "image": "/img/caravan.png",
+  "status": "ready",
+  "likes": 9,
+  "created_at": 1793136341856,
+  "storyline": [],
+  "attachments": []
+}

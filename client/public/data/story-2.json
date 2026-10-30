@@ -1,0 +1,49 @@
+{
+  "id": 2,
+  "title": "In seven days, the stars fell into their eyes",
+  "summary": "In July 2025, the Astronomy Club of Jilin Adream School flew to Beijing: pondering fossils at the Natural History Museum, holding their breath at Tsinghua's telescopes, and giving hand-made moon lamps back to their funders.",
+  "location": "Jilin Province",
+  "lng": 126.5,
+  "lat": 43.8,
+  "timeline": [
+    {
+      "y": "D1",
+      "lab": "Departure",
+      "t": "First flight",
+      "d": "Nine children and their teachers flew to Beijing.",
+      "ph": [
+        "Journey"
+      ]
+    },
+    {
+      "y": "D3",
+      "lab": "Tsinghua",
+      "t": "At the telescope",
+      "d": "Observing the stars with professional equipment.",
+      "ph": [
+        "Journey"
+      ]
+    },
+    {
+      "y": "D7",
+      "lab": "Return",
+      "t": "The journey has just begun",
+      "d": "\"The universe never abandons a single grain of dust.\"",
+      "ph": [
+        "Sharing"
+      ]
+    }
+  ],
+  "stats": [],
+  "tags": [
+    "Astronomy",
+    "Beijing",
+    "Go Far"
+  ],
+  "image": "/img/classroom.png",
+  "status": "ready",
+  "likes": 51,
+  "created_at": 1793301941844,
+  "storyline": [],
+  "attachments": []
+}

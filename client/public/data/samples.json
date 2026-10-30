@@ -1,0 +1,530 @@
+{
+  "nanjing": {
+    "text": "# 南京梦想队研学任务单\n\n时间：2025年7月6日-7月12日\n队员：辰辰、杰杰、漫漫、月月、菲菲、茜茜（六名三年级学生）\n带队：蔡老师\n\n## 基本信息\n\n核心研究问题：民国建筑有什么特别？\n\n出发前提出的三个问题：\n- 屋顶为什么大多是斜的？\n- 红砖墙是用什么做的？\n- 这些建筑里曾经住过什么样的人？\n\n## 行前准备\n\n- 查找老照片和民国年份表\n- 阅读研学手册\n- 搜集南京博物院和颐和路民国建筑资料\n- 每人准备一个笔记本和一盒彩铅\n\n\n# 我的南京之旅（茜茜）\n\n第一次离开家去那么远的地方，我有点紧张。第一天买地铁票的时候，我把零钱数错了，漫漫就帮我一起数，后来我们两个人一起管钱，就再也没有出过错，蔡老师夸我们是\"双人记账法\"。\n\n在颐和路，我看到了有雕花的窗户，特别好看。我画了一张草图，虽然画得不太好，但是我觉得那个窗子像花一样。回家以后我还想画更多这样的窗子。\n\n晚上大家围坐在一起看当天的照片，辰辰画的总统府门楼比照片还好看。我们一起做绘本，我负责整理文字。回家的时候，我把绘本拿给妈妈看，妈妈说我长大了。\n\n\n# 我负责画建筑（辰辰）\n\n我最喜欢总统府的大门楼，它有一个圆圆的顶。我蹲在地上画了很久，杰杰帮我按住纸，风一直吹。\n\n一开始我画得不像，屋顶总是歪的。漫漫说不用怕，先把大形状画出来，再补细节。我画了三遍，第三遍终于像了。\n\n蔡老师说我们六个人就像一栋房子的六块砖，少了谁都不行。\n\n\n# 蔡老师复盘记录\n\n## 第一晚复盘\n\n今天孩子们第一次独立坐地铁、买票、点餐、找酒店，暴露了不少问题。\n\n- 茜茜付账时数错零钱 → 和漫漫组成\"双人记账法\"，两个人互相核对\n- 杰杰问路时紧张，话说不完整 → 先练习两遍再出发\n- 点餐时大家同时开口，服务员听不清 → 约定轮流表达需求\n\n## 调整后的变化\n\n- 双人记账之后，付款没有再出错\n- 孩子们开始提前研究地铁线路，讨论第二天的行程\n- 点餐时能够轮流表达自己的需求\n\n\n# 绘本创作分工与成果\n\n## 团队分工\n\n- 辰辰、杰杰：绘制建筑细节\n- 漫漫、月月：绘制队员神态\n- 菲菲、茜茜：整理文字、建筑历史与故事\n\n## 目前成果\n\n- 完成总统府门楼、颐和路雕花窗、博物院大门三页初稿\n- 每人完成一篇研学日记\n- 收集建筑照片和手绘草图若干\n\n\n# 留给下一届的问题\n\n## 延伸问题\n\n- 南京民国建筑与重庆吊脚楼在建筑结构和生活方式上有什么不同？\n- 为什么南京的民国建筑会呈现出不同的风格？这些风格背后有什么历史原因？\n- 下一支三年级研学队可以怎样设计任务分工，让团队合作更加顺畅？",
+    "images": [
+      "/samples/nanjing/nanjing-museum-republican-hall.png",
+      "/samples/nanjing/nanjing-presidential-gate.png",
+      "/samples/nanjing/nanjing-sketch.png",
+      "/samples/nanjing/nanjing-yihe-window.png"
+    ],
+    "draft": {
+      "title": "Sketching History: The Six Bricks of Nanjing",
+      "theme": "Exploring the blend of East and West in Republic-era architecture.",
+      "summary": "Six third-grade students traveled to Nanjing to investigate the unique features of Republic-era buildings. Through sketching intricate details like carved windows and domed gates, they learned about architectural history while developing essential teamwork skills like the 'Double Bookkeeping Method'. Their journey culminated in a collaborative picture book that captured both the city's heritage and their own growth.",
+      "question": "What makes Republic-era architecture special?",
+      "subQuestions": [
+        "Why are most roofs slanted?",
+        "What materials were used for red brick walls?",
+        "Who lived inside these historical buildings?"
+      ],
+      "turns": [
+        {
+          "lab": "Preparation",
+          "t": "Packing Curiosity",
+          "d": "Before leaving home, the team gathered reference photos and prepared art supplies to document what they would see.",
+          "ph": [
+            "Preparation"
+          ],
+          "moments": [
+            {
+              "t": "Research Mission",
+              "d": "Students collected information on the Nanjing Museum and Yihe Road historic district."
+            },
+            {
+              "t": "Tool Check",
+              "d": "Each child packed a notebook and colored pencils specifically for field observation."
+            }
+          ]
+        },
+        {
+          "lab": "Independence",
+          "t": "First Steps Alone",
+          "d": "Navigating the subway and ordering food without parents presented immediate challenges that required creative solutions.",
+          "ph": [
+            "Challenges",
+            "Collaboration"
+          ],
+          "moments": [
+            {
+              "t": "The Double Bookkeeping Method",
+              "d": "After Qianqian miscounted change at the ticket machine, she and Manman created a system where two people always verify money together."
+            },
+            {
+              "t": "Voice Control",
+              "d": "The group established a rule to speak one by one when ordering meals so waiters could understand them clearly."
+            }
+          ]
+        },
+        {
+          "lab": "Field Work",
+          "t": "Reading the Stones",
+          "d": "At Yihe Road and the Presidential Palace, students observed how Western styles merged with traditional Chinese elements.",
+          "ph": [
+            "Field Work"
+          ],
+          "moments": [
+            {
+              "t": "Flower Windows",
+              "d": "Qianqian sketched an intricately carved wooden window frame, comparing its beauty to a blooming flower."
+            },
+            {
+              "t": "The Dome Gate",
+              "d": "Chenchen focused on the Sun Yat-sen Mausoleum gate, noting its solemn atmosphere and symmetrical layout."
+            }
+          ]
+        },
+        {
+          "lab": "Creation",
+          "t": "Drawing Against the Wind",
+          "d": "Translating complex structures onto paper was difficult, but peer support helped refine their artistic techniques.",
+          "ph": [
+            "Creation",
+            "Collaboration"
+          ],
+          "moments": [
+            {
+              "t": "Three Drafts",
+              "d": "Chenchen struggled to draw the roof straight until Manman advised him to block out large shapes first; he redrew it three times."
+            },
+            {
+              "t": "Wind & Paper",
+              "d": "Jiejie held down Chenchen’s sketchbook against strong winds so he could finish his drawing of the Presidential Palace archway."
+            }
+          ]
+        },
+        {
+          "lab": "Reflection",
+          "t": "Six Bricks, One House",
+          "d": "The trip concluded with a shared realization that individual talents combine to create something stronger than themselves.",
+          "ph": [
+            "Reflection",
+            "Outcomes"
+          ],
+          "moments": [
+            {
+              "t": "Team Metaphor",
+              "d": "Teacher Cai compared the six students to bricks in a wall, emphasizing that removing any one person weakens the structure."
+            },
+            {
+              "t": "Growing Up",
+              "d": "When Qianqian showed her mother the finished text pages of their book, her mom remarked on how much she had grown."
+            }
+          ]
+        }
+      ],
+      "openQuestions": [
+        {
+          "q": "How do Nanjing's flat-roofed villas differ structurally from Chongqing's stilt houses (Diaojiaolou)?",
+          "d": "Comparing geography-specific adaptations helps students understand why buildings look different across regions."
+        },
+        {
+          "q": "What specific historical events caused the mix of Western domes and Chinese tiles in Nanjing?",
+          "d": "Digging deeper into the timeline reveals the political context behind aesthetic choices."
+        }
+      ],
+      "outcomes": [
+        "A collaborative illustrated picture book featuring sketches of the Presidential Palace and Yihe Road.",
+        "Development of the 'Double Bookkeeping' financial safety habit.",
+        "Improved ability to articulate needs clearly in public settings like restaurants.",
+        "Personal reflection journals documenting architectural observations."
+      ],
+      "stats": [
+        [
+          "6",
+          "Third-graders"
+        ],
+        [
+          "7",
+          "Days duration"
+        ],
+        [
+          "3",
+          "Drafts per major sketch"
+        ]
+      ],
+      "tags": [
+        "architecture",
+        "teamwork",
+        "independence",
+        "art-journalism"
+      ],
+      "location": "Nanjing",
+      "lng": 118.796,
+      "lat": 32.06,
+      "timeline": [
+        {
+          "y": "Phase 1",
+          "lab": "Preparation",
+          "t": "Packing Curiosity",
+          "d": "Before leaving home, the team gathered reference photos and prepared art supplies to document what they would see.",
+          "ph": [
+            "Preparation"
+          ],
+          "st": [],
+          "moments": [
+            {
+              "t": "Research Mission",
+              "d": "Students collected information on the Nanjing Museum and Yihe Road historic district."
+            },
+            {
+              "t": "Tool Check",
+              "d": "Each child packed a notebook and colored pencils specifically for field observation."
+            }
+          ]
+        },
+        {
+          "y": "Phase 2",
+          "lab": "Independence",
+          "t": "First Steps Alone",
+          "d": "Navigating the subway and ordering food without parents presented immediate challenges that required creative solutions.",
+          "ph": [
+            "Challenges",
+            "Collaboration"
+          ],
+          "st": [],
+          "moments": [
+            {
+              "t": "The Double Bookkeeping Method",
+              "d": "After Qianqian miscounted change at the ticket machine, she and Manman created a system where two people always verify money together."
+            },
+            {
+              "t": "Voice Control",
+              "d": "The group established a rule to speak one by one when ordering meals so waiters could understand them clearly."
+            }
+          ]
+        },
+        {
+          "y": "Phase 3",
+          "lab": "Field Work",
+          "t": "Reading the Stones",
+          "d": "At Yihe Road and the Presidential Palace, students observed how Western styles merged with traditional Chinese elements.",
+          "ph": [
+            "Field Work"
+          ],
+          "st": [],
+          "moments": [
+            {
+              "t": "Flower Windows",
+              "d": "Qianqian sketched an intricately carved wooden window frame, comparing its beauty to a blooming flower."
+            },
+            {
+              "t": "The Dome Gate",
+              "d": "Chenchen focused on the Sun Yat-sen Mausoleum gate, noting its solemn atmosphere and symmetrical layout."
+            }
+          ]
+        },
+        {
+          "y": "Phase 4",
+          "lab": "Creation",
+          "t": "Drawing Against the Wind",
+          "d": "Translating complex structures onto paper was difficult, but peer support helped refine their artistic techniques.",
+          "ph": [
+            "Creation",
+            "Collaboration"
+          ],
+          "st": [],
+          "moments": [
+            {
+              "t": "Three Drafts",
+              "d": "Chenchen struggled to draw the roof straight until Manman advised him to block out large shapes first; he redrew it three times."
+            },
+            {
+              "t": "Wind & Paper",
+              "d": "Jiejie held down Chenchen’s sketchbook against strong winds so he could finish his drawing of the Presidential Palace archway."
+            }
+          ]
+        },
+        {
+          "y": "Phase 5",
+          "lab": "Reflection",
+          "t": "Six Bricks, One House",
+          "d": "The trip concluded with a shared realization that individual talents combine to create something stronger than themselves.",
+          "ph": [
+            "Reflection",
+            "Outcomes"
+          ],
+          "st": [],
+          "moments": [
+            {
+              "t": "Team Metaphor",
+              "d": "Teacher Cai compared the six students to bricks in a wall, emphasizing that removing any one person weakens the structure."
+            },
+            {
+              "t": "Growing Up",
+              "d": "When Qianqian showed her mother the finished text pages of their book, her mom remarked on how much she had grown."
+            }
+          ]
+        }
+      ],
+      "dataKind": "provided"
+    }
+  },
+  "hongyadong": {
+    "text": "# 洪崖洞是怎么“长”出来的？\n\n——重庆山城建筑小队研学任务单\n\n时间：2026年7月13日—7月17日\n队员：六名五年级学生（小雨、阿泽、乐乐、思思、豆豆、圆圆）\n带队：周老师\n地点：重庆市渝中区洪崖洞、千厮门大桥、重庆中国三峡博物馆\n\n核心研究问题：洪崖洞的吊脚楼为什么能建在这么陡的悬崖上？\n\n出发前我们想问：\n- 吊脚楼的木柱子插在崖壁上，房子为什么不会倒？\n- 洪崖洞明明有十一层，为什么每一层走出去都像是一楼？\n- 以前住在江边的人，为什么要把房子修成这个样子？\n\n## 行前准备\n- 在教室里用纸板搭吊脚楼模型，第一次搭到第三层就塌了，第二次给柱子加了斜撑才立住。\n- 查地图发现洪崖洞紧挨着嘉陵江，江面比房子最低的一层还要低。\n- 每人准备一本观察本，约定每天回酒店后画一张速写、写三条发现。\n- 周老师提醒我们：不要只看网红打卡点，要蹲下来看柱子是怎么落地的。\n\n\n# 学生研究报告：吊脚楼为什么能站在悬崖上\n\n## 吊脚楼是用什么“站”住的\n我们在洪崖洞下面的江边蹲了很久，终于看懂了柱子的秘密。靠山的一侧，房子直接把梁搭在岩石和坡地上，几乎不用挖平；靠江的一侧悬空，就用一排长长的木柱子撑住，柱脚落在下面的石头平台上。柱子之间还有斜撑，像三角形一样把力分散开。回到酒店我们用吸管和纸板又搭了一遍，斜撑一加上，模型就再也不晃了。\n\n## 为什么每一层走出去都是街\n洪崖洞不是一栋普通的楼，它是顺着山坡一层一层叠上去的。我们从江边往上数：最下面是临江的滨江路，往上几层是商铺，再往上平台越来越宽，最后从十一层走出去就是沧白路。因为山城的地势是斜的，每一层的屋顶同时又是上一层的“地面”，所以每一层都像一楼。阿泽说这就像把好几条街竖着摞起来。\n\n## 洪水线：最下面一层为什么不睡人\n我们在临江的柱子上看到一圈颜色更深的痕迹，问了一位在洪崖洞卖酸辣粉的阿姨。她说涨水的年份，江水会漫到最下面一层，所以那一层从来不住人，只放能搬走的东西。博物馆里的老照片也印证了这一点：老重庆江边的吊脚楼都习惯把最下面一层留空，当作洪水来了可以放弃的部分。我们把它叫做“会退让的房子”。\n\n## 我们的结论\n洪崖洞不是设计师凭空画出来的，它是山城人跟陡坡和江水商量出来的结果：用长柱子把房子架起来，用斜撑把力传下去，用叠起来的平台把坡度变成街道，再把最危险的一层让给洪水。所以我们认为，洪崖洞是“长”在山坡上的，而不是“建”在平地上的。\n\n\n# 研究过程记录：五天里我们是怎么找到答案的\n\n## 五天里我们怎么研究\n- 第一天下午：站在洪崖洞对面的江边，用卷尺量了自己能够到的平台宽度，发现临江一侧的柱子比靠山一侧长很多。\n- 第二天：在三峡博物馆找到老重庆吊脚楼的照片，拆迁前的江边密密麻麻全是这种房子。\n- 第三天：在千厮门大桥上画剖面图，从江面往上数，确认洪崖洞从滨江路一直叠到沧白路，一共十一层。\n- 第四天：采访在洪崖洞卖酸辣粉的阿姨，她说涨水的年份一楼会进水，所以最下面一层从来不住人。\n- 第五天：把速写、160张照片和访谈记录整理成12页研究报告，还给低年级同学讲了一次。\n\n\n# 成果与下一棒\n\n## 目前成果\n- 完成一份12页的学生研究报告《吊脚楼为什么能站在悬崖上》，里面有剖面图、访谈记录和我们的结论。\n- 用吸管和纸板做了一个可以拆装的吊脚楼模型，斜撑一装上模型就稳了，低年级同学很喜欢。\n- 在洪崖洞现场画了9张速写，记录了柱子、挑檐和平台的不同样子。\n- 给全校做了一次分享：房子不是只能建在平地上，它也可以顺着山坡长出来。\n\n## 留给下一届的新问题\n- 重庆还有没有和洪崖洞一样“长”在坡上的老房子，它们现在还在用吗？\n- 如果把吊脚楼盖到更陡的地方，柱子要加多少根才够稳？\n- 洪崖洞现在每天有那么多游客，老房子的木头还受得了吗？",
+    "images": [
+      "/samples/hongyadong/hongyadong-night-overview.png",
+      "/samples/hongyadong/hongyadong-riverside-bridge.png"
+    ],
+    "draft": {
+      "title": "The House That Grew on the Cliff: Decoding Hongya Cave",
+      "theme": "How Chongqing's architecture adapts to steep terrain and rising waters.",
+      "summary": "Six fifth-grade students investigated how Hongya Cave’s stilt houses stand on a vertical cliff face. Through field observation, historical research at the Three Gorges Museum, and physical modeling, they discovered that the building is not just constructed but 'grown' from the mountain using diagonal bracing and flood-adaptive design.",
+      "question": "Why can Hongya Cave's stilt houses be built on such a steep cliff?",
+      "subQuestions": [
+        "Why don't the wooden pillars inserted into the cliff cause the house to fall over?",
+        "Why does every floor of an eleven-story building feel like the ground level when you walk out?",
+        "Why did people living by the river historically build their homes this way?"
+      ],
+      "turns": [
+        {
+          "lab": "Preparation",
+          "t": "Modeling Failure & Success",
+          "d": "Before leaving for Chongqing, the team attempted to build cardboard models of stilt houses in the classroom.",
+          "ph": [
+            "Preparation"
+          ],
+          "moments": [
+            {
+              "t": "The Collapse",
+              "d": "Their first attempt failed dramatically when the model collapsed at the third layer."
+            },
+            {
+              "t": "Adding Diagonal Braces",
+              "d": "By adding diagonal supports (bracing), they successfully stabilized the second prototype, learning the physics before seeing the real thing."
+            }
+          ]
+        },
+        {
+          "lab": "Field Work",
+          "t": "Measuring the Mystery",
+          "d": "Upon arriving in Chongqing, students went directly to the riverside below Hongya Cave to inspect the structural base.",
+          "ph": [
+            "Field Work",
+            "Observation"
+          ],
+          "moments": [
+            {
+              "t": "Crouching Down",
+              "d": "Ignoring the tourist crowds above, the group crouched near the water to measure platform widths with tape measures."
+            },
+            {
+              "t": "Seeing the Pillars",
+              "d": "They observed that pillars on the river side were significantly longer than those on the mountain side, relying on stone platforms for footing."
+            }
+          ]
+        },
+        {
+          "lab": "Research",
+          "t": "Layers of History",
+          "d": "The journey moved indoors to understand the context of the city's topography and history.",
+          "ph": [
+            "Collaboration",
+            "Field Work"
+          ],
+          "moments": [
+            {
+              "t": "Museum Archives",
+              "d": "At the China Three Gorges Museum, photos revealed that old Chongqing was once densely packed with these specific types of riverside structures."
+            },
+            {
+              "t": "Drawing Sections",
+              "d": "From Qiansimen Bridge, students sketched cross-sections confirming the building stacks vertically from Binjiang Road up to Cangbai Road."
+            }
+          ]
+        },
+        {
+          "lab": "Discovery",
+          "t": "The Flood Line",
+          "d": "A crucial insight came from interviewing a local vendor about the function of the lowest floors.",
+          "ph": [
+            "Challenges",
+            "Reflection"
+          ],
+          "moments": [
+            {
+              "t": "The Darker Wood",
+              "d": "Students noticed discoloration on lower pillars; a local auntie explained this was the high-water mark during floods."
+            },
+            {
+              "t": "Retreating Architecture",
+              "d": "They realized the bottom floor is intentionally left empty or used for movable goods so it can 'yield' to nature without destroying the home."
+            }
+          ]
+        },
+        {
+          "lab": "Synthesis",
+          "t": "Building the Conclusion",
+          "d": "Back at the hotel, the team synthesized their sketches, interviews, and measurements into final outputs.",
+          "ph": [
+            "Creation",
+            "Outcomes"
+          ],
+          "moments": [
+            {
+              "t": "Straw Model V2",
+              "d": "Using straws and paperboard, they rebuilt their initial concept, proving that diagonal bracing makes the structure rigid against shaking."
+            },
+            {
+              "t": "Sharing Knowledge",
+              "d": "The group presented their findings to younger students, explaining that buildings can grow along slopes rather than sitting flat on land."
+            }
+          ]
+        }
+      ],
+      "openQuestions": [
+        {
+          "q": "Are there other old houses in Chongqing still 'growing' on slopes today?",
+          "d": "To see if this architectural style survives outside of famous landmarks."
+        },
+        {
+          "q": "If we build on an even steeper slope, how many more pillars are needed?",
+          "d": "Testing the limits of the structural engineering principles they learned."
+        },
+        {
+          "q": "Can traditional wood withstand modern tourism loads?",
+          "d": "Investigating the durability of heritage sites under heavy foot traffic."
+        }
+      ],
+      "outcomes": [
+        "Produced a 12-page illustrated report titled 'Why Stilt Houses Can Stand on Cliffs'.",
+        "Created functional straw-and-cardboard models demonstrating diagonal bracing stability.",
+        "Completed 9 detailed site sketches capturing column bases and eaves.",
+        "Delivered a school-wide presentation on adaptive mountain architecture."
+      ],
+      "stats": [
+        [
+          "5 Days",
+          "Duration"
+        ],
+        [
+          "6 Students",
+          "Team Size"
+        ],
+        [
+          "160 Photos",
+          "Documentation"
+        ],
+        [
+          "11 Floors",
+          "Height Analyzed"
+        ]
+      ],
+      "tags": [
+        "architecture",
+        "engineering",
+        "chongqing",
+        "field-research"
+      ],
+      "location": "Chongqing",
+      "lng": 106.579,
+      "lat": 29.562,
+      "timeline": [
+        {
+          "y": "Phase 1",
+          "lab": "Preparation",
+          "t": "Modeling Failure & Success",
+          "d": "Before leaving for Chongqing, the team attempted to build cardboard models of stilt houses in the classroom.",
+          "ph": [
+            "Preparation"
+          ],
+          "st": [],
+          "moments": [
+            {
+              "t": "The Collapse",
+              "d": "Their first attempt failed dramatically when the model collapsed at the third layer."
+            },
+            {
+              "t": "Adding Diagonal Braces",
+              "d": "By adding diagonal supports (bracing), they successfully stabilized the second prototype, learning the physics before seeing the real thing."
+            }
+          ]
+        },
+        {
+          "y": "Phase 2",
+          "lab": "Field Work",
+          "t": "Measuring the Mystery",
+          "d": "Upon arriving in Chongqing, students went directly to the riverside below Hongya Cave to inspect the structural base.",
+          "ph": [
+            "Field Work",
+            "Observation"
+          ],
+          "st": [],
+          "moments": [
+            {
+              "t": "Crouching Down",
+              "d": "Ignoring the tourist crowds above, the group crouched near the water to measure platform widths with tape measures."
+            },
+            {
+              "t": "Seeing the Pillars",
+              "d": "They observed that pillars on the river side were significantly longer than those on the mountain side, relying on stone platforms for footing."
+            }
+          ]
+        },
+        {
+          "y": "Phase 3",
+          "lab": "Research",
+          "t": "Layers of History",
+          "d": "The journey moved indoors to understand the context of the city's topography and history.",
+          "ph": [
+            "Collaboration",
+            "Field Work"
+          ],
+          "st": [],
+          "moments": [
+            {
+              "t": "Museum Archives",
+              "d": "At the China Three Gorges Museum, photos revealed that old Chongqing was once densely packed with these specific types of riverside structures."
+            },
+            {
+              "t": "Drawing Sections",
+              "d": "From Qiansimen Bridge, students sketched cross-sections confirming the building stacks vertically from Binjiang Road up to Cangbai Road."
+            }
+          ]
+        },
+        {
+          "y": "Phase 4",
+          "lab": "Discovery",
+          "t": "The Flood Line",
+          "d": "A crucial insight came from interviewing a local vendor about the function of the lowest floors.",
+          "ph": [
+            "Challenges",
+            "Reflection"
+          ],
+          "st": [],
+          "moments": [
+            {
+              "t": "The Darker Wood",
+              "d": "Students noticed discoloration on lower pillars; a local auntie explained this was the high-water mark during floods."
+            },
+            {
+              "t": "Retreating Architecture",
+              "d": "They realized the bottom floor is intentionally left empty or used for movable goods so it can 'yield' to nature without destroying the home."
+            }
+          ]
+        },
+        {
+          "y": "Phase 5",
+          "lab": "Synthesis",
+          "t": "Building the Conclusion",
+          "d": "Back at the hotel, the team synthesized their sketches, interviews, and measurements into final outputs.",
+          "ph": [
+            "Creation",
+            "Outcomes"
+          ],
+          "st": [],
+          "moments": [
+            {
+              "t": "Straw Model V2",
+              "d": "Using straws and paperboard, they rebuilt their initial concept, proving that diagonal bracing makes the structure rigid against shaking."
+            },
+            {
+              "t": "Sharing Knowledge",
+              "d": "The group presented their findings to younger students, explaining that buildings can grow along slopes rather than sitting flat on land."
+            }
+          ]
+        }
+      ],
+      "dataKind": "provided"
+    }
+  }
+}

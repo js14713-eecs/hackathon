@@ -1,0 +1,136 @@
+[
+  {
+    "id": 13,
+    "title": "Sketching History: The Six Bricks of Nanjing",
+    "summary": "Six third-grade students traveled to Nanjing to investigate the unique features of Republic-era buildings. Through sketching intricate details like carved windows and domed gates, they learned about architectural history while developing essential teamwork skills like the 'Double Bookkeeping Method'. Their journey culminated in a collaborative picture book that captured both the city's heritage and their own growth.",
+    "location": "Nanjing",
+    "lng": 118.796,
+    "lat": 32.06,
+    "image": null,
+    "likes": 0,
+    "tags": [
+      "architecture",
+      "teamwork",
+      "independence",
+      "art-journalism"
+    ],
+    "created_at": 1793343962786,
+    "hot": 0.4008573121259187
+  },
+  {
+    "id": 12,
+    "title": "The House That Grew on the Cliff: Decoding Hongya Cave",
+    "summary": "Six fifth-grade students investigated how Hongya Cave’s stilt houses stand on a vertical cliff face. Through field observation, historical research at the Three Gorges Museum, and physical modeling, they discovered that the building is not just constructed but 'grown' from the mountain using diagonal bracing and flood-adaptive design.",
+    "location": "Chongqing",
+    "lng": 106.579,
+    "lat": 29.562,
+    "image": null,
+    "likes": 0,
+    "tags": [
+      "architecture",
+      "engineering",
+      "chongqing",
+      "field-research"
+    ],
+    "created_at": 1793343901559,
+    "hot": 0.3970712106526429
+  },
+  {
+    "id": 6,
+    "title": "Our school in Guiyang Guizhou started a maker club in 2023. Twelve students buil",
+    "summary": "Our school in Guiyang Guizhou started a maker club in 2023. Twelve students built a small weather station with sensors and uploaded data every day. In 2024 they won the provincial science fair and two teams traveled to Shanghai for the national finals. Over 200 students joined the club in two years.",
+    "location": "Uncategorized",
+    "lng": null,
+    "lat": null,
+    "image": null,
+    "likes": 0,
+    "tags": [
+      "unedited"
+    ],
+    "created_at": 1793335507317,
+    "hot": 0.1648942635535729
+  },
+  {
+    "id": 5,
+    "title": "Our school in Bijie Guizhou organized a coding club. In 2023 ten kids built a we",
+    "summary": "Our school in Bijie Guizhou organized a coding club. In 2023 ten kids built a weather station. In 2024 they won a provincial robot contest and visited Shanghai.",
+    "location": "Uncategorized",
+    "lng": null,
+    "lat": null,
+    "image": null,
+    "likes": 1,
+    "tags": [
+      "unedited"
+    ],
+    "created_at": 1793334351323,
+    "hot": 0.30355924574173754
+  },
+  {
+    "id": 1,
+    "title": "\"The sea really is as salty as the textbook said\"",
+    "summary": "Fifth graders from Shunchang County Experimental Primary School, Fujian, reached Qingdao in 2025 and saw the ocean for the first time in their lives. They opened their arms on the beach and shouted at the waves.",
+    "location": "Fujian Province",
+    "lng": 118.1,
+    "lat": 26.1,
+    "image": "/img/sea.png",
+    "likes": 58,
+    "tags": [
+      "Go Far",
+      "first-time",
+      "Qingdao"
+    ],
+    "created_at": 1793323541838,
+    "hot": 5.004540242978975
+  },
+  {
+    "id": 2,
+    "title": "In seven days, the stars fell into their eyes",
+    "summary": "In July 2025, the Astronomy Club of Jilin Adream School flew to Beijing: pondering fossils at the Natural History Museum, holding their breath at Tsinghua's telescopes, and giving hand-made moon lamps back to their funders.",
+    "location": "Jilin Province",
+    "lng": 126.5,
+    "lat": 43.8,
+    "image": "/img/classroom.png",
+    "likes": 51,
+    "tags": [
+      "Astronomy",
+      "Beijing",
+      "Go Far"
+    ],
+    "created_at": 1793301941844,
+    "hot": 2.2263712559308693
+  },
+  {
+    "id": 3,
+    "title": "\"What's beyond the mountains?\" — now I know",
+    "summary": "Kids from Tianzhu, Wuwei, Gansu, kept asking what lies beyond the snowy grasslands. In 2025's \"Heroes' Journey\", they left the Hexi Corridor for eastern cities with their hometown stories in their backpacks.",
+    "location": "Gansu Province",
+    "lng": 103.7,
+    "lat": 36.1,
+    "image": "/img/hero.png",
+    "likes": 19,
+    "tags": [
+      "Go Far",
+      "Tianzhu",
+      "Heroes Journey"
+    ],
+    "created_at": 1793226341850,
+    "hot": 0.28243363544638134
+  },
+  {
+    "id": 4,
+    "title": "When the caravan came, our school felt like New Year",
+    "summary": "Along the 2023 Central Plains Tour in Henan, children waited at the school gate for the 27-ton \"mobile Dream Center\". One boy said the day the caravan arrived felt like New Year.",
+    "location": "Henan Province",
+    "lng": 113.6,
+    "lat": 34.7,
+    "image": "/img/caravan.png",
+    "likes": 9,
+    "tags": [
+      "Dream Caravan",
+      "Henan",
+      "STEAM"
+    ],
+    "created_at": 1793136341856,
+    "hot": 0.07376178815967127
+  }
+]
