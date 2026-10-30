@@ -33,6 +33,22 @@ export const api = {
     if (!r.ok) throw new Error(j.error || `HTTP ${r.status}`);
     return j;
   },
+  agentSamples: () => get('/api/agent/samples'),
+  agentGenerate: async (text, files) => {
+    const fd = new FormData();
+    if (text) fd.append('text', text);
+    for (const f of files) fd.append('files', f);
+    const r = await fetch('/api/agent/generate', { method: 'POST', body: fd });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || `HTTP ${r.status}`);
+    return j;
+  },
+  agentPublish: async (id) => {
+    const r = await fetch(`/api/agent/${id}/publish`, { method: 'POST' });
+    const j = await r.json();
+    if (!r.ok) throw new Error(j.error || `HTTP ${r.status}`);
+    return j;
+  },
 };
 
 export function timeAgo(ts) {

@@ -4,10 +4,14 @@ import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { LOCATIONS, PARTICIPATING, FEATURED_GEO, IMPACTS } from './data.js';
-import { createStory, setStoryReady, addAttachment, getStory, listStories, likeStory } from './db.js';
+import { createStory, setStoryReady, addAttachment, getStory, listStories, likeStory, createDraftStory, saveDraftStoryline, publishStory } from './db.js';
 import { organizeStory } from './llm.js';
+import { generateStoryline } from './agent.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
+const envPath = path.join(__dirname, '..', '.env');
+if (fs.existsSync(envPath)) process.loadEnvFile(envPath);
+
 const app = express();
 app.use(express.json());
 
@@ -15,8 +19,13 @@ const UPLOAD_DIR = path.join(__dirname, '..', 'uploads');
 fs.mkdirSync(UPLOAD_DIR, { recursive: true });
 const upload = multer({
   dest: UPLOAD_DIR,
-  limits: { fileSize: 20 * 1024 * 1024, files: 6 },
+  limits: { fileSize: 20 * 1024 * 1024, files: 8 },
 });
+
+const SAMPLES_DIR = path.join(__dirname, '..', 'samples');
+if (fs.existsSync(SAMPLES_DIR)) {
+  app.use('/samples', express.static(SAMPLES_DIR));
+}
 
 /* ---------- static site (production) ---------- */
 const dist = path.join(__dirname, '..', '..', 'client', 'dist');
@@ -97,9 +106,58 @@ app.get('/uploads/:name', (req, res) => {
   res.sendFile(path.join(UPLOAD_DIR, safe));
 });
 
+/* ---------- teacher AI agent ---------- */
+app.get('/api/agent/samples', (_req, res) => {
+  const dir = path.join(SAMPLES_DIR, 'nanjing');
+  if (!fs.existsSync(dir)) return res.json({ text: '', images: [] });
+  const files = fs.readdirSync(dir).sort();
+  let text = '';
+  const images = [];
+  for (const f of files) {
+    const full = path.join(dir, f);
+    if (/\.(md|txt)$/i.test(f)) text += `\n\n${fs.readFileSync(full, 'utf8').slice(0, 12000)}`;
+    else if (/\.(jpe?g|png|webp)$/i.test(f)) images.push(`/samples/nanjing/${f}`);
+  }
+  res.json({ text: text.trim(), images });
+});
+
+app.post('/api/agent/generate', upload.array('files', 8), async (req, res) => {
+  try {
+    const text = (req.body.text || '').trim();
+    const files = req.files || [];
+    let raw = text;
+    const images = [];
+    for (const f of files) {
+      if (/^text\//.test(f.mimetype) || /\.(txt|md|markdown)$/i.test(f.originalname)) {
+        raw += '\n\n' + fs.readFileSync(f.path, 'utf8').slice(0, 20000);
+      } else if (/^image\//.test(f.mimetype)) {
+        images.push({ mime: f.mimetype, b64: fs.readFileSync(f.path).toString('base64') });
+      }
+      fs.rmSync(f.path, { force: true });
+    }
+    if (!raw && images.length === 0) {
+      return res.status(400).json({ error: 'Provide some text or at least one photo.' });
+    }
+    const { data, engine, model } = await generateStoryline({ text: raw, images });
+    const id = createDraftStory({ title: data.title, raw });
+    saveDraftStoryline(id, data);
+    res.json({ id, engine, model, data });
+  } catch (e) {
+    console.error('[agent] generate error:', e.message);
+    res.status(500).json({ error: 'Could not generate the storyline.' });
+  }
+});
+
+app.post('/api/agent/:id/publish', (req, res) => {
+  if (!publishStory(Number(req.params.id))) {
+    return res.status(404).json({ error: 'Draft not found' });
+  }
+  res.json({ ok: true });
+});
+
 /* ---------- SPA fallback ---------- */
 if (fs.existsSync(dist)) {
-  app.get(/^\/(?!api|uploads).*/, (_req, res) => res.sendFile(path.join(dist, 'index.html')));
+  app.get(/^\/(?!api|uploads|samples).*/, (_req, res) => res.sendFile(path.join(dist, 'index.html')));
 }
 
 const PORT = process.env.PORT || 4000;

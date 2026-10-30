@@ -6,3 +6,5 @@ client/dist/
 server/data.db
 server/uploads/
 server/.env
+
+vibe_images/

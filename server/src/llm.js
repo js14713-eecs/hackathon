@@ -29,7 +29,7 @@ function fallbackOrganize(rawText) {
   };
 }
 
-function coerceLocation(name) {
+export function coerceLocation(name) {
   if (KNOWN_LOCATIONS.includes(name)) return name;
   const hit = LOCATIONS.find(l => name && (name.includes(l.name.split(' ')[0]) || l.name.split(' ')[0].includes(name)));
   return hit ? hit.name : 'Uncategorized';

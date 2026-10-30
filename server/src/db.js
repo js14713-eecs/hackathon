@@ -30,6 +30,11 @@ db.exec(`
   );
 `);
 
+const storyCols = db.prepare(`PRAGMA table_info(stories)`).all().map(c => c.name);
+if (!storyCols.includes('storyline')) {
+  db.exec(`ALTER TABLE stories ADD COLUMN storyline TEXT NOT NULL DEFAULT '[]'`);
+}
+
 function seedIfEmpty() {
   const { n } = db.prepare('SELECT COUNT(*) AS n FROM stories').get();
   if (n > 0) return;
@@ -65,7 +70,29 @@ export function setStoryReady(id, data) {
 }
 
 export function markStoryFailed(id) {
-  db.prepare(`UPDATE stories SET status='ready' WHERE id=?`).run(id);
+  db.prepare(`UPDATE stories SET status='failed' WHERE id=?`).run(id);
+}
+
+export function createDraftStory({ title, raw }) {
+  const r = db.prepare(
+    `INSERT INTO stories (title, raw, summary, status, created_at) VALUES (?, ?, '', 'draft', ?)`
+  ).run(title, raw, Date.now());
+  return Number(r.lastInsertRowid);
+}
+
+export function saveDraftStoryline(id, data) {
+  db.prepare(
+    `UPDATE stories SET title=?, summary=?, location=?, lng=?, lat=?, timeline=?, stats=?, tags=?, storyline=? WHERE id=?`
+  ).run(
+    data.title, data.summary, data.location, data.lng ?? null, data.lat ?? null,
+    JSON.stringify(data.timeline || []), JSON.stringify(data.stats || []),
+    JSON.stringify(data.tags || []), JSON.stringify(data), id
+  );
+}
+
+export function publishStory(id) {
+  const r = db.prepare(`UPDATE stories SET status='ready' WHERE id=? AND status='draft'`).run(id);
+  return r.changes > 0;
 }
 
 export function addAttachment(storyId, filename, storedPath) {
@@ -79,6 +106,7 @@ export function getStory(id) {
   return {
     ...s,
     timeline: JSON.parse(s.timeline), stats: JSON.parse(s.stats), tags: JSON.parse(s.tags),
+    storyline: JSON.parse(s.storyline || '[]'),
     attachments: atts,
   };
 }

@@ -9,7 +9,7 @@ export const TYPES = {
 
 export const KNOWN_LOCATIONS = [
   'Yunnan Province','Henan Province','Shandong Province','Jilin Province','Xinjiang Uygur Autonomous Region',
-  'Fujian Province','Gansu Province','Shanghai','Uncategorized',
+  'Fujian Province','Gansu Province','Shanghai','Nanjing','Uncategorized',
 ];
 
 export const PARTICIPATING = [
@@ -229,6 +229,24 @@ export const LOCATIONS = [
           { y: '2021', lab: 'Pilot Launch', t: '6 communities pilot', d: 'Children\'s councils landed in Shanghai.', ph: ['Research'], st: [['6', 'communities']] },
           { y: '2023', lab: 'Campus Hearings', t: 'Kids chair the hearings', d: '"How should we spend recess?" "Who decides the lunch menu?" — kids chaired hearings and voted.', ph: ['Hearing'], st: [['10+', 'hearings']] },
           { y: '2025', lab: 'Regular Course', t: 'Kids\' proposals adopted', d: 'The course entered more schools; several children\'s proposals were genuinely adopted by their communities.', ph: ['Adoption'], st: [['Several', 'proposals adopted']] },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'nanjing', name: 'Nanjing', geo: '江苏省', coords: [118.796, 32.06],
+    tagline: '2025 · The Nanjing Dream Team asked what makes Republican-era architecture special — and left new questions behind',
+    stats: [['2025', 'first edition'], ['6', 'students'], ['1', 'picture-book draft']],
+    projects: [
+      {
+        id: 'nj-dream-team', type: 'qyf', title: 'From Chongqing to Nanjing: Six Kids Explore Republican-era Architecture', years: '2025 · July · 7 days', img: '/samples/nanjing/nanjing-presidential-gate.png',
+        summary: 'Six third-graders from Youyang Minzu Primary School in Chongqing traveled to Nanjing with one question: what makes Republican-era architecture special? They came home with a picture-book draft — and three new questions for the next cohort.',
+        timeline: [
+          { y: 'Stage 1', lab: 'Preparation', t: 'Setting off with questions', d: 'Before departure the team dug into old photos, year tables and museum guides, and pinned down three questions: why are the roofs sloped, what are the red-brick walls made of, and who lived in these buildings?', ph: ['Preparation'], st: [['3', 'questions']], img: '/samples/nanjing/nanjing-museum-republican-hall.png' },
+          { y: 'Stage 2', lab: 'Challenges', t: 'First night away from home', d: 'Away from home for the first time, the six kids had to navigate, buy metro tickets, find the hotel and order food on their own. Xixi miscounted change, so she and Manman invented a two-person bookkeeping system; Jiejie practiced asking for directions until he could speak up.', ph: ['Challenges', 'Reflection'], st: [['1', 'double-bookkeeping duo']], img: '/samples/nanjing/nanjing-sketch.png' },
+          { y: 'Stage 3', lab: 'Field Work', t: 'Finding answers in Nanjing', d: 'At the Nanjing Museum Republican-era hall, the Yihe Road mansion district and the Presidential Palace, the team stopped just looking and started observing: roof shapes, brick patterns, carved windows, interior layouts.', ph: ['Field Work'], st: [['3', 'sites visited']], img: '/samples/nanjing/nanjing-yihe-window.png' },
+          { y: 'Stage 4', lab: 'Creation', t: 'Six kids, one picture book', d: 'Every evening the six sat together, reviewing the day\'s photos and sketches. Chenchen and Jiejie drew architectural details, Manman and Yueyue drew the team, and Feifei and Xixi organized the words and history.', ph: ['Collaboration', 'Creation'], st: [['3', 'pages drafted']], img: '/samples/nanjing/nanjing-sketch.png' },
+          { y: 'Stage 5', lab: 'Outcomes', t: 'Coming home with more than a book', d: 'The team finished the first draft of their picture book. But the journey also left them with independent planning skills, teamwork habits, and the courage to face unfamiliar places.', ph: ['Outcomes', 'Sharing'], st: [['1', 'picture-book draft']], img: '/samples/nanjing/nanjing-presidential-gate.png' },
         ],
       },
     ],
