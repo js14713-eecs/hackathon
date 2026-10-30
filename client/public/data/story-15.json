@@ -1,0 +1,391 @@
+{
+  "id": 15,
+  "title": "Miao Moon Silver: A Journey into Guizhou's Intangible Heritage",
+  "summary": "The 'Miao Moon Silver' team of six students traveled to Guiyang and Miao villages in Guizhou to explore the unique aesthetics of Miao wax dyeing, silver ornaments, and embroidery. Through interviews with a master artisan and hands-on observation, they uncovered the deep cultural meanings behind traditional craftsmanship and the power of passion in preserving heritage.",
+  "location": "Guizhou Province",
+  "lng": 106.63,
+  "lat": 26.65,
+  "timeline": [
+    {
+      "y": "Phase 1",
+      "lab": "Preparation",
+      "t": "Setting the Stage",
+      "d": "Six students formed the 'Miao Moon Silver' team to research Miao culture before departing for Guiyang. They reviewed the history of wax dyeing from the Qin-Han to Tang dynasties and designed interview questions for local artisans.",
+      "ph": [
+        "Preparation"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "Team Division",
+          "d": "Students assigned roles like map guide, safety officer, and budget manager using mind maps."
+        },
+        {
+          "t": "Historical Research",
+          "d": "The team studied how wax dyeing evolved from ancient times through the Song and Tang dynasties."
+        }
+      ]
+    },
+    {
+      "y": "Phase 2",
+      "lab": "Field Work",
+      "t": "Discovering Aesthetics",
+      "d": "At Jiaxiu Tower and local workshops, students observed the distinct features of Miao silver and wax dyeing. They learned that silver ornaments are valued for being large, heavy, and numerous, while wax dyeing features intricate lotus and fish patterns.",
+      "ph": [
+        "Field Work"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "Silver Ornament Study",
+          "d": "Students noted that earrings can weigh up to 200 grams and neck rings up to four jin, embodying wealth and beauty."
+        },
+        {
+          "t": "Wax Dyeing Observation",
+          "d": "They examined blue-and-white fabrics with traditional motifs like butterflies and flowers, tracing their historical roots."
+        }
+      ]
+    },
+    {
+      "y": "Phase 3",
+      "lab": "Collaboration",
+      "t": "Master Interview",
+      "d": "The team interviewed Teacher Ayao, a Miao craft master, to understand the challenges and rewards of keeping these traditions alive. Her words about passion resonated deeply with the students.",
+      "ph": [
+        "Collaboration",
+        "Reflection"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "The Power of Passion",
+          "d": "Teacher Ayao shared that persistence comes from love, stating that what one loves cannot be replaced by money."
+        },
+        {
+          "t": "Embroidery Techniques",
+          "d": "Students learned about complex stitches like 'broken thread embroidery,' which require immense time and skill."
+        }
+      ]
+    },
+    {
+      "y": "Phase 4",
+      "lab": "Creation",
+      "t": "Documenting the Journey",
+      "d": "Back at base, the group collaborated to create four detailed posters summarizing their findings on wax dyeing history, silver aesthetics, and interview records.",
+      "ph": [
+        "Creation"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "Poster Production",
+          "d": "Students combined hand-drawn illustrations with written analysis to present their research visually."
+        }
+      ]
+    },
+    {
+      "y": "Phase 5",
+      "lab": "Outcomes",
+      "t": "Final Reflections",
+      "d": "The journey concluded with a deeper appreciation for minority cultures and the irreplaceable value of handmade crafts. Students realized that true preservation relies on genuine passion rather than commercial gain.",
+      "ph": [
+        "Outcomes",
+        "Reflection"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "Cultural Respect",
+          "d": "The students developed a profound respect for the dedication required to maintain these ancient traditions."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    [
+      "6",
+      "Team Members"
+    ],
+    [
+      "4",
+      "Research Posters Created"
+    ],
+    [
+      "1",
+      "Master Artisan Interviewed"
+    ]
+  ],
+  "tags": [
+    "guizhou",
+    "intangible-heritage",
+    "miao-culture",
+    "student-journey"
+  ],
+  "image": "/uploads/story-15-poster-1.jpg",
+  "status": "ready",
+  "likes": 0,
+  "created_at": 1793345186278,
+  "storyline": {
+    "title": "Miao Moon Silver: A Journey into Guizhou's Intangible Heritage",
+    "theme": "From experiencing Miao intangible heritage to recording and inheriting it.",
+    "summary": "The 'Miao Moon Silver' team of six students traveled to Guiyang and Miao villages in Guizhou to explore the unique aesthetics of Miao wax dyeing, silver ornaments, and embroidery. Through interviews with a master artisan and hands-on observation, they uncovered the deep cultural meanings behind traditional craftsmanship and the power of passion in preserving heritage.",
+    "question": "What makes Miao traditional crafts (wax dyeing, silver ornaments, embroidery) so special?",
+    "subQuestions": [
+      "What is the history and production process of Miao wax dyeing?",
+      "Why do Miao silver ornaments pursue the aesthetics of 'big', 'heavy', and 'many'?",
+      "Are clothing patterns the same across different Miao villages? Can modern technology replace handmade work?"
+    ],
+    "turns": [
+      {
+        "lab": "Preparation",
+        "t": "Setting the Stage",
+        "d": "Six students formed the 'Miao Moon Silver' team to research Miao culture before departing for Guiyang. They reviewed the history of wax dyeing from the Qin-Han to Tang dynasties and designed interview questions for local artisans.",
+        "ph": [
+          "Preparation"
+        ],
+        "moments": [
+          {
+            "t": "Team Division",
+            "d": "Students assigned roles like map guide, safety officer, and budget manager using mind maps."
+          },
+          {
+            "t": "Historical Research",
+            "d": "The team studied how wax dyeing evolved from ancient times through the Song and Tang dynasties."
+          }
+        ]
+      },
+      {
+        "lab": "Field Work",
+        "t": "Discovering Aesthetics",
+        "d": "At Jiaxiu Tower and local workshops, students observed the distinct features of Miao silver and wax dyeing. They learned that silver ornaments are valued for being large, heavy, and numerous, while wax dyeing features intricate lotus and fish patterns.",
+        "ph": [
+          "Field Work"
+        ],
+        "moments": [
+          {
+            "t": "Silver Ornament Study",
+            "d": "Students noted that earrings can weigh up to 200 grams and neck rings up to four jin, embodying wealth and beauty."
+          },
+          {
+            "t": "Wax Dyeing Observation",
+            "d": "They examined blue-and-white fabrics with traditional motifs like butterflies and flowers, tracing their historical roots."
+          }
+        ]
+      },
+      {
+        "lab": "Collaboration",
+        "t": "Master Interview",
+        "d": "The team interviewed Teacher Ayao, a Miao craft master, to understand the challenges and rewards of keeping these traditions alive. Her words about passion resonated deeply with the students.",
+        "ph": [
+          "Collaboration",
+          "Reflection"
+        ],
+        "moments": [
+          {
+            "t": "The Power of Passion",
+            "d": "Teacher Ayao shared that persistence comes from love, stating that what one loves cannot be replaced by money."
+          },
+          {
+            "t": "Embroidery Techniques",
+            "d": "Students learned about complex stitches like 'broken thread embroidery,' which require immense time and skill."
+          }
+        ]
+      },
+      {
+        "lab": "Creation",
+        "t": "Documenting the Journey",
+        "d": "Back at base, the group collaborated to create four detailed posters summarizing their findings on wax dyeing history, silver aesthetics, and interview records.",
+        "ph": [
+          "Creation"
+        ],
+        "moments": [
+          {
+            "t": "Poster Production",
+            "d": "Students combined hand-drawn illustrations with written analysis to present their research visually."
+          }
+        ]
+      },
+      {
+        "lab": "Outcomes",
+        "t": "Final Reflections",
+        "d": "The journey concluded with a deeper appreciation for minority cultures and the irreplaceable value of handmade crafts. Students realized that true preservation relies on genuine passion rather than commercial gain.",
+        "ph": [
+          "Outcomes",
+          "Reflection"
+        ],
+        "moments": [
+          {
+            "t": "Cultural Respect",
+            "d": "The students developed a profound respect for the dedication required to maintain these ancient traditions."
+          }
+        ]
+      }
+    ],
+    "openQuestions": [
+      {
+        "q": "Which other intangible heritage crafts face the risk of disappearing due to modernization?",
+        "d": "Understanding which traditions are most vulnerable helps prioritize protection efforts for future generations."
+      },
+      {
+        "q": "How do regional geography and culture shape different aesthetic concepts?",
+        "d": "Exploring this connection reveals the diverse ways communities express identity through art and design."
+      },
+      {
+        "q": "How can we design better interview guides to uncover deeper stories from inheritors?",
+        "d": "Improving inquiry methods allows the next cohort to extract more meaningful insights from their subjects."
+      },
+      {
+        "q": "How can traditional patterns be innovatively applied to modern products like school uniforms or bags?",
+        "d": "Bridging tradition and modernity ensures these crafts remain relevant and accessible to youth today."
+      }
+    ],
+    "outcomes": [
+      "Created high-quality research posters documenting Miao wax dyeing, silver ornaments, and embroidery techniques.",
+      "Developed a deep understanding of the cultural significance behind 'big, heavy, and many' aesthetic standards.",
+      "Experienced firsthand the value of passion over profit through an interview with Master Ayao.",
+      "Strengthened teamwork skills by dividing tasks and collaboratively producing visual reports."
+    ],
+    "stats": [
+      [
+        "6",
+        "Team Members"
+      ],
+      [
+        "4",
+        "Research Posters Created"
+      ],
+      [
+        "1",
+        "Master Artisan Interviewed"
+      ]
+    ],
+    "tags": [
+      "guizhou",
+      "intangible-heritage",
+      "miao-culture",
+      "student-journey"
+    ],
+    "location": "Guizhou Province",
+    "lng": 106.63,
+    "lat": 26.65,
+    "timeline": [
+      {
+        "y": "Phase 1",
+        "lab": "Preparation",
+        "t": "Setting the Stage",
+        "d": "Six students formed the 'Miao Moon Silver' team to research Miao culture before departing for Guiyang. They reviewed the history of wax dyeing from the Qin-Han to Tang dynasties and designed interview questions for local artisans.",
+        "ph": [
+          "Preparation"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "Team Division",
+            "d": "Students assigned roles like map guide, safety officer, and budget manager using mind maps."
+          },
+          {
+            "t": "Historical Research",
+            "d": "The team studied how wax dyeing evolved from ancient times through the Song and Tang dynasties."
+          }
+        ]
+      },
+      {
+        "y": "Phase 2",
+        "lab": "Field Work",
+        "t": "Discovering Aesthetics",
+        "d": "At Jiaxiu Tower and local workshops, students observed the distinct features of Miao silver and wax dyeing. They learned that silver ornaments are valued for being large, heavy, and numerous, while wax dyeing features intricate lotus and fish patterns.",
+        "ph": [
+          "Field Work"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "Silver Ornament Study",
+            "d": "Students noted that earrings can weigh up to 200 grams and neck rings up to four jin, embodying wealth and beauty."
+          },
+          {
+            "t": "Wax Dyeing Observation",
+            "d": "They examined blue-and-white fabrics with traditional motifs like butterflies and flowers, tracing their historical roots."
+          }
+        ]
+      },
+      {
+        "y": "Phase 3",
+        "lab": "Collaboration",
+        "t": "Master Interview",
+        "d": "The team interviewed Teacher Ayao, a Miao craft master, to understand the challenges and rewards of keeping these traditions alive. Her words about passion resonated deeply with the students.",
+        "ph": [
+          "Collaboration",
+          "Reflection"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "The Power of Passion",
+            "d": "Teacher Ayao shared that persistence comes from love, stating that what one loves cannot be replaced by money."
+          },
+          {
+            "t": "Embroidery Techniques",
+            "d": "Students learned about complex stitches like 'broken thread embroidery,' which require immense time and skill."
+          }
+        ]
+      },
+      {
+        "y": "Phase 4",
+        "lab": "Creation",
+        "t": "Documenting the Journey",
+        "d": "Back at base, the group collaborated to create four detailed posters summarizing their findings on wax dyeing history, silver aesthetics, and interview records.",
+        "ph": [
+          "Creation"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "Poster Production",
+            "d": "Students combined hand-drawn illustrations with written analysis to present their research visually."
+          }
+        ]
+      },
+      {
+        "y": "Phase 5",
+        "lab": "Outcomes",
+        "t": "Final Reflections",
+        "d": "The journey concluded with a deeper appreciation for minority cultures and the irreplaceable value of handmade crafts. Students realized that true preservation relies on genuine passion rather than commercial gain.",
+        "ph": [
+          "Outcomes",
+          "Reflection"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "Cultural Respect",
+            "d": "The students developed a profound respect for the dedication required to maintain these ancient traditions."
+          }
+        ]
+      }
+    ],
+    "dataKind": "provided"
+  },
+  "attachments": [
+    {
+      "id": 1,
+      "filename": "Miao Moon Silver poster 1.jpg",
+      "path": "story-15-poster-1.jpg"
+    },
+    {
+      "id": 2,
+      "filename": "Miao Moon Silver poster 2.jpg",
+      "path": "story-15-poster-2.jpg"
+    },
+    {
+      "id": 3,
+      "filename": "Miao Moon Silver poster 3.jpg",
+      "path": "story-15-poster-3.jpg"
+    },
+    {
+      "id": 4,
+      "filename": "Miao Moon Silver poster 4.jpg",
+      "path": "story-15-poster-4.jpg"
+    }
+  ]
+}

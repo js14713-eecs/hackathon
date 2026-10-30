@@ -1,5 +1,41 @@
 [
   {
+    "id": 15,
+    "title": "Miao Moon Silver: A Journey into Guizhou's Intangible Heritage",
+    "summary": "The 'Miao Moon Silver' team of six students traveled to Guiyang and Miao villages in Guizhou to explore the unique aesthetics of Miao wax dyeing, silver ornaments, and embroidery. Through interviews with a master artisan and hands-on observation, they uncovered the deep cultural meanings behind traditional craftsmanship and the power of passion in preserving heritage.",
+    "location": "Guizhou Province",
+    "lng": 106.63,
+    "lat": 26.65,
+    "image": "/uploads/story-15-poster-1.jpg",
+    "likes": 0,
+    "tags": [
+      "guizhou",
+      "intangible-heritage",
+      "miao-culture",
+      "student-journey"
+    ],
+    "created_at": 1793345186278,
+    "hot": 0.397283417607839
+  },
+  {
+    "id": 14,
+    "title": "Growing on the Cliff: The Chongqing Stilt House Journey",
+    "summary": "A group of fifth-grade students in Chongqing investigated why stilt houses can stand on such steep cliffs. Through fieldwork, interviews, and model building, they discovered that these structures are not built but 'grown' by adapting to the slope and water levels. Their journey transformed them into young urban planners who understand the harmony between architecture and nature.",
+    "location": "Chongqing",
+    "lng": 106.579,
+    "lat": 29.562,
+    "image": null,
+    "likes": 0,
+    "tags": [
+      "architecture",
+      "engineering",
+      "urban planning",
+      "cultural heritage"
+    ],
+    "created_at": 1793344575335,
+    "hot": 0.36278647394138136
+  },
+  {
     "id": 13,
     "title": "Sketching History: The Six Bricks of Nanjing",
     "summary": "Six third-grade students traveled to Nanjing to investigate the unique features of Republic-era buildings. Through sketching intricate details like carved windows and domed gates, they learned about architectural history while developing essential teamwork skills like the 'Double Bookkeeping Method'. Their journey culminated in a collaborative picture book that captured both the city's heritage and their own growth.",
@@ -15,7 +51,7 @@
       "art-journalism"
     ],
     "created_at": 1793343962786,
-    "hot": 0.4008573121259187
+    "hot": 0.3333387740452452
   },
   {
     "id": 12,
@@ -33,7 +69,7 @@
       "field-research"
     ],
     "created_at": 1793343901559,
-    "hot": 0.3970712106526429
+    "hot": 0.3306356170335845
   },
   {
     "id": 6,
@@ -48,7 +84,7 @@
       "unedited"
     ],
     "created_at": 1793335507317,
-    "hot": 0.1648942635535729
+    "hot": 0.1504729760495802
   },
   {
     "id": 5,
@@ -63,7 +99,7 @@
       "unedited"
     ],
     "created_at": 1793334351323,
-    "hot": 0.30355924574173754
+    "hot": 0.27864834214973677
   },
   {
     "id": 1,
@@ -80,7 +116,7 @@
       "Qingdao"
     ],
     "created_at": 1793323541838,
-    "hot": 5.004540242978975
+    "hot": 4.74409721129602
   },
   {
     "id": 2,
@@ -97,7 +133,7 @@
       "Go Far"
     ],
     "created_at": 1793301941844,
-    "hot": 2.2263712559308693
+    "hot": 2.1594400650639387
   },
   {
     "id": 3,
@@ -114,7 +150,7 @@
       "Heroes Journey"
     ],
     "created_at": 1793226341850,
-    "hot": 0.28243363544638134
+    "hot": 0.27900743569453884
   },
   {
     "id": 4,
@@ -131,6 +167,6 @@
       "STEAM"
     ],
     "created_at": 1793136341856,
-    "hot": 0.07376178815967127
+    "hot": 0.07323854187519951
   }
 ]

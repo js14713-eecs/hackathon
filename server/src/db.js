@@ -99,10 +99,14 @@ export function addAttachment(storyId, filename, storedPath) {
   db.prepare(`INSERT INTO attachments (story_id, filename, path) VALUES (?, ?, ?)`).run(storyId, filename, storedPath);
 }
 
+export function setStoryImage(storyId, image) {
+  db.prepare(`UPDATE stories SET image=? WHERE id=?`).run(image, storyId);
+}
+
 export function getStory(id) {
   const s = db.prepare(`SELECT * FROM stories WHERE id=?`).get(id);
   if (!s) return null;
-  const atts = db.prepare(`SELECT id, filename FROM attachments WHERE story_id=?`).all(id);
+  const atts = db.prepare(`SELECT id, filename, path FROM attachments WHERE story_id=?`).all(id);
   return {
     ...s,
     timeline: JSON.parse(s.timeline), stats: JSON.parse(s.stats), tags: JSON.parse(s.tags),

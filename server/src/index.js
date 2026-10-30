@@ -4,9 +4,10 @@ import path from 'node:path';
 import fs from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { LOCATIONS, PARTICIPATING, FEATURED_GEO, IMPACTS } from './data.js';
-import { createStory, setStoryReady, addAttachment, getStory, listStories, likeStory, createDraftStory, saveDraftStoryline, publishStory } from './db.js';
+import { createStory, setStoryReady, addAttachment, setStoryImage, getStory, listStories, likeStory, createDraftStory, saveDraftStoryline, publishStory } from './db.js';
 import { organizeStory } from './llm.js';
 import { generateStoryline } from './agent.js';
+import { persistAgentImages } from './agentUploads.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const envPath = path.join(__dirname, '..', '.env');
@@ -123,18 +124,22 @@ app.get('/api/agent/samples', (req, res) => {
 });
 
 app.post('/api/agent/generate', upload.array('files', 8), async (req, res) => {
+  const files = req.files || [];
   try {
     const text = (req.body.text || '').trim();
-    const files = req.files || [];
     let raw = text;
     const images = [];
+    const imageFiles = [];
     for (const f of files) {
       if (/^text\//.test(f.mimetype) || /\.(txt|md|markdown)$/i.test(f.originalname)) {
         raw += '\n\n' + fs.readFileSync(f.path, 'utf8').slice(0, 20000);
+        fs.rmSync(f.path, { force: true });
       } else if (/^image\//.test(f.mimetype)) {
         images.push({ mime: f.mimetype, b64: fs.readFileSync(f.path).toString('base64') });
+        imageFiles.push(f);
+      } else {
+        fs.rmSync(f.path, { force: true });
       }
-      fs.rmSync(f.path, { force: true });
     }
     if (!raw && images.length === 0) {
       return res.status(400).json({ error: 'Provide some text or at least one photo.' });
@@ -142,8 +147,12 @@ app.post('/api/agent/generate', upload.array('files', 8), async (req, res) => {
     const { data, engine, model } = await generateStoryline({ text: raw, images });
     const id = createDraftStory({ title: data.title, raw });
     saveDraftStoryline(id, data);
+    const media = persistAgentImages({ storyId: id, uploadDir: UPLOAD_DIR, files: imageFiles });
+    media.attachments.forEach(a => addAttachment(id, a.filename, a.path));
+    if (media.cover) setStoryImage(id, media.cover);
     res.json({ id, engine, model, data });
   } catch (e) {
+    files.forEach(f => fs.rmSync(f.path, { force: true }));
     console.error('[agent] generate error:', e.message);
     res.status(500).json({ error: 'Could not generate the storyline.' });
   }

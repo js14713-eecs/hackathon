@@ -12,7 +12,10 @@ import { listStories, getStory } from '../src/db.js';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '../..');
 const dataDir = path.join(root, 'client', 'public', 'data');
 const samplesOut = path.join(root, 'client', 'public', 'samples');
+const uploadsIn = path.join(root, 'server', 'uploads');
+const uploadsOut = path.join(root, 'client', 'public', 'uploads');
 fs.mkdirSync(dataDir, { recursive: true });
+fs.mkdirSync(uploadsOut, { recursive: true });
 
 const write = (name, data) => {
   fs.writeFileSync(path.join(dataDir, name), JSON.stringify(data, null, 2));
@@ -41,6 +44,11 @@ write('stories.json', stories);
 for (const s of stories) {
   const full = getStory(s.id);
   delete full.raw;
+  for (const attachment of full.attachments || []) {
+    const safe = path.basename(attachment.path || '');
+    const source = path.join(uploadsIn, safe);
+    if (safe && fs.existsSync(source)) fs.copyFileSync(source, path.join(uploadsOut, safe));
+  }
   write(`story-${s.id}.json`, full);
 }
 

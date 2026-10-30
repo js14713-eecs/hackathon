@@ -1,0 +1,324 @@
+{
+  "id": 14,
+  "title": "Growing on the Cliff: The Chongqing Stilt House Journey",
+  "summary": "A group of fifth-grade students in Chongqing investigated why stilt houses can stand on such steep cliffs. Through fieldwork, interviews, and model building, they discovered that these structures are not built but 'grown' by adapting to the slope and water levels. Their journey transformed them into young urban planners who understand the harmony between architecture and nature.",
+  "location": "Chongqing",
+  "lng": 106.579,
+  "lat": 29.562,
+  "timeline": [
+    {
+      "y": "Phase 1",
+      "lab": "Preparation",
+      "t": "Building Stability Models",
+      "d": "Students tested cardboard models in the classroom, discovering that diagonal braces were essential for stability against the cliff's slope.",
+      "ph": [
+        "Preparation"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "The Collapse",
+          "d": "Their first attempt at a three-story model collapsed immediately until they added diagonal supports."
+        }
+      ]
+    },
+    {
+      "y": "Phase 2",
+      "lab": "Field Work",
+      "t": "Measuring the Vertical City",
+      "d": "On-site measurements revealed that pillars facing the river were significantly longer than those on the cliff side to accommodate the elevation change.",
+      "ph": [
+        "Field Work"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "The River View",
+          "d": "Standing by the Jialing River, students measured the gap between the lowest floor and the water level."
+        }
+      ]
+    },
+    {
+      "y": "Phase 3",
+      "lab": "Collaboration",
+      "t": "Interviewing Local Wisdom",
+      "d": "An interview with a local spicy noodle vendor revealed that the ground floor is intentionally left empty to serve as a flood buffer.",
+      "ph": [
+        "Collaboration"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "The Flood Line",
+          "d": "They identified dark water marks on the pillars indicating where rising rivers used to reach."
+        }
+      ]
+    },
+    {
+      "y": "Phase 4",
+      "lab": "Creation",
+      "t": "Mapping the Eleven Layers",
+      "d": "From the Qiansimen Bridge, they sketched a cross-section proving the building stacks eleven distinct levels vertically up the hillside.",
+      "ph": [
+        "Creation"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "The Cross-Section",
+          "d": "Drawing from the bridge confirmed that each roof serves as the ground for the layer above it."
+        }
+      ]
+    },
+    {
+      "y": "Phase 5",
+      "lab": "Reflection",
+      "t": "Concluding the Study",
+      "d": "Synthesizing their findings, the students concluded that the architecture is a negotiation with the mountain rather than a conquest of it.",
+      "ph": [
+        "Reflection"
+      ],
+      "st": [],
+      "moments": [
+        {
+          "t": "The Final Report",
+          "d": "They compiled their sketches, photos, and interviews into a comprehensive 12-page research report."
+        }
+      ]
+    }
+  ],
+  "stats": [
+    [
+      "11",
+      "Floors stacked vertically"
+    ],
+    [
+      "9",
+      "Sketches drawn on site"
+    ],
+    [
+      "5",
+      "Days of field research"
+    ]
+  ],
+  "tags": [
+    "architecture",
+    "engineering",
+    "urban planning",
+    "cultural heritage"
+  ],
+  "image": null,
+  "status": "ready",
+  "likes": 0,
+  "created_at": 1793344575335,
+  "storyline": {
+    "title": "Growing on the Cliff: The Chongqing Stilt House Journey",
+    "theme": "How traditional stilt houses adapt to steep mountain terrain and river floods.",
+    "summary": "A group of fifth-grade students in Chongqing investigated why stilt houses can stand on such steep cliffs. Through fieldwork, interviews, and model building, they discovered that these structures are not built but 'grown' by adapting to the slope and water levels. Their journey transformed them into young urban planners who understand the harmony between architecture and nature.",
+    "question": "Why can stilt houses be built on such steep cliffs?",
+    "subQuestions": [
+      "How do wooden pillars support the house without collapsing when inserted into the cliff?",
+      "Why does every floor feel like the ground floor despite having eleven levels?",
+      "Why did people living by the river build their houses this way?"
+    ],
+    "turns": [
+      {
+        "lab": "Preparation",
+        "t": "Building Stability Models",
+        "d": "Students tested cardboard models in the classroom, discovering that diagonal braces were essential for stability against the cliff's slope.",
+        "ph": [
+          "Preparation"
+        ],
+        "moments": [
+          {
+            "t": "The Collapse",
+            "d": "Their first attempt at a three-story model collapsed immediately until they added diagonal supports."
+          }
+        ]
+      },
+      {
+        "lab": "Field Work",
+        "t": "Measuring the Vertical City",
+        "d": "On-site measurements revealed that pillars facing the river were significantly longer than those on the cliff side to accommodate the elevation change.",
+        "ph": [
+          "Field Work"
+        ],
+        "moments": [
+          {
+            "t": "The River View",
+            "d": "Standing by the Jialing River, students measured the gap between the lowest floor and the water level."
+          }
+        ]
+      },
+      {
+        "lab": "Collaboration",
+        "t": "Interviewing Local Wisdom",
+        "d": "An interview with a local spicy noodle vendor revealed that the ground floor is intentionally left empty to serve as a flood buffer.",
+        "ph": [
+          "Collaboration"
+        ],
+        "moments": [
+          {
+            "t": "The Flood Line",
+            "d": "They identified dark water marks on the pillars indicating where rising rivers used to reach."
+          }
+        ]
+      },
+      {
+        "lab": "Creation",
+        "t": "Mapping the Eleven Layers",
+        "d": "From the Qiansimen Bridge, they sketched a cross-section proving the building stacks eleven distinct levels vertically up the hillside.",
+        "ph": [
+          "Creation"
+        ],
+        "moments": [
+          {
+            "t": "The Cross-Section",
+            "d": "Drawing from the bridge confirmed that each roof serves as the ground for the layer above it."
+          }
+        ]
+      },
+      {
+        "lab": "Reflection",
+        "t": "Concluding the Study",
+        "d": "Synthesizing their findings, the students concluded that the architecture is a negotiation with the mountain rather than a conquest of it.",
+        "ph": [
+          "Reflection"
+        ],
+        "moments": [
+          {
+            "t": "The Final Report",
+            "d": "They compiled their sketches, photos, and interviews into a comprehensive 12-page research report."
+          }
+        ]
+      }
+    ],
+    "openQuestions": [
+      {
+        "q": "Are there other old stilt houses in Chongqing still standing and in use today?",
+        "d": "Understanding their current state helps preserve cultural heritage before they disappear."
+      },
+      {
+        "q": "If we built stilt houses on even steeper slopes, how many more pillars would be needed for stability?",
+        "d": "This explores the engineering limits of traditional architecture in extreme terrains."
+      },
+      {
+        "q": "With so many tourists visiting daily, can the wooden structures withstand the wear and tear?",
+        "d": "This addresses the sustainability challenges of turning historic homes into modern attractions."
+      }
+    ],
+    "outcomes": [
+      "A 12-page student research report titled 'Why Stilt Houses Stand on Cliffs'.",
+      "A functional, disassemblable model of a stilt house demonstrating structural engineering principles.",
+      "Nine detailed sketches documenting the unique architectural features of the site.",
+      "A school-wide presentation sharing their discovery that buildings can grow with the land."
+    ],
+    "stats": [
+      [
+        "11",
+        "Floors stacked vertically"
+      ],
+      [
+        "9",
+        "Sketches drawn on site"
+      ],
+      [
+        "5",
+        "Days of field research"
+      ]
+    ],
+    "tags": [
+      "architecture",
+      "engineering",
+      "urban planning",
+      "cultural heritage"
+    ],
+    "location": "Chongqing",
+    "lng": 106.579,
+    "lat": 29.562,
+    "timeline": [
+      {
+        "y": "Phase 1",
+        "lab": "Preparation",
+        "t": "Building Stability Models",
+        "d": "Students tested cardboard models in the classroom, discovering that diagonal braces were essential for stability against the cliff's slope.",
+        "ph": [
+          "Preparation"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "The Collapse",
+            "d": "Their first attempt at a three-story model collapsed immediately until they added diagonal supports."
+          }
+        ]
+      },
+      {
+        "y": "Phase 2",
+        "lab": "Field Work",
+        "t": "Measuring the Vertical City",
+        "d": "On-site measurements revealed that pillars facing the river were significantly longer than those on the cliff side to accommodate the elevation change.",
+        "ph": [
+          "Field Work"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "The River View",
+            "d": "Standing by the Jialing River, students measured the gap between the lowest floor and the water level."
+          }
+        ]
+      },
+      {
+        "y": "Phase 3",
+        "lab": "Collaboration",
+        "t": "Interviewing Local Wisdom",
+        "d": "An interview with a local spicy noodle vendor revealed that the ground floor is intentionally left empty to serve as a flood buffer.",
+        "ph": [
+          "Collaboration"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "The Flood Line",
+            "d": "They identified dark water marks on the pillars indicating where rising rivers used to reach."
+          }
+        ]
+      },
+      {
+        "y": "Phase 4",
+        "lab": "Creation",
+        "t": "Mapping the Eleven Layers",
+        "d": "From the Qiansimen Bridge, they sketched a cross-section proving the building stacks eleven distinct levels vertically up the hillside.",
+        "ph": [
+          "Creation"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "The Cross-Section",
+            "d": "Drawing from the bridge confirmed that each roof serves as the ground for the layer above it."
+          }
+        ]
+      },
+      {
+        "y": "Phase 5",
+        "lab": "Reflection",
+        "t": "Concluding the Study",
+        "d": "Synthesizing their findings, the students concluded that the architecture is a negotiation with the mountain rather than a conquest of it.",
+        "ph": [
+          "Reflection"
+        ],
+        "st": [],
+        "moments": [
+          {
+            "t": "The Final Report",
+            "d": "They compiled their sketches, photos, and interviews into a comprehensive 12-page research report."
+          }
+        ]
+      }
+    ],
+    "dataKind": "provided"
+  },
+  "attachments": []
+}

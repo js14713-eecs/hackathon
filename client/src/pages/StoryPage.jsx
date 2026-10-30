@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { api, timeAgo } from '../api.js';
 import Timeline from '../components/Timeline.jsx';
+import { imageAttachmentUrl } from '../attachment.js';
 
 export default function StoryPage() {
   const { id } = useParams();
@@ -41,6 +42,17 @@ export default function StoryPage() {
   }
   if (!story) return <div className="container page empty">Loading…</div>;
 
+  const openQuestions = story.storyline?.openQuestions?.length
+    ? story.storyline.openQuestions.map(item => typeof item === 'string' ? { q: item, d: '' } : item)
+    : [
+        { q: `What changed after ${story.title}?`, d: 'Look for evidence that the next cohort can compare.' },
+        { q: 'What question did this journey leave unanswered?', d: 'Turn one loose end into a new field study.' },
+        { q: 'How could another team test these findings?', d: 'Suggest a practical next step, interview, or experiment.' },
+      ];
+  const imageAttachments = (story.attachments || [])
+    .map(a => ({ ...a, url: imageAttachmentUrl(a, import.meta.env.BASE_URL) }))
+    .filter(a => a.url);
+
   return (
     <div className="container page">
       <Link className="back-link" to="/">← Back to the map</Link>
@@ -68,10 +80,49 @@ export default function StoryPage() {
         </div>
       )}
 
-      {story.attachments?.length > 0 && (
+      {imageAttachments.length > 0 && (
+        <section className="story-gallery">
+          <div className="story-gallery-head">
+            <span className="eyebrow">ORIGINAL FIELD MATERIALS</span>
+            <h2>Created by the students</h2>
+            <p>These posters, drawings, and notes are the evidence behind this journey.</p>
+          </div>
+          <div className="story-gallery-grid">
+            {imageAttachments.map((a, index) => (
+              <a href={a.url} target="_blank" rel="noopener noreferrer" key={a.id} className={index === 0 ? 'featured' : ''}>
+                <img src={a.url} alt={`Student-created project material: ${a.filename}`} />
+                <span>{a.filename}</span>
+              </a>
+            ))}
+          </div>
+        </section>
+      )}
+
+      <section className="relay-cta">
+        <div className="relay-cta-copy">
+          <span className="eyebrow">PASS THE TORCH</span>
+          <h2>Questions for the next cohort</h2>
+          <p>Every journey should leave a door open. Pick a question, add your idea, and help the next group decide where to begin.</p>
+        </div>
+        <div className="relay-question-list">
+          {openQuestions.slice(0, 3).map((item, index) => (
+            <Link
+              className="relay-question"
+              key={`${item.q}-${index}`}
+              to={`/story/${id}/relay?q=${encodeURIComponent(item.q)}`}
+            >
+              <span>0{index + 1}</span>
+              <div><b>{item.q}</b>{item.d && <small>{item.d}</small>}</div>
+              <i>Continue →</i>
+            </Link>
+          ))}
+        </div>
+      </section>
+
+      {story.attachments?.some(a => !imageAttachmentUrl(a, import.meta.env.BASE_URL)) && (
         <div style={{ marginTop: 28 }}>
           <h3 style={{ fontSize: 17, marginBottom: 10 }}>Original attachments</h3>
-          {story.attachments.map(a => (
+          {story.attachments.filter(a => !imageAttachmentUrl(a, import.meta.env.BASE_URL)).map(a => (
             <a key={a.id} className="attach" href={`/uploads/${a.path}`} target="_blank" rel="noopener noreferrer">
               📎 {a.filename}
             </a>

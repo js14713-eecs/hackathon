@@ -5,6 +5,7 @@ import StoryPage from './pages/StoryPage.jsx';
 import SubmitPage from './pages/SubmitPage.jsx';
 import HotPage from './pages/HotPage.jsx';
 import TeacherPage from './pages/TeacherPage.jsx';
+import RelayPage from './pages/RelayPage.jsx';
 
 const Heart = () => (
   <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.9-9.7-9.2C.7 8.6 2.6 5 6.2 5c2.2 0 3.6 1.2 4.4 2.5L12 9l1.4-1.5C14.2 6.2 15.6 5 17.8 5c3.6 0 5.5 3.6 3.9 6.8C19.5 16.1 12 21 12 21z"/></svg>
@@ -77,6 +78,7 @@ export default function App() {
           <Route path="/" element={<Home />} />
           <Route path="/location/:id" element={<LocationPage />} />
           <Route path="/story/:id" element={<StoryPage />} />
+          <Route path="/story/:id/relay" element={<RelayPage />} />
           <Route path="/submit" element={<SubmitPage />} />
           <Route path="/teacher" element={<TeacherPage />} />
           <Route path="/hot" element={<HotPage />} />

@@ -140,6 +140,22 @@
   ],
   "stories": [
     {
+      "id": 15,
+      "title": "Miao Moon Silver: A Journey into Guizhou's Intangible Heritage",
+      "coords": [
+        106.63,
+        26.65
+      ]
+    },
+    {
+      "id": 14,
+      "title": "Growing on the Cliff: The Chongqing Stilt House Journey",
+      "coords": [
+        106.579,
+        29.562
+      ]
+    },
+    {
       "id": 13,
       "title": "Sketching History: The Six Bricks of Nanjing",
       "coords": [
