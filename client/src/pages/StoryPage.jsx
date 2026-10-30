@@ -3,7 +3,8 @@ import { useParams, Link } from 'react-router-dom';
 import { api, timeAgo } from '../api.js';
 import Timeline from '../components/Timeline.jsx';
 import { imageAttachmentUrl } from '../attachment.js';
-import { attachTimelineMedia } from '../timelineMedia.js';
+import { attachTeacherNote, attachTimelineMedia } from '../timelineMedia.js';
+import { MIAO_YEAR_TWO } from '../cohortTimeline.js';
 
 export default function StoryPage() {
   const { id } = useParams();
@@ -12,9 +13,11 @@ export default function StoryPage() {
   const [likes, setLikes] = useState(0);
   const [liked, setLiked] = useState(false);
   const [lightbox, setLightbox] = useState(null);
+  const [cohortYear, setCohortYear] = useState(1);
 
   useEffect(() => {
     setStory(null); setError(false);
+    setCohortYear(1);
     api.story(id)
       .then(s => { setStory(s); setLikes(s.likes); })
       .catch(() => setError(true));
@@ -66,7 +69,12 @@ export default function StoryPage() {
     .map(a => ({ ...a, url: imageAttachmentUrl(a, import.meta.env.BASE_URL) }))
     .filter(a => a.url);
   const mediaOrder = String(id) === '15' ? [3, 1, 0, 2] : imageAttachments.map((_, index) => index);
-  const timeline = attachTimelineMedia(story.timeline, imageAttachments, mediaOrder);
+  const timelineWithMedia = attachTimelineMedia(story.timeline, imageAttachments, mediaOrder);
+  const timeline = String(id) === '15'
+    ? attachTeacherNote(timelineWithMedia, 2, 'Teacher note: This is the turning point—students moved beyond collecting facts and began listening for the passion, difficulty, and human choices behind cultural inheritance.')
+    : timelineWithMedia;
+  const hasMultiYearStory = String(id) === '15';
+  const activeTimeline = hasMultiYearStory && cohortYear === 2 ? MIAO_YEAR_TWO : timeline;
 
   return (
     <div className="container page">
@@ -74,6 +82,16 @@ export default function StoryPage() {
       <div className="story-hero">
         <span className="eyebrow">Community Story · AI-organized draft</span>
         <h1>{story.title}</h1>
+        {hasMultiYearStory && (
+          <div className="cohort-tabs" role="tablist" aria-label="Explore this place across years">
+            <button type="button" role="tab" aria-selected={cohortYear === 1} className={cohortYear === 1 ? 'active' : ''} onClick={() => setCohortYear(1)}>
+              <b>Year 1</b><span>Original journey</span>
+            </button>
+            <button type="button" role="tab" aria-selected={cohortYear === 2} className={cohortYear === 2 ? 'active' : ''} onClick={() => setCohortYear(2)}>
+              <b>Year 2</b><span>Next cohort relay</span>
+            </button>
+          </div>
+        )}
         <p className="sum">{story.summary}</p>
         <div className="story-meta">
           <span className="meta-item">📍 {story.location}</span>
@@ -85,16 +103,16 @@ export default function StoryPage() {
         </div>
       </div>
 
-      {timeline?.length > 0 && (
+      {activeTimeline?.length > 0 && (
         <Timeline
-          nodes={timeline}
+          nodes={activeTimeline}
           color="#4caf7d"
-          summary="Organized by the AI editor from the submitted material — pending editorial review."
+          summary={cohortYear === 2 ? 'AI-generated continuation concept: the next cohort returns to the same place, compares change, and passes the work forward.' : 'Organized by the AI editor from the submitted material — pending editorial review.'}
           onImageOpen={setLightbox}
         />
       )}
 
-      {story.stats?.length > 0 && (
+      {cohortYear === 1 && story.stats?.length > 0 && (
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginTop: 24 }}>
           {story.stats.map((s, i) => (
             <span className="tl-stat" key={i} style={{ padding: '10px 18px', fontSize: 14 }}>{s[0]} <i>{s[1]}</i></span>

@@ -6,6 +6,7 @@ import SubmitPage from './pages/SubmitPage.jsx';
 import HotPage from './pages/HotPage.jsx';
 import TeacherPage from './pages/TeacherPage.jsx';
 import RelayPage from './pages/RelayPage.jsx';
+import ImpactPage from './pages/ImpactPage.jsx';
 
 const Heart = () => (
   <svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.9-9.7-9.2C.7 8.6 2.6 5 6.2 5c2.2 0 3.6 1.2 4.4 2.5L12 9l1.4-1.5C14.2 6.2 15.6 5 17.8 5c3.6 0 5.5 3.6 3.9 6.8C19.5 16.1 12 21 12 21z"/></svg>
@@ -22,6 +23,7 @@ function Nav() {
         <div className="nav-links">
           <NavLink to="/" end>Map</NavLink>
           <NavLink to="/hot">Trending</NavLink>
+          <NavLink to="/impact">Impact</NavLink>
           <NavLink to="/teacher">Teacher AI</NavLink>
           <NavLink to="/submit">Submit a Story</NavLink>
         </div>
@@ -50,6 +52,7 @@ function Footer() {
             <h5>Explore</h5>
             <Link to="/">Impact Map</Link>
             <Link to="/hot">Trending Stories</Link>
+            <Link to="/impact">Donor Impact</Link>
             <Link to="/teacher">Teacher AI</Link>
             <Link to="/submit">Submit a Story</Link>
           </div>
@@ -82,6 +85,7 @@ export default function App() {
           <Route path="/submit" element={<SubmitPage />} />
           <Route path="/teacher" element={<TeacherPage />} />
           <Route path="/hot" element={<HotPage />} />
+          <Route path="/impact" element={<ImpactPage />} />
           <Route path="*" element={
             <div className="container page empty">
               <h2 style={{ fontSize: 30 }}>Page not found</h2>

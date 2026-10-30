@@ -26,8 +26,24 @@ test('stores a trimmed relay idea under the selected open question', async () =>
     author: 'Maya',
     comment: 'Compare two new models.',
     createdAt: 1234,
+    creditsEarned: 10,
   });
   assert.deepEqual(relay.readRelayIdeas(storage, '14', 'How could the next cohort test this idea?'), [saved]);
+  assert.equal(relay.readRelayCredits(storage), 10);
+});
+
+test('awards ten cumulative credits for each submitted idea', async () => {
+  const relay = await import('./relayStore.js');
+  const memory = new Map();
+  const storage = {
+    getItem: key => memory.get(key) ?? null,
+    setItem: (key, value) => memory.set(key, value),
+  };
+
+  relay.addRelayIdea(storage, { storyId: '15', question: 'What next?', comment: 'Interview an artisan.', now: 1 });
+  relay.addRelayIdea(storage, { storyId: '15', question: 'What next?', comment: 'Compare both years.', now: 2 });
+
+  assert.equal(relay.readRelayCredits(storage), 20);
 });
 
 test('rejects an empty relay comment', async () => {

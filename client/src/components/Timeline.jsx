@@ -42,6 +42,12 @@ export default function Timeline({ nodes, color = '#f5a623', summary = '', onIma
                     ))}
                   </ul>
                 )}
+                {n.teacherNote && (
+                  <aside className="teacher-note">
+                    <span>✎ TEACHER NOTE</span>
+                    <p>{n.teacherNote.replace(/^Teacher note:\s*/i, '')}</p>
+                  </aside>
+                )}
                 {n.ph?.length > 0 && (
                   <div className="tl-phases">
                     {n.ph.map((p, j) => (

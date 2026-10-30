@@ -1,7 +1,7 @@
 import { useEffect, useMemo, useState } from 'react';
 import { Link, useParams, useSearchParams } from 'react-router-dom';
 import { api, timeAgo } from '../api.js';
-import { addRelayIdea, readRelayIdeas } from '../relayStore.js';
+import { addRelayIdea, readRelayCredits, readRelayIdeas } from '../relayStore.js';
 
 export default function RelayPage() {
   const { id } = useParams();
@@ -12,6 +12,7 @@ export default function RelayPage() {
   const [comment, setComment] = useState('');
   const [ideas, setIdeas] = useState(() => readRelayIdeas(localStorage, id, question));
   const [message, setMessage] = useState('');
+  const [credits, setCredits] = useState(() => readRelayCredits(localStorage));
 
   useEffect(() => { api.story(id).then(setStory).catch(() => setStory(false)); }, [id]);
   useEffect(() => { setIdeas(readRelayIdeas(localStorage, id, question)); }, [id, question]);
@@ -27,8 +28,9 @@ export default function RelayPage() {
     try {
       const saved = addRelayIdea(localStorage, { storyId: id, question, author, comment });
       setIdeas(current => [...current, saved]);
+      setCredits(readRelayCredits(localStorage));
       setComment('');
-      setMessage('Idea added to the relay. The next cohort can build on it.');
+      setMessage('+10 Credits earned! Your idea is now part of the relay.');
     } catch (err) {
       setMessage(err.message);
     }
@@ -41,7 +43,10 @@ export default function RelayPage() {
     <div className="container page relay-page">
       <Link className="back-link" to={`/story/${id}`}>← Back to the journey</Link>
       <section className="relay-hero">
-        <span className="eyebrow">NEXT COHORT RELAY</span>
+        <div className="relay-hero-top">
+          <span className="eyebrow">NEXT COHORT RELAY</span>
+          <div className="credit-balance"><span>✦</span><b>{credits}</b> Credits</div>
+        </div>
         <p className="relay-origin">Inspired by {story.title}</p>
         <h1>{question}</h1>
         <p>Leave one practical thought for the students who continue this journey. A small observation can become their starting point.</p>
@@ -58,7 +63,7 @@ export default function RelayPage() {
             <input value={author} onChange={e => setAuthor(e.target.value)} placeholder="e.g. Class 6 · Dream Team" />
             <label>Your idea for the next cohort</label>
             <textarea value={comment} onChange={e => setComment(e.target.value)} placeholder="Suggest a question, field method, interview, experiment, or place to visit…" rows="6" />
-            <button className="btn btn-primary" type="submit">Add idea to the relay →</button>
+            <button className="btn btn-primary" type="submit">Add idea · Earn 10 Credits →</button>
             {message && <p className="relay-message">{message}</p>}
           </form>
         </section>
@@ -70,7 +75,7 @@ export default function RelayPage() {
           ) : ideas.map(idea => (
             <article className="relay-idea" key={idea.id}>
               <p>{idea.comment}</p>
-              <span>{idea.author} · {timeAgo(idea.createdAt)}</span>
+              <span>{idea.author} · {timeAgo(idea.createdAt)} <i>+{idea.creditsEarned || 10} Credits</i></span>
             </article>
           ))}
         </section>

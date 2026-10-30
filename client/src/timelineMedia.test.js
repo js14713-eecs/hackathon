@@ -22,3 +22,14 @@ test('places the four Guizhou posters beside their matching journey phases', asy
     null,
   ]);
 });
+
+test('adds a teacher note to the selected phase without changing the others', async () => {
+  const { attachTeacherNote } = await import('./timelineMedia.js');
+  const phases = [{ t: 'Prepare' }, { t: 'Interview' }, { t: 'Create' }];
+
+  const result = attachTeacherNote(phases, 1, 'Listen for the motivation behind the craft.');
+
+  assert.equal(result[1].teacherNote, 'Listen for the motivation behind the craft.');
+  assert.equal(result[0].teacherNote, undefined);
+  assert.equal(result[2].teacherNote, undefined);
+});
