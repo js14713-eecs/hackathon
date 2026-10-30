@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>孩子们的远方 · 真爱梦想公益项目地图</title>
+<style>
+:root{
+  --cream:#faf6ee; --ink:#14324a; --ink-soft:#5b728a;
+  --navy:#0d2438; --navy-2:#12304a; --navy-3:#1c4160;
+  --amber:#f5a623; --orange:#ff6b35; --gold:#ffd166;
+  --line:#e8dfcd; --white:#fff;
+  --shadow:0 10px 30px rgba(20,50,74,.10);
+  --radius:18px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;background:var(--cream);color:var(--ink);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+section{padding:96px 0}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:3px;color:var(--amber);text-transform:uppercase}
+.eyebrow::before{content:"";width:26px;height:3px;border-radius:2px;background:var(--amber)}
+h1,h2,h3{line-height:1.25;font-weight:800;letter-spacing:-.5px}
+.sec-h{font-size:40px;margin:14px 0 10px}
+.sec-sub{color:var(--ink-soft);font-size:17px;max-width:640px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;border-radius:999px;font-weight:700;font-size:15px;cursor:pointer;border:2px solid transparent;transition:.25s}
+.btn-primary{background:var(--amber);color:#1d2c3a;box-shadow:0 6px 18px rgba(245,166,35,.35)}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(245,166,35,.45)}
+.btn-ghost{border-color:rgba(255,255,255,.45);color:#fff}
+.btn-ghost:hover{background:rgba(255,255,255,.1)}
+.btn-line{border-color:var(--ink);color:var(--ink)}
+.btn-line:hover{background:var(--ink);color:#fff}
+
+/* ---------- nav ---------- */
+nav{position:sticky;top:0;z-index:50;background:rgba(250,246,238,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
+.logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px}
+.logo-mark{width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,var(--amber),var(--orange));display:flex;align-items:center;justify-content:center}
+.logo-mark svg{width:18px;height:18px;fill:#fff}
+.logo small{display:block;font-size:10px;font-weight:600;letter-spacing:2.5px;color:var(--ink-soft)}
+.nav-links{display:flex;gap:30px;font-size:15px;font-weight:600;color:var(--ink-soft)}
+.nav-links a:hover{color:var(--ink)}
+@media(max-width:900px){.nav-links{display:none}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;overflow:hidden;padding:84px 0 96px}
+.hero .container{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.hero h1{font-size:54px;margin:16px 0 20px}
+.hero h1 em{font-style:normal;color:var(--orange);position:relative}
+.hero h1 em::after{content:"";position:absolute;left:0;right:0;bottom:6px;height:12px;background:rgba(245,166,35,.28);z-index:-1;border-radius:4px}
+.hero p.lead{font-size:18px;color:var(--ink-soft);max-width:520px;margin-bottom:30px}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:38px}
+.hero-stats{display:flex;gap:38px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:26px}
+.hstat b{display:block;font-size:30px;font-weight:800;color:var(--ink)}
+.hstat b i{font-style:normal;color:var(--orange);font-size:22px}
+.hstat span{font-size:13px;color:var(--ink-soft)}
+.hero-art{position:relative}
+.hero-art img{border-radius:28px;box-shadow:0 24px 60px rgba(20,50,74,.22)}
+.float-card{position:absolute;background:var(--white);border-radius:16px;box-shadow:var(--shadow);padding:14px 18px;font-size:13px;font-weight:700}
+.float-card small{display:block;font-weight:500;color:var(--ink-soft);font-size:11px}
+.fc-1{top:-22px;left:-26px;animation:floaty 5s ease-in-out infinite}
+.fc-2{bottom:-20px;right:-14px;animation:floaty 5s 1.2s ease-in-out infinite}
+@keyframes floaty{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}
+@media(max-width:900px){
+  .hero .container{grid-template-columns:1fr}
+  .hero h1{font-size:36px}
+  .hero{padding:56px 0 72px}
+}
+
+/* ---------- map ---------- */
+.map-wrap{background:var(--navy);border-radius:32px;padding:34px 30px 26px;box-shadow:0 30px 70px rgba(13,36,56,.35);color:#fff}
+.map-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-bottom:20px}
+.map-head h2{font-size:28px;color:#fff}
+.map-head p{color:#9db4c8;font-size:14px;margin-top:4px}
+.chips{display:flex;gap:10px;flex-wrap:wrap}
+.chip{padding:8px 18px;border-radius:999px;border:1.5px solid rgba(255,255,255,.25);color:#c8d8e6;font-size:14px;font-weight:600;cursor:pointer;transition:.2s;background:transparent}
+.chip:hover{border-color:var(--gold);color:var(--gold)}
+.chip.active{background:var(--amber);border-color:var(--amber);color:#1d2c3a}
+.map-stage{position:relative}
+#chinaMap{width:100%;height:620px}
+.map-overlay{position:absolute;top:18px;left:18px;max-width:300px;background:rgba(10,28,44,.88);backdrop-filter:blur(8px);border:1px solid rgba(255,255,255,.14);border-left:4px solid var(--amber);border-radius:14px;padding:16px 18px;display:none;z-index:10}
+.map-overlay.show{display:block;animation:slidein .35s ease}
+@keyframes slidein{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+.map-overlay h4{font-size:17px;color:#fff;margin-bottom:4px}
+.map-overlay p{font-size:12.5px;color:#a9c0d4;margin-bottom:10px}
+.map-overlay .btn{font-size:13px;padding:8px 16px}
+.map-reset{position:absolute;top:18px;right:18px;background:rgba(10,28,44,.88);border:1px solid rgba(255,255,255,.2);color:#c8d8e6;border-radius:999px;padding:8px 16px;font-size:13px;font-weight:600;cursor:pointer;display:none;z-index:10}
+.map-reset:hover{color:#fff;border-color:var(--gold)}
+.map-legend{position:absolute;bottom:14px;left:18px;display:flex;gap:18px;font-size:12px;color:#9db4c8;flex-wrap:wrap}
+.map-legend i{display:inline-block;width:11px;height:11px;border-radius:3px;margin-right:6px;vertical-align:-1px}
+@media(max-width:900px){
+  #chinaMap{height:430px}
+  .map-overlay{max-width:230px}
+}
+
+/* ---------- detail ---------- */
+.detail-section{scroll-margin-top:80px}
+.breadcrumb{font-size:13px;color:var(--ink-soft);margin-bottom:18px}
+.breadcrumb b{color:var(--ink)}
+.loc-head{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:34px}
+.loc-head h2{font-size:38px}
+.loc-tags{display:flex;gap:8px;margin-top:10px;flex-wrap:wrap}
+.tag{padding:4px 12px;border-radius:999px;font-size:12px;font-weight:700;color:#fff}
+.loc-stats{display:flex;gap:12px;flex-wrap:wrap}
+.loc-stat{background:var(--white);border:1px solid var(--line);border-radius:14px;padding:10px 18px;text-align:center;min-width:96px}
+.loc-stat b{display:block;font-size:22px;color:var(--ink)}
+.loc-stat span{font-size:11.5px;color:var(--ink-soft)}
+.proj-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:24px;margin-bottom:56px}
+.proj-card{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);cursor:pointer;border:3px solid transparent;transition:.25s;display:flex;flex-direction:column}
+.proj-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px rgba(20,50,74,.16)}
+.proj-card.active{border-color:var(--amber)}
+.proj-card .pic{height:180px;overflow:hidden;position:relative}
+.proj-card .pic img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.proj-card:hover .pic img{transform:scale(1.05)}
+.proj-card .pic .type-badge{position:absolute;top:12px;left:12px;padding:5px 12px;border-radius:999px;font-size:12px;font-weight:700;color:#fff;box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.proj-card .body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:10px;flex:1}
+.proj-card h3{font-size:19px}
+.proj-card p{font-size:13.5px;color:var(--ink-soft);flex:1}
+.proj-meta{display:flex;gap:16px;font-size:12.5px;color:var(--ink-soft);font-weight:600}
+.proj-meta b{color:var(--orange)}
+.proj-card .go{font-size:13.5px;font-weight:700;color:var(--amber)}
+.proj-card .go::after{content:"→";margin-left:6px;transition:.2s}
+.proj-card:hover .go::after{margin-left:10px}
+
+/* timeline */
+.tl-wrap{background:var(--white);border-radius:24px;box-shadow:var(--shadow);padding:34px 34px 40px}
+.tl-head{display:flex;justify-content:space-between;align-items:flex-end;gap:16px;flex-wrap:wrap;margin-bottom:8px}
+.tl-head h3{font-size:24px}
+.tl-head .sum{font-size:13.5px;color:var(--ink-soft);max-width:520px}
+.tl-chips{display:flex;gap:8px;overflow-x:auto;padding:16px 2px 22px;scrollbar-width:none}
+.tl-chips::-webkit-scrollbar{display:none}
+.tl-chip{flex:0 0 auto;padding:7px 16px;border-radius:999px;background:#f3ecdf;font-size:13px;font-weight:700;color:var(--ink-soft);cursor:pointer;transition:.2s;border:1.5px solid transparent}
+.tl-chip:hover{color:var(--ink)}
+.tl-chip.active{background:var(--ink);color:#fff}
+.tl{position:relative;padding-left:0}
+.tl-node{display:grid;grid-template-columns:110px 26px 1fr;gap:0;position:relative}
+.tl-node::before{content:"";position:absolute;left:122px;top:30px;bottom:-8px;width:2px;background:repeating-linear-gradient(to bottom,var(--line) 0 6px,transparent 6px 12px)}
+.tl-node:last-child::before{display:none}
+.tl-date{text-align:right;padding:16px 16px 0 0}
+.tl-date b{display:block;font-size:19px;color:var(--ink)}
+.tl-date span{font-size:12px;color:var(--ink-soft);font-weight:600}
+.tl-dot{position:relative;z-index:2;margin-top:22px}
+.tl-dot::before{content:"";position:absolute;left:6px;top:-6px;width:14px;height:14px;border-radius:50%;background:var(--amber);box-shadow:0 0 0 5px rgba(245,166,35,.18)}
+.tl-card{background:#fdfbf6;border:1px solid var(--line);border-radius:16px;padding:18px 22px;margin:10px 0 18px;display:grid;grid-template-columns:1fr auto;gap:14px;transition:.25s}
+.tl-card:hover{box-shadow:var(--shadow);border-color:#e3d5b8}
+.tl-card.hl{background:#fff7e6;border-color:var(--amber);box-shadow:0 0 0 4px rgba(245,166,35,.14)}
+.tl-card h4{font-size:17px;margin-bottom:5px}
+.tl-card p{font-size:13.5px;color:var(--ink-soft);max-width:640px}
+.tl-phases{display:flex;gap:6px;flex-wrap:wrap;margin-top:10px}
+.phase{font-size:11.5px;font-weight:700;padding:3px 10px;border-radius:999px}
+.tl-stats{display:flex;gap:8px;flex-wrap:wrap;margin-top:12px}
+.tl-stat{background:var(--white);border:1px solid var(--line);border-radius:10px;padding:6px 13px;font-size:12.5px;font-weight:700}
+.tl-stat i{font-style:normal;color:var(--orange)}
+.tl-thumb{width:118px;border-radius:12px;object-fit:cover;align-self:center}
+@media(max-width:700px){
+  .tl-node{grid-template-columns:64px 22px 1fr}
+  .tl-node::before{left:74px}
+  .tl-date b{font-size:15px}
+  .tl-card{grid-template-columns:1fr}
+  .tl-thumb{width:100%;max-height:150px}
+  .tl-wrap{padding:22px 16px 28px}
+}
+
+/* ---------- stories ---------- */
+.stories{background:linear-gradient(180deg,var(--cream) 0%,#f3ead9 100%)}
+.story-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:44px}
+.story{background:var(--white);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow);display:flex;flex-direction:column}
+.story .pic{height:150px;overflow:hidden}
+.story .pic img{width:100%;height:100%;object-fit:cover;transition:.4s}
+.story:hover .pic img{transform:scale(1.06)}
+.story .body{padding:18px 20px 20px;flex:1;display:flex;flex-direction:column}
+.story .quote{font-size:15.5px;font-weight:700;line-height:1.55;margin-bottom:12px;flex:1}
+.story .quote::before{content:"“";color:var(--amber);font-size:26px;font-weight:800;margin-right:2px}
+.story .who{font-size:12px;color:var(--ink-soft);border-top:1px solid var(--line);padding-top:10px}
+.story .who b{color:var(--ink)}
+@media(max-width:1000px){.story-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:600px){.story-grid{grid-template-columns:1fr}}
+
+/* ---------- impact ---------- */
+.impact{background:var(--navy);color:#fff}
+.impact .eyebrow{color:var(--gold)}
+.impact .sec-sub{color:#9db4c8}
+.impact-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:48px}
+.impact-card{background:var(--navy-2);border:1px solid rgba(255,255,255,.08);border-radius:var(--radius);padding:30px 28px;transition:.25s}
+.impact-card:hover{border-color:rgba(245,166,35,.45);transform:translateY(-4px)}
+.impact-card b{font-size:44px;font-weight:800;color:var(--gold);line-height:1.1}
+.impact-card b i{font-style:normal;font-size:26px}
+.impact-card span{display:block;margin-top:8px;color:#a9c0d4;font-size:14px}
+@media(max-width:900px){.impact-grid{grid-template-columns:1fr 1fr}}
+@media(max-width:560px){.impact-grid{grid-template-columns:1fr}}
+
+/* ---------- join ---------- */
+.join-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:44px}
+.join-card{border-radius:24px;padding:38px 36px;color:#fff;position:relative;overflow:hidden}
+.join-card::after{content:"";position:absolute;width:260px;height:260px;border-radius:50%;background:rgba(255,255,255,.08);top:-110px;right:-80px}
+.join-donor{background:linear-gradient(135deg,var(--navy) 0%,var(--navy-3) 100%)}
+.join-kid{background:linear-gradient(135deg,#e8872b 0%,var(--orange) 100%)}
+.join-card h3{font-size:26px;margin-bottom:10px}
+.join-card p{font-size:14.5px;opacity:.88;max-width:420px;margin-bottom:24px}
+.join-card .btn{position:relative;z-index:2}
+.join-donor .btn{background:var(--amber);color:#1d2c3a}
+.join-kid .btn{background:#fff;color:var(--orange)}
+@media(max-width:800px){.join-grid{grid-template-columns:1fr}}
+
+/* ---------- footer ---------- */
+footer{background:#081b2c;color:#8fa8bd;padding:56px 0 40px;font-size:13.5px}
+.foot-grid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px;margin-bottom:36px}
+footer h5{color:#fff;font-size:14px;margin-bottom:12px}
+footer a{display:block;margin-bottom:8px}
+footer a:hover{color:var(--gold)}
+.foot-note{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;font-size:12px;line-height:1.8}
+@media(max-width:800px){.foot-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav-inner">
+    <a class="logo" href="#top">
+      <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.9-9.7-9.2C.7 8.6 2.6 5 6.2 5c2.2 0 3.6 1.2 4.4 2.5L12 9l1.4-1.5C14.2 6.2 15.6 5 17.8 5c3.6 0 5.5 3.6 3.9 6.8C19.5 16.1 12 21 12 21z"/></svg></span>
+      <span>真爱梦想<small>ADREAM · 项目地图</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#map">项目地图</a>
+      <a href="#detail">项目故事</a>
+      <a href="#stories">学生故事</a>
+      <a href="#impact">数据看板</a>
+    </div>
+    <a class="btn btn-primary" style="padding:9px 20px;font-size:14px" href="https://gongyi.weibo.com/r/239643" target="_blank" rel="noopener">支持我们</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="container">
+    <div>
+      <span class="eyebrow">上海真爱梦想公益基金会 · 成果展示原型</span>
+      <h1>每一次出发，<br>都值得<em>被看见</em></h1>
+      <p class="lead">12 年来，30 个省的孩子们自己设计路线、自己管理预算、自己走向远方。这张地图记录他们走过的每一步——给捐赠人一份看得见的改变，给下一届孩子一份可以触摸的勇气。</p>
+      <div class="hero-ctas">
+        <a class="btn btn-primary" href="#map">探索项目地图</a>
+        <a class="btn btn-line" href="#detail">查看历届时间线</a>
+      </div>
+      <div class="hero-stats">
+        <div class="hstat"><b>12<i>届</i></b><span>连续举办去远方</span></div>
+        <div class="hstat"><b>30<i>省</i></b><span>孩子出发的足迹</span></div>
+        <div class="hstat"><b>3600<i>+</i></b><span>支研学小队成行</span></div>
+        <div class="hstat"><b>190<i>万+</i></b><span>孩子上过梦想课</span></div>
+      </div>
+    </div>
+    <div class="hero-art">
+      <img src="img/hero.png" alt="孩子们在山丘上眺望远方的城市">
+      <div class="float-card fc-1">2025 届 · 467 支小队出发<small>目的地：青岛 · 北京 · 上海……</small></div>
+      <div class="float-card fc-2">第一次看到大海<small>福建顺昌 → 青岛</small></div>
+    </div>
+  </div>
+</header>
+
+<section id="map" style="padding-top:20px">
+  <div class="container">
+    <div class="map-wrap">
+      <div class="map-head">
+        <div>
+          <h2>点亮的地方，就是孩子们走过的远方</h2>
+          <p>点击省份或光点，查看该地点的项目与历届完成过程</p>
+        </div>
+        <div class="chips" id="typeChips">
+          <button class="chip active" data-tag="all">全部</button>
+          <button class="chip" data-tag="qyf">去远方·研学</button>
+          <button class="chip" data-tag="caravan">梦想大篷车</button>
+          <button class="chip" data-tag="sports">运动梦想</button>
+          <button class="chip" data-tag="border">国门学校</button>
+        </div>
+      </div>
+      <div class="map-stage">
+        <div id="chinaMap"></div>
+        <div class="map-overlay" id="mapOverlay"></div>
+        <button class="map-reset" id="mapReset">↺ 回到全国</button>
+        <div class="map-legend">
+          <span><i style="background:#f5a623"></i>故事地点</span>
+          <span><i style="background:#3d5f83"></i>已参与课程省份</span>
+          <span><i style="background:#233f59"></i>故事持续更新中</span>
+          <span><i style="background:#ffd166;border-radius:50%"></i>当前选中</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="detail-section" id="detail">
+  <div class="container">
+    <div class="breadcrumb" id="detailBreadcrumb"></div>
+    <div id="detailContent"></div>
+  </div>
+</section>
+
+<section class="stories" id="stories">
+  <div class="container">
+    <span class="eyebrow">学生故事</span>
+    <h2 class="sec-h">他们说，远方是这样的</h2>
+    <p class="sec-sub">这些故事，是给捐赠人最好的回信，也是给下一届孩子最好的邀请函。</p>
+    <div class="story-grid" id="storyGrid"></div>
+  </div>
+</section>
+
+<section class="impact" id="impact">
+  <div class="container">
+    <span class="eyebrow">数据看板</span>
+    <h2 class="sec-h" style="color:#fff">每一个数字背后，都是一个孩子</h2>
+    <p class="sec-sub">数据来源：真爱梦想公益基金会公开报道与年报（截至 2025 年，部分为演示示意数据）。</p>
+    <div class="impact-grid" id="impactGrid"></div>
+  </div>
+</section>
+
+<section id="join">
+  <div class="container">
+    <span class="eyebrow">一起出发</span>
+    <h2 class="sec-h">你想成为故事的一部分吗？</h2>
+    <div class="join-grid">
+      <div class="join-card join-donor">
+        <h3>我想支持这些孩子</h3>
+        <p>每一份捐赠，都会变成一节梦想课、一张车票、一次看世界的机会。你的支持，正在被这些时间线记录。</p>
+        <a class="btn" href="https://gongyi.weibo.com/r/239643" target="_blank" rel="noopener">去捐赠 →</a>
+      </div>
+      <div class="join-card join-kid">
+        <h3>下一站，轮到你出发</h3>
+        <p>如果你是梦想中心学校的学生，欢迎加入《去远方》课程，和小伙伴一起设计你们自己的旅行方案。</p>
+        <a class="btn" href="https://www.adream.org/theme-activities" target="_blank" rel="noopener">了解活动 →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="foot-grid">
+      <div>
+        <a class="logo" href="#top" style="color:#fff;margin-bottom:12px">
+          <span class="logo-mark"><svg viewBox="0 0 24 24"><path d="M12 21s-7.5-4.9-9.7-9.2C.7 8.6 2.6 5 6.2 5c2.2 0 3.6 1.2 4.4 2.5L12 9l1.4-1.5C14.2 6.2 15.6 5 17.8 5c3.6 0 5.5 3.6 3.9 6.8C19.5 16.1 12 21 12 21z"/></svg></span>
+          <span>真爱梦想<small>ADREAM</small></span>
+        </a>
+        <p style="max-width:360px">使命：教育推动社会进步<br>愿景：帮助孩子们自信、从容、有尊严地成长</p>
+      </div>
+      <div>
+        <h5>快速入口</h5>
+        <a href="#map">项目地图</a>
+        <a href="#detail">历届时间线</a>
+        <a href="#stories">学生故事</a>
+        <a href="#impact">数据看板</a>
+      </div>
+      <div>
+        <h5>相关链接</h5>
+        <a href="https://www.adream.org/" target="_blank" rel="noopener">真爱梦想官网</a>
+        <a href="https://www.adream.org/theme-activities" target="_blank" rel="noopener">主题活动</a>
+        <a href="https://gongyi.weibo.com/r/239643" target="_blank" rel="noopener">支持去远方项目</a>
+      </div>
+    </div>
+    <div class="foot-note">
+      本页面为黑客松演示原型（Hackathon Prototype）。项目数据基于真爱梦想公益基金会公开报道整理，部分数字为演示示意；正式数据请以 adream.org 官方发布为准。插画为 AI 生成示意素材。
+    </div>
+  </div>
+</footer>
+
+<script src="lib/echarts.min.js"></script>
+<script src="lib/geo-data.js"></script>
+<script>
+/* ============ 项目类型 ============ */
+const TYPES = {
+  qyf:     { label:'去远方·研学',     color:'#f5a623' },
+  caravan: { label:'梦想大篷车',       color:'#ff6b35' },
+  sports:  { label:'运动梦想',         color:'#2bb3a3' },
+  border:  { label:'爱在边疆·国门学校',color:'#9b6bd6' },
+  coach:   { label:'梦想教练计划',     color:'#3f7fb8' },
+  citizen: { label:'小童善治',         color:'#4caf7d' },
+};
+const PHASES = {
+  qyf:     ['开课','方案设计','小队答辩','出发研学','成果分享'],
+  caravan: ['发车仪式','素养嘉年华','科创课堂','教师培训','收官'],
+  sports:  ['课程培训','校际联赛','冰雪运动会','常态课程'],
+  border:  ['签约','梦想中心落成','国门课程','成果展'],
+  coach:   ['招募','集中培训','入校陪伴','认证'],
+  citizen: ['议题调研','校园听证','提案落地'],
+};
+
+/* ============ 地点与项目数据 ============ */
+const LOCATIONS = [
+  {
+    id:'yunnan', name:'云南省', geo:'云南省', coords:[102.71,24.97], zoom:3.4,
+    tagline:'373 支小队 · 1937 名孩子 · 全省 27 万+ 课时梦想课（截至 2025.8）',
+    stats:[['373','支研学小队'],['1937','名孩子成行'],['27万+','课时梦想课']],
+    projects:[
+      {
+        id:'yn-qyf', type:'qyf', title:'去远方·研学旅行（云南）', years:'2014 — 2025 · 共 12 届', img:'img/classroom.png',
+        summary:'从 2014 年第一支小队到 2025 年第 12 届，云南孩子把"远方"从课本变成脚下的路；全省梦想中心累计开设 27 万余课时梦想课。',
+        timeline:[
+          {y:'2014',lab:'首届启程',t:'第一支小队走出大山',d:'《去远方》课程首次进入云南乡村学校，2 支小队、11 名孩子第一次走出大山，自己定路线、管预算。',ph:['开课','出发研学'],st:[['2','支小队'],['11','名孩子']],img:'img/classroom.png'},
+          {y:'2016',lab:'课程生根',t:'成为最受欢迎的梦想课',d:'12 支小队成行。孩子们在课堂上学做旅行规划师：查车次、比价格、设计研究主题。',ph:['开课','方案设计'],st:[['12','支小队']]},
+          {y:'2018',lab:'家乡即远方',t:'本地研学启动',d:'"让自己的家乡成为更多人的远方"——28 支小队走进民族村寨与梯田，学习爱家乡。',ph:['方案设计','出发研学','成果分享'],st:[['28','支小队']]},
+          {y:'2020',lab:'云端看世界',t:'云研学上线',d:'特殊的一年，15 支小队以"云研学"方式连线远方城市，与志愿者线上互动。',ph:['开课','出发研学'],st:[['15','支小队']]},
+          {y:'2022',lab:'小队翻倍',t:'45 支小队出发',d:'答辩会上，孩子们用自己做的 PPT 讲方案，评委是老师和往届队员。',ph:['方案设计','小队答辩'],st:[['45','支小队']]},
+          {y:'2023',lab:'守护者计划',t:'志愿者全程护航',d:'63 支小队成行，"出行守护者"与"线上安全员"志愿者首次大规模护航。',ph:['出发研学'],st:[['63','支小队'],['40+','名守护者']]},
+          {y:'2024',lab:'幻方专项',t:'6297 名学子共同开课',d:'幻方量化资助下，甘肃·云南·陕西·内蒙古乡镇梦想中心校全面开课，48 位老师参与专项培训，23 支小队成行。',ph:['开课','出发研学'],st:[['6297','名学子'],['116','位教师']]},
+          {y:'2025',lab:'第十二届',t:'373 支小队的答卷',d:'第 12 届收官：累计 373 支小队、1937 名孩子完成研学；全省梦想课突破 27 万课时。',ph:['出发研学','成果分享'],st:[['373','累计小队'],['1937','累计孩子'],['27万+','课时']],img:'img/sea.png'},
+        ]
+      },
+      {
+        id:'yn-caravan', type:'caravan', title:'梦想大篷车 · 十周年收官站', years:'2015 — 2025', img:'img/caravan.png',
+        summary:'2015 年大篷车首发"西部行"就来到云南；2025 年项目十周年，"篷"程万里收官站再次回到云南。十年间大篷车走过 27 省 103 个地区 254 所学校。',
+        timeline:[
+          {y:'2015',lab:'首发·西部行',t:'27 吨的移动梦想中心',d:'大篷车首发"西部行"驶入云南乡镇，孩子们第一次体验科技、艺术、民族文化专项课堂。',ph:['发车仪式','素养嘉年华'],st:[['27','吨重'],['60㎡','展开教室']]},
+          {y:'2018',lab:'边疆行',t:'把课堂送到国门小镇',d:'大篷车沿边境线而行，素养教育嘉年华走进边疆学校。',ph:['发车仪式','素养嘉年华'],st:[['27省','累计足迹']]},
+          {y:'2022',lab:'运动嘉年华',t:'流动运动课进山',d:'与安踏合作，体育素养课程随大篷车进入山区学校。',ph:['素养嘉年华','教师培训']},
+          {y:'2025',lab:'十周年·收官',t:'"篷"程万里回到云南',d:'在齐鲁制药公益慈善基金会支持下，十周年活动收官站落地云南。十年累计：27 省 103 地 254 校、超 17 万公里、29 万余名孩子与大篷车相遇。',ph:['素养嘉年华','收官'],st:[['27省','103地'],['254','所学校'],['17万+','公里']],img:'img/caravan.png'},
+        ]
+      }
+    ]
+  },
+  {
+    id:'henan', name:'河南省', geo:'河南省', coords:[113.6,34.7], zoom:3.2,
+    tagline:'2023 素养教育中原行 · 7 县市 8 站 · 传统文化 × 现代科技',
+    stats:[['8','站巡展'],['959','节梦想课(累计)'],['514','节科创课(累计)']],
+    projects:[
+      {
+        id:'hn-caravan', type:'caravan', title:'梦想大篷车 · 素养教育中原行（2023）', years:'2023 · 5月 — 6月', img:'img/caravan.png',
+        summary:'2023 年 5 月 8 日，小红书号大篷车从郑州中原区启程，一路走过 7 县市 8 站，把传统文化与现代科技融合的素养课堂带给中原孩子。',
+        timeline:[
+          {y:'05.08',lab:'启程',t:'郑州·中原区 发车仪式',d:'"素养教育中原行"正式启动，一场传统文化与现代文明的美丽"邂逅"开始。',ph:['发车仪式'],st:[['8','站计划']],img:'img/caravan.png'},
+          {y:'05月',lab:'第二站',t:'新密市',d:'孩子们在非遗课堂与科创实验之间穿梭，一天体验两种世界。',ph:['素养嘉年华','科创课堂'],st:[['600+','孩子参与']]},
+          {y:'05月',lab:'第三站',t:'巩义市',d:'诗圣故里，诗词诵读与编程启蒙同上一堂课。',ph:['素养嘉年华']},
+          {y:'05月',lab:'第四站',t:'洛阳·新安县',d:'千年古都旁，孩子们用平板电脑设计自己的"未来城市"。',ph:['科创课堂'],st:[['300+','份城市设计']]},
+          {y:'05月',lab:'第五站',t:'三门峡·卢氏县',d:'山区孩子第一次体验 VR 眼镜与 3D 打印笔。',ph:['科创课堂']},
+          {y:'06月',lab:'第六站',t:'开封·尉氏县',d:'宋韵文化主题课堂，志愿者与孩子们共创手作。',ph:['素养嘉年华'],st:[['100+','名志愿者']]},
+          {y:'06月',lab:'收官',t:'南阳·内乡县',d:'收官站：孩子们带着"梦想卡"告别大篷车。项目 8 年累计 959 节梦想课、514 节科创课、2543 名志愿者参与。',ph:['素养嘉年华','收官'],st:[['959','梦想课'],['514','科创课'],['2543','志愿者']]},
+        ]
+      },
+      {
+        id:'hn-qyf', type:'qyf', title:'去远方 · 梦想课程（河南）', years:'2017 — 2025', img:'img/classroom.png',
+        summary:'依托全省梦想中心，《去远方》课程在中原大地扎根，孩子们把洛阳、开封写进自己的研学方案。',
+        timeline:[
+          {y:'2017',lab:'课程引入',t:'首批 15 校开课',d:'《去远方》进入河南首批 15 所梦想中心学校。',ph:['开课'],st:[['15','所学校']]},
+          {y:'2021',lab:'首支小队',t:'20 支小队出发',d:'目的地：西安、青岛、北京。孩子们第一次自己买票、换乘。',ph:['方案设计','出发研学'],st:[['20','支小队']]},
+          {y:'2023',lab:'中原行联动',t:'400+ 孩子完成课程',d:'大篷车巡展期间，沿线学校 400 余名孩子同步完成课程学习。',ph:['开课'],st:[['400+','名孩子']]},
+          {y:'2025',lab:'第八届',t:'累计 120+ 小队',d:'越来越多河南孩子带着"我的家乡值得被看见"的方案出发。',ph:['出发研学','成果分享'],st:[['120+','累计小队']],img:'img/sea.png'},
+        ]
+      }
+    ]
+  },
+  {
+    id:'shandong', name:'山东省', geo:'山东省', coords:[118.0,36.4], zoom:3.0,
+    tagline:'2024 YAO健康公益行 · 6 县市 · 10105 名学生参与',
+    stats:[['10105','名学生'],['493','名教师'],['6','县市巡展']],
+    projects:[
+      {
+        id:'sd-caravan', type:'caravan', title:'梦想大篷车 · YAO健康公益行（2024）', years:'2024 · 9月', img:'img/caravan.png',
+        summary:'2024 年 9 月，在山东齐鲁制药公益慈善基金会支持下，大篷车驶入山东 6 县市，带来素养教育嘉年华与健康课程。',
+        timeline:[
+          {y:'09月',lab:'启程',t:'德州·临邑县',d:'"YAO健康·乐成长"公益行启动，健康素养第一课开讲。',ph:['发车仪式','素养嘉年华']},
+          {y:'09月',lab:'第二站',t:'乐陵市',d:'金丝小枣之乡，孩子们学习营养搭配与趣味体能课。',ph:['素养嘉年华']},
+          {y:'09月',lab:'第三站',t:'淄博·周村区',d:'2014 年就与真爱梦想结缘的老朋友——梦想教室早已落地，大篷车带来升级版科创课堂。',ph:['科创课堂'],st:[['10年','结缘周村']]},
+          {y:'09.24',lab:'第四站',t:'潍坊·诸城市',d:'东鲁学校艺术团为开营演出，舜帝故里的孩子们体验 3D 打印。',ph:['素养嘉年华','科创课堂']},
+          {y:'09月',lab:'第五站',t:'泰安·宁阳县',d:'泰山脚下，学生素养嘉年华与教师培训同步进行。',ph:['素养嘉年华','教师培训']},
+          {y:'09月',lab:'收官',t:'临沂·沂南县',d:'收官：6 县市累计 10105 名学生、493 名教师参与。',ph:['收官'],st:[['10105','学生'],['493','教师']],img:'img/caravan.png'},
+        ]
+      },
+      {
+        id:'sd-qyf', type:'qyf', title:'去远方 · 齐鲁大地', years:'2021 — 2025', img:'img/sea.png',
+        summary:'齐鲁大地的孩子们把大海和泰山写进研学方案。',
+        timeline:[
+          {y:'2021',lab:'首支小队',t:'10 支小队出发',d:'目的地青岛、济南，孩子们第一次独自完成换乘。',ph:['方案设计','出发研学'],st:[['10','支小队']]},
+          {y:'2024',lab:'与大篷车联动',t:'课程 × 巡展',d:'YAO健康公益行期间，沿线学校孩子同步完成《去远方》课程。',ph:['开课'],st:[['20+','所学校']]},
+          {y:'2025',lab:'第五届',t:'累计 60+ 小队',d:'更多山东孩子带着方案走向省外。',ph:['出发研学'],st:[['60+','累计小队']]},
+        ]
+      }
+    ]
+  },
+  {
+    id:'jilin', name:'吉林省', geo:'吉林省', coords:[126.5,43.8], zoom:3.4,
+    tagline:'2024 冬季冰雪运动会 · 天文社团北京研学',
+    stats:[['100','名师生齐聚'],['6省13地','参与冰雪'],['7天','北京研学']],
+    projects:[
+      {
+        id:'jl-sports', type:'sports', title:'运动梦想 · 冬季冰雪运动会', years:'2017 — 2025', img:'img/snow.png',
+        summary:'安踏"运动梦想课"把专业体育课程带给乡村孩子。2024 年龙年新春，来自 6 省 13 个地区的 100 名师生齐聚吉林，参加冬季冰雪运动会。',
+        timeline:[
+          {y:'2017',lab:'课程启动',t:'安踏 × 真爱梦想',d:'专业运动课程进入乡村学校，运动梦想课启动。',ph:['课程培训'],st:[['首批','试点校']]},
+          {y:'2022',lab:'体系成型',t:'课程覆盖超百校',d:'篮球、足球、冰雪课程体系成型。',ph:['课程培训','校际联赛'],st:[['100+','学校']]},
+          {y:'2024',lab:'冰雪运动会',t:'龙年新春 · 吉林',d:'贵州、云南、四川、甘肃、广西、宁夏 6 省 13 地 20 所乡村学校 100 名师生齐聚吉林——滑雪、滑冰、冰壶初体验。',ph:['冰雪运动会'],st:[['100','师生'],['20','所学校'],['6省13地','参与']],img:'img/snow.png'},
+          {y:'2025',lab:'常态化',t:'冰雪课向更多学校复制',d:'课程包与培训体系沉淀，全年服务师生持续增长。',ph:['常态课程']},
+        ]
+      },
+      {
+        id:'jl-qyf', type:'qyf', title:'去远方 · 天文社团北京研学', years:'2025 · 7月 · 7天', img:'img/classroom.png',
+        summary:'2025 年 7 月，吉林省真爱梦想学校天文社团的孩子们带着望远镜出发北京——在化石前沉思，在清华屏息仰望星空。',
+        timeline:[
+          {y:'D1',lab:'出发',t:'第一次坐飞机',d:'天文社团 9 名孩子与老师飞抵北京，行囊里装着自制的天文笔记本。',ph:['出发研学'],st:[['9','名孩子']],img:'img/classroom.png'},
+          {y:'D2',lab:'自然博物馆',t:'在化石前沉思',d:'国家自然博物馆里，宇宙的尺度第一次变得具体。',ph:['出发研学']},
+          {y:'D3',lab:'清华大学',t:'在望远镜后屏息',d:'与大学生哥哥姐姐交流，学会使用天文望远镜观测。',ph:['出发研学'],st:[['1台','专业望远镜体验']]},
+          {y:'D4',lab:'九坤公益',t:'把月球灯回赠爱心企业',d:'孩子们把亲手制作的月球灯送给资助方——"用研学成果回报这份善意"。',ph:['成果分享'],st:[['1盏','月球灯的心意']]},
+          {y:'D7',lab:'返程',t:'征途刚刚启航',d:'"宇宙从未抛弃任何一粒尘埃，就像社会用爱托起每个仰望的少年。"',ph:['成果分享'],st:[['7天','研学完成']]},
+        ]
+      }
+    ]
+  },
+  {
+    id:'xinjiang', name:'新疆维吾尔自治区', geo:'新疆维吾尔自治区', coords:[75.2,39.9], zoom:4.5,
+    tagline:'爱在边疆 · 第 20 所国门学校：祖国西极吉根乡小学',
+    stats:[['20','所国门学校'],['2024.9','西极落成'],['2位','国门教师入选专刊']],
+    projects:[
+      {
+        id:'xj-border', type:'border', title:'爱在边疆 · 点亮国门', years:'2018 — 2025', img:'img/classroom.png',
+        summary:'2024 年 9 月，祖国"西极"克州乌恰县吉根乡小学成为第 20 所"爱在边疆·点亮国门"项目学校——把梦想中心建到国门下。',
+        timeline:[
+          {y:'2018',lab:'项目启动',t:'面向边境县市发起',d:'国门学校支持计划发起，为边疆学校建设梦想中心。',ph:['签约'],st:[['1','号学校']]},
+          {y:'2021',lab:'第 10 所',t:'梦想中心走进更多边疆学校',d:'课程与教师培训同步跟上。',ph:['梦想中心落成'],st:[['10','所']]},
+          {y:'2024.9',lab:'第 20 所',t:'吉根乡小学 · 祖国西极',d:'克孜勒苏柯尔克孜自治州乌恰县吉根乡小学梦想中心落成，赛里曼老师成为梦想教师。',ph:['梦想中心落成','国门课程'],st:[['第20所','国门学校']],img:'img/classroom.png'},
+          {y:'2024.10',lab:'国门教师专刊',t:'致敬，国门教师',d:'吉根乡小学赛里曼老师与亚东县桑吉卓玛老师入选《中国教师报》国庆特刊。',ph:['成果展']},
+          {y:'2025',lab:'常态化',t:'国门下的梦想课',d:'梦想课程在国门学校常态化开设，边境线上的孩子拥有同样的素养课堂。',ph:['国门课程'],st:[['20+','所学校']]},
+        ]
+      },
+      {
+        id:'xj-qyf', type:'qyf', title:'去远方 · 帕米尔的孩子看世界', years:'2022 — 2025', img:'img/sea.png',
+        summary:'边疆孩子的"远方"是古城与都市——从喀什到乌鲁木齐，第 4 届小队已经出发。',
+        timeline:[
+          {y:'2022',lab:'首支小队',t:'喀什古城研学',d:'孩子们第一次做自己的旅行攻略，走进喀什古城。',ph:['方案设计','出发研学'],st:[['5','支小队']]},
+          {y:'2024',lab:'乌鲁木齐站',t:'博物馆与天文台',d:'小队走进新疆博物馆与天文台，把课本变成风景。',ph:['出发研学'],st:[['12','支小队']]},
+          {y:'2025',lab:'第四届',t:'更多国门学校加入',d:'课程与出行计划覆盖更多边疆县市。',ph:['开课','出发研学'],st:[['20+','支小队']]},
+        ]
+      }
+    ]
+  },
+  {
+    id:'fujian', name:'福建省', geo:'福建省', coords:[118.1,26.1], zoom:3.4,
+    tagline:'顺昌孩子第一次看到大海 · "原来海真的和课本里一样咸"',
+    stats:[['40+','支小队成行'],['2025','青岛看海'],['5届','连续举办']],
+    projects:[
+      {
+        id:'fj-qyf', type:'qyf', title:'去远方 · 研学旅行（福建）', years:'2019 — 2025', img:'img/sea.png',
+        summary:'2025 年夏天，南平市顺昌县实验小学五年级的孩子们在青岛第一次看到大海——这是"去远方"最经典的故事之一。',
+        timeline:[
+          {y:'2019',lab:'课程进校',t:'南平顺昌开课',d:'《去远方》进入南平顺昌等县市学校，孩子们第一次学习做旅行方案。',ph:['开课'],st:[['首批','10+所学校']]},
+          {y:'2022',lab:'首支小队',t:'武夷山路线',d:'省内研学启动，孩子们自主规划武夷山两日路线。',ph:['方案设计','出发研学'],st:[['8','支小队']]},
+          {y:'2024',lab:'小队翻倍',t:'40+ 支小队成行',d:'目的地从省内扩展到省外，答辩会越来越热闹。',ph:['小队答辩','出发研学'],st:[['40+','支小队']]},
+          {y:'2025',lab:'第一次看海',t:'顺昌 → 青岛',d:'顺昌县实验小学五年级的孩子抵达青岛，在海边张开双臂："原来海真的和课本里一样咸。"',ph:['出发研学','成果分享'],st:[['1次','人生初见大海']],img:'img/sea.png'},
+        ]
+      }
+    ]
+  },
+  {
+    id:'gansu', name:'甘肃省', geo:'甘肃省', coords:[103.7,36.1], zoom:3.2,
+    tagline:'幻方专项 · 116 位教师 6297 名学子开课 · 英雄少年行',
+    stats:[['6297','名学子开课'],['116','位教师'],['23','支小队成行']],
+    projects:[
+      {
+        id:'gs-qyf', type:'qyf', title:'去远方 · 研学旅行（甘肃）', years:'2020 — 2025', img:'img/classroom.png',
+        summary:'武威天祝的孩子们问："山的那边是什么呢？"2025 年"英雄少年行"，天祝学子走出雪山草原看世界。',
+        timeline:[
+          {y:'2020',lab:'课程落地',t:'武威天祝开课',d:'《去远方》进入武威天祝等乡镇学校。',ph:['开课'],st:[['首批','乡镇校']]},
+          {y:'2022',lab:'首支小队',t:'兰州成为第一个远方',d:'12 支小队出发，很多孩子第一次坐高铁。',ph:['方案设计','出发研学'],st:[['12','支小队']]},
+          {y:'2024',lab:'幻方专项',t:'四省同行',d:'甘肃、云南、陕西、内蒙古 116 位教师、6297 名学子共同开课；48 位老师参与专项培训，23 支小队成行。',ph:['开课','出发研学'],st:[['6297','学子'],['116','教师'],['23','小队']],img:'img/classroom.png'},
+          {y:'2025',lab:'英雄少年行',t:'天祝学子看世界',d:'从河西走廊到东部城市，雪山草原的孩子带着家乡的故事出发。',ph:['出发研学','成果分享'],st:[['30+','支小队']],img:'img/sea.png'},
+        ]
+      }
+    ]
+  },
+  {
+    id:'shanghai', name:'上海市', geo:'上海市', coords:[121.47,31.23], zoom:5.0,
+    tagline:'去远方大本营 · 梦想教练计划 · 小童善治',
+    stats:[['310+','支小队奔赴(2021)'],['1万+','教师/年服务'],['83%','学校开课率']],
+    projects:[
+      {
+        id:'sh-qyf', type:'qyf', title:'去远方 · 抵达上海', years:'2018 — 2025', img:'img/hero.png',
+        summary:'上海既是"去远方"的大本营，也是无数小队梦想的目的地。2021 年盛夏，全国 310 余支小队出发，许多孩子的目的地正是上海。',
+        timeline:[
+          {y:'2018',lab:'首批抵沪',t:'小队用自己的路线认识上海',d:'外滩、自然博物馆、大学校园——孩子们用自己设计的路线认识这座城。',ph:['出发研学'],st:[['首批','抵沪小队']]},
+          {y:'2021',lab:'310 支小队',t:'守护者与安全员上线',d:'全国 310 余支小队奔赴远方，"出行守护者"与"线上安全员"志愿者首次大规模招募。',ph:['出发研学'],st:[['310+','支小队']],img:'img/hero.png'},
+          {y:'2024',lab:'路线升级',t:'企业开放日进路线',d:'企业开放日、博物馆课程加入上海研学路线。',ph:['方案设计']},
+          {y:'2025',lab:'大本营开放日',t:'孩子们讲述远方故事',d:'小队走进真爱梦想总部，分享自己的远方故事。',ph:['成果分享'],st:[['12届','持续举办']]},
+        ]
+      },
+      {
+        id:'sh-coach', type:'coach', title:'梦想教练计划', years:'2010 — 2025', img:'img/classroom.png',
+        summary:'面向乡村教师的陪伴式成长计划。2022 年全年服务上万名乡村教师，运营期内学校开课率 83%，200 个区县达到 100%。',
+        timeline:[
+          {y:'2010',lab:'计划启动',t:'第一批梦想教练进校',d:'陪伴式教师成长模式从上海出发。',ph:['招募','入校陪伴'],st:[['首批','教练']]},
+          {y:'2016',lab:'千人教练',t:'课程体系标准化',d:'累计培训教师过千人，课程与培训体系成型。',ph:['集中培训'],st:[['1000+','教师']]},
+          {y:'2020',lab:'线上常态化',t:'云端培训',d:'特殊时期，教练计划全面线上化。',ph:['集中培训']},
+          {y:'2024',lab:'开课率新高',t:'83% 开课率',d:'全年服务上万名教师；83% 开课率、200 个区县 100% 开课，创历史新高。',ph:['入校陪伴','认证'],st:[['1万+','教师/年'],['83%','开课率'],['200','区县100%开课']],img:'img/classroom.png'},
+        ]
+      },
+      {
+        id:'sh-citizen', type:'citizen', title:'小童善治 · 儿童参与社区治理', years:'2021 — 2025', img:'img/hero.png',
+        summary:'让儿童参与社区治理的实践课程，孩子们用"校园听证会"改变身边的小世界。',
+        timeline:[
+          {y:'2021',lab:'试点启动',t:'6 个社区首批试点',d:'儿童议事会模式在上海落地。',ph:['议题调研'],st:[['6','个社区']]},
+          {y:'2023',lab:'校园听证会',t:'孩子们主持听证',d:'"课间十分钟怎么过""食堂菜单谁决定"——孩子们主持听证会并投票。',ph:['校园听证'],st:[['10+','场听证会']]},
+          {y:'2025',lab:'常态化',t:'儿童提案被采纳',d:'课程进入更多学校，多条儿童提案被社区真正采纳落地。',ph:['提案落地'],st:[['多条','提案落地']]},
+        ]
+      }
+    ]
+  },
+];
+
+/* 参与去远方课程的 30 个省市区（示意） */
+const PARTICIPATING = ['北京市','天津市','河北省','山西省','内蒙古自治区','辽宁省','吉林省','黑龙江省','上海市','江苏省','浙江省','安徽省','福建省','江西省','山东省','河南省','湖北省','湖南省','广东省','广西壮族自治区','海南省','重庆市','四川省','贵州省','云南省','陕西省','甘肃省','青海省','宁夏回族自治区','新疆维吾尔自治区'];
+const FEATURED = LOCATIONS.map(l=>l.geo);
+const TIER_COLOR = ['#233f59','#3d5f83','#f5a623'];
+
+const STORIES = [
+  {q:'原来海真的和课本里一样咸',who:'福建 · 顺昌县实验小学五年级',w:'2025 · 青岛 · 人生第一次看到大海',img:'img/sea.png'},
+  {q:'七天，星星落进了他们的眼睛',who:'吉林省真爱梦想学校天文社团',w:'2025 · 北京 · 天文研学',img:'img/classroom.png'},
+  {q:'山的那边是什么呢？——现在我知道了',who:'甘肃 · 武威天祝学子',w:'2025 · 英雄少年行 · 走出雪山草原',img:'img/hero.png'},
+  {q:'篷篷来了！那天我们学校像过年一样',who:'河南 · 中原行沿线孩子',w:'2023 · 梦想大篷车 · 素养教育中原行',img:'img/caravan.png'},
+];
+const IMPACTS = [
+  {v:190,suf:'万+',txt:'孩子上过《去远方》课程'},
+  {v:5000,suf:'+',txt:'间梦想中心建在乡村学校'},
+  {v:3600,suf:'+',txt:'支研学小队走出家乡'},
+  {v:18000,suf:'+',txt:'名孩子与老师走向远方'},
+  {v:17,suf:'万+',txt:'公里梦想大篷车里程'},
+  {v:29,suf:'万+',txt:'名孩子与大篷车相遇'},
+];
+
+/* ============ 渲染：故事 & 数据 ============ */
+document.getElementById('storyGrid').innerHTML = STORIES.map(s=>`
+  <div class="story"><div class="pic"><img src="${s.img}" alt=""></div>
+  <div class="body"><div class="quote">${s.q}</div><div class="who"><b>${s.who}</b><br>${s.w}</div></div></div>`).join('');
+
+document.getElementById('impactGrid').innerHTML = IMPACTS.map(c=>`
+  <div class="impact-card"><b data-count="${c.v}" data-suf="${c.suf}">0</b><span>${c.txt}</span></div>`).join('');
+
+const io = new IntersectionObserver(es=>es.forEach(e=>{
+  if(!e.isIntersecting) return;
+  const el=e.target, target=+el.dataset.count, suf=el.dataset.suf||'';
+  const t0=performance.now();
+  const tick=t=>{const p=Math.min(1,(t-t0)/1400), ease=1-Math.pow(1-p,3);
+    el.textContent=Math.round(target*ease).toLocaleString()+suf;
+    if(p<1) requestAnimationFrame(tick);};
+  requestAnimationFrame(tick); io.unobserve(el);
+}),{threshold:.4});
+document.querySelectorAll('[data-count]').forEach(el=>io.observe(el));
+
+/* ============ 渲染：地点详情 + 时间线 ============ */
+let curLoc = LOCATIONS[0], curProjIdx = 0;
+
+function phaseChips(node){
+  return node.ph.map(p=>`<span class="phase" style="color:${TYPES[curProj().type].color};background:${TYPES[curProj().type].color}1a">${p}</span>`).join('');
+}
+function curProj(){ return curLoc.projects[curProjIdx]; }
+
+function renderTimeline(){
+  const p = curProj();
+  const nodes = p.timeline.map((n,i)=>`
+    <div class="tl-node" id="tnode-${i}">
+      <div class="tl-date"><b>${n.y}</b><span>${n.lab}</span></div>
+      <div class="tl-dot"></div>
+      <div class="tl-card" id="tcard-${i}">
+        <div>
+          <h4>${n.t}</h4><p>${n.d}</p>
+          <div class="tl-phases">${phaseChips(n)}</div>
+          ${n.st?`<div class="tl-stats">${n.st.map(s=>`<span class="tl-stat">${s[0]} <i>${s[1]}</i></span>`).join('')}</div>`:''}
+        </div>
+        ${n.img?`<img class="tl-thumb" src="${n.img}" alt="">`:''}
+      </div>
+    </div>`).join('');
+  return `
+    <div class="tl-wrap">
+      <div class="tl-head">
+        <div><span class="eyebrow">历届时间线</span>
+        <h3>${p.title} · 完成过程</h3></div>
+        <p class="sum">${p.summary}</p>
+      </div>
+      <div class="tl-chips">${p.timeline.map((n,i)=>`<button class="tl-chip${i===0?' active':''}" data-i="${i}">${n.y} ${n.lab}</button>`).join('')}</div>
+      <div class="tl">${nodes}</div>
+    </div>`;
+}
+
+function renderDetail(){
+  const l = curLoc;
+  document.getElementById('detailBreadcrumb').innerHTML = `项目地图 / 全国 / <b>${l.name}</b>`;
+  const cards = l.projects.map((p,i)=>{
+    const t=TYPES[p.type];
+    return `<div class="proj-card${i===curProjIdx?' active':''}" data-i="${i}">
+      <div class="pic"><span class="type-badge" style="background:${t.color}">${t.label}</span><img src="${p.img}" alt=""></div>
+      <div class="body"><h3>${p.title}</h3><p>${p.summary}</p>
+        <div class="proj-meta"><span>历届：<b>${p.years}</b></span><span>共 <b>${p.timeline.length}</b> 个关键节点</span></div>
+        <div class="go">${i===curProjIdx?'查看历届时间线 ↓':'查看历届时间线'}</div>
+      </div></div>`;
+  }).join('');
+  document.getElementById('detailContent').innerHTML = `
+    <div class="loc-head">
+      <div><h2>${l.name} · 项目故事</h2>
+        <div class="loc-tags">${l.projects.map(p=>`<span class="tag" style="background:${TYPES[p.type].color}">${TYPES[p.type].label}</span>`).join('')}</div>
+        <p class="sec-sub" style="margin-top:10px">${l.tagline}</p>
+      </div>
+      <div class="loc-stats">${l.stats.map(s=>`<div class="loc-stat"><b>${s[0]}</b><span>${s[1]}</span></div>`).join('')}</div>
+    </div>
+    <div class="proj-grid">${cards}</div>
+    ${renderTimeline()}`;
+  document.querySelectorAll('.proj-card').forEach(c=>c.onclick=()=>{
+    curProjIdx=+c.dataset.i; renderDetail();
+    document.querySelector('.tl-wrap').scrollIntoView({behavior:'smooth',block:'start'});
+  });
+  document.querySelectorAll('.tl-chip').forEach(ch=>ch.onclick=()=>{
+    document.querySelectorAll('.tl-chip').forEach(x=>x.classList.remove('active')); ch.classList.add('active');
+    const el=document.getElementById('tcard-'+ch.dataset.i);
+    document.querySelectorAll('.tl-card').forEach(x=>x.classList.remove('hl'));
+    el.classList.add('hl'); el.scrollIntoView({behavior:'smooth',block:'center'});
+  });
+  document.querySelectorAll('.tl-card').forEach((c,i)=>c.onclick=()=>{
+    document.querySelectorAll('.tl-card').forEach(x=>x.classList.remove('hl')); c.classList.add('hl');
+  });
+}
+
+/* ============ 地图 ============ */
+const chart = echarts.init(document.getElementById('chinaMap'));
+echarts.registerMap('china', window.CHINA_GEO);
+
+function bboxCenter(f){
+  let xs=[],ys=[];
+  const walk=a=>{if(typeof a[0]==='number'){xs.push(a[0]);ys.push(a[1]);}else a.forEach(walk);};
+  walk(f.geometry.coordinates);
+  return [(Math.min(...xs)+Math.max(...xs))/2,(Math.min(...ys)+Math.max(...ys))/2];
+}
+const CENTERS = {}; window.CHINA_GEO.features.forEach(f=>CENTERS[f.properties.name]=bboxCenter(f));
+
+let activeFilter='all', selected=null;
+
+function markerData(){
+  return LOCATIONS.filter(l=>activeFilter==='all'||l.projects.some(p=>p.type===activeFilter)).map(l=>({
+    name:l.name, value:[...l.coords,8],
+    label:{position:l.id==='shanghai'?'left':'top'}
+  }));
+}
+function mapOption(){
+  return {
+    tooltip:{backgroundColor:'#0a1c2c',borderWidth:0,textStyle:{color:'#fff',fontSize:12},
+      formatter:p=> p.seriesType==='effectScatter'
+        ? `<b>${p.name}</b><br>点击查看项目与时间线` : `${p.name}<br>点击查看项目与时间线`},
+    geo:{map:'china',roam:true,scaleLimit:{min:1,max:12},
+      center:[104.5,36.5],zoom:1.12,
+      label:{show:true,fontSize:9,color:'#7d97ad'},
+      itemStyle:{areaColor:'#233f59',borderColor:'#0b2036',borderWidth:1},
+      emphasis:{label:{color:'#fff',fontSize:10},itemStyle:{areaColor:'#f7c36b'}},
+      select:{itemStyle:{areaColor:'#ffd166'},label:{color:'#0d2438'}}},
+    series:[
+      {type:'map',map:'china',geoIndex:0,selectedMode:false,silent:false,zlevel:1,
+        data:window.CHINA_GEO.features.map(f=>{
+          const n=f.properties.name;
+          let tier=0; if(PARTICIPATING.includes(n))tier=1; if(FEATURED.includes(n))tier=2;
+          if(selected&&n===selected.geo)tier=3;
+          return {name:n,value:tier,itemStyle:{areaColor:TIER_COLOR[tier]||'#ffd166'}};
+        })},
+      {type:'effectScatter',coordinateSystem:'geo',zlevel:3,
+        rippleEffect:{brushType:'stroke',scale:3.4,period:4},
+        symbolSize:11,itemStyle:{color:'#ffd166',shadowBlur:14,shadowColor:'#f5a623'},
+        label:{show:true,position:'top',formatter:'{b}',color:'#ffe9b8',fontSize:11,fontWeight:700},
+        data:markerData()}
+    ]
+  };
+}
+chart.setOption(mapOption());
+
+function showOverlay(loc){
+  const o=document.getElementById('mapOverlay');
+  o.innerHTML=`<h4>${loc.name}</h4><p>${loc.tagline}</p>
+    <span class="btn btn-primary" style="font-size:13px;padding:8px 16px">查看 ${loc.projects.length} 个项目与历届时间线 ↓</span>`;
+  o.classList.add('show');
+  o.querySelector('.btn').onclick=()=>document.getElementById('detail').scrollIntoView({behavior:'smooth'});
+}
+function selectLoc(loc){
+  selected=loc; curLoc=loc; curProjIdx=0;
+  const c=CENTERS[loc.geo]||loc.coords;
+  chart.setOption({geo:{center:c,zoom:loc.zoom}},{animationDurationUpdate:700});
+  chart.setOption({series:[{data:window.CHINA_GEO.features.map(f=>{
+      const n=f.properties.name;
+      let tier=0; if(PARTICIPATING.includes(n))tier=1; if(FEATURED.includes(n))tier=2;
+      if(n===loc.geo)tier=3;
+      return {name:n,value:tier,itemStyle:{areaColor:TIER_COLOR[tier]||'#ffd166'}};
+    })}]});
+  showOverlay(loc);
+  document.getElementById('mapReset').style.display='block';
+  renderDetail();
+}
+function resetMap(){
+  selected=null;
+  chart.setOption({geo:{center:[104.5,36.5],zoom:1.12}},{animationDurationUpdate:700});
+  chart.setOption({series:[{data:window.CHINA_GEO.features.map(f=>{
+      const n=f.properties.name;
+      let tier=0; if(PARTICIPATING.includes(n))tier=1; if(FEATURED.includes(n))tier=2;
+      return {name:n,value:tier,itemStyle:{areaColor:TIER_COLOR[tier]||'#ffd166'}};
+    })}]});
+  document.getElementById('mapOverlay').classList.remove('show');
+  document.getElementById('mapReset').style.display='none';
+}
+document.getElementById('mapReset').onclick=resetMap;
+
+chart.on('click',p=>{
+  if(p.seriesType==='effectScatter'){
+    const loc=LOCATIONS.find(l=>l.name===p.name); if(loc) selectLoc(loc);
+  }else if(p.seriesType==='map'){
+    const loc=LOCATIONS.find(l=>l.geo===p.name);
+    if(loc){ selectLoc(loc); return; }
+    const o=document.getElementById('mapOverlay');
+    if(PARTICIPATING.includes(p.name)){
+      o.innerHTML=`<h4>${p.name}</h4><p>已参与《去远方》梦想课程，研学小队正在路上。详细项目故事持续更新中。</p>`;
+      o.classList.add('show');
+    }else{
+      o.innerHTML=`<h4>${p.name}</h4><p>梦想中心正在建设中，期待下一个故事在这里发生。</p>`;
+      o.classList.add('show');
+    }
+  }
+});
+
+document.getElementById('typeChips').addEventListener('click',e=>{
+  const b=e.target.closest('.chip'); if(!b) return;
+  activeFilter=b.dataset.tag;
+  document.querySelectorAll('#typeChips .chip').forEach(x=>x.classList.toggle('active',x===b));
+  chart.setOption({series:[{type:'effectScatter',data:markerData()}]});
+});
+
+/* ============ 初始状态 ============ */
+renderDetail();
+window.addEventListener('resize',()=>chart.resize());
+</script>
+</body>
+</html>
