@@ -2,3 +2,7 @@
 Thumbs.db
 *.log
 node_modules/
+client/dist/
+server/data.db
+server/uploads/
+server/.env
